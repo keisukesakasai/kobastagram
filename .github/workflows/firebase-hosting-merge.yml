@@ -20,6 +20,8 @@ jobs:
       - name: Add path
         run: echo "$(pwd)/flutter/bin" >> $GITHUB_PATH
 
+      - run: flutter channel beta
+
       # パッケージのダウンロード
       - name: Download Flutter packages
         run: flutter pub get
