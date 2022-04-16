@@ -43,20 +43,32 @@ class _PostItemState extends State {
             children: [Text("奥山 大樹"), Text("日本 埼玉県")],
           ),
         ]),
-        IconButton(icon: Icon(Icons.more_horiz),onPressed: () => {},)
+        IconButton(
+          icon: Icon(Icons.more_horiz),
+          onPressed: () => {},
+        )
       ]),
-      Center(
-        child: CarouselSlider(
-            height: 400,
-            enableInfiniteScroll: false,
-            viewportFraction: 1.0,
-            onPageChanged: (index) {
-              setState(() {
-                _current = index;
-              });
-            },
-            items: _pictures),
-      ),
+    Center(
+        child: Image.asset(
+          'images/okuyama_taiki.jpg',
+          fit: BoxFit.cover,
+          width: 1000.0,
+          height: 400,
+        )
+    ),
+      // Center(
+      //     child: CarouselSlider(
+      //     options: CarouselOptions(
+      //       height: 400,
+      //       enableInfiniteScroll: false,
+      //       viewportFraction: 1.0,
+      //       onPageChanged: (index) {
+      //         setState(() {
+      //           _current = index;
+      //         });
+      //       },
+      //       items: _pictures),
+      // )),
       Row(
         children: [
           Container(
@@ -83,20 +95,20 @@ class _PostItemState extends State {
                   children: _pictures
                       .asMap()
                       .map((index, picture) {
-                    return MapEntry(
-                        index,
-                        Container(
-                          height: 8.0,
-                          width: 8.0,
-                          margin: EdgeInsets.symmetric(
-                              vertical: 20.0, horizontal: 2.0),
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: _current == index
-                                  ? Color.fromRGBO(0, 0, 0, 0.9)
-                                  : Color.fromRGBO(0, 0, 0, 0.4)),
-                        ));
-                  })
+                        return MapEntry(
+                            index,
+                            Container(
+                              height: 8.0,
+                              width: 8.0,
+                              margin: EdgeInsets.symmetric(
+                                  vertical: 20.0, horizontal: 2.0),
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: _current == index
+                                      ? Color.fromRGBO(0, 0, 0, 0.9)
+                                      : Color.fromRGBO(0, 0, 0, 0.4)),
+                            ));
+                      })
                       .values
                       .toList())),
           Container(
@@ -105,7 +117,10 @@ class _PostItemState extends State {
                 Transform.rotate(
                   angle: 3 * pi / 2,
                   child: IconButton(
-                      icon: Icon(Icons.label_important), iconSize: 30, onPressed: () => {},),
+                    icon: Icon(Icons.label_important),
+                    iconSize: 30,
+                    onPressed: () => {},
+                  ),
                 )
               ])),
         ],
@@ -133,24 +148,20 @@ class _PostItemState extends State {
           alignment: Alignment.centerLeft,
           child: Column(
             children: [
-              Text(
-                  'オレの誕生日の次の日の結婚式おめでとう！！\n'
-                      '高3の口聞かなかった時期のことまだ根に持ってたけど、もう大人だから水に流すね！またまゆちゃんも一緒につぶれるまで飲み行こう🙆\n‍ゆうじとまゆに永遠の幸あれ　アメン🌝\n'
-              ),
+              Text('オレの誕生日の次の日の結婚式おめでとう！！\n'
+                  '高3の口聞かなかった時期のことまだ根に持ってたけど、もう大人だから水に流すね！またまゆちゃんも一緒につぶれるまで飲み行こう🙆\n‍ゆうじとまゆに永遠の幸あれ　アメン🌝\n'),
             ],
-          )
-      ),
+          )),
       Container(
           padding: EdgeInsets.symmetric(horizontal: 12),
           alignment: Alignment.centerLeft,
           child: Column(
             children: [
-              Text('#ゆうじ#いい匂い#ボディミスト#多め',
-
+              Text(
+                '#ゆうじ#いい匂い#ボディミスト#多め',
               ),
             ],
-          )
-      ),
+          )),
       // Container(
       //     padding: EdgeInsets.symmetric(horizontal: 12),
       //     alignment: Alignment.centerLeft,
