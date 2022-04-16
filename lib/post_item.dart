@@ -13,7 +13,7 @@ final _sliderItem = Container(
   child: ClipRRect(
       borderRadius: BorderRadius.all(Radius.circular(0.0)),
       child: Image.asset(
-        'images/friends_yuji/okuyama_taiki.jpg',
+        'images/okuyama_taiki.jpg',
         fit: BoxFit.cover,
         width: 1000.0,
       )),

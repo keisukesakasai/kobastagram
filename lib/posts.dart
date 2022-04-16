@@ -19,7 +19,7 @@ class _PostsState extends State<Posts> {
                     bottom: BorderSide(width: 1, color: Color(0x33330000)))),
             child: Column(
               children: [
-                // PostItem(),
+                PostItem(),
                 // PostItemOkuyamaTaiki(),
                 Heros(),
               ],

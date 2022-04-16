@@ -21,15 +21,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
   final String title;
 
   @override
@@ -58,14 +49,21 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(color: Colors.white),
                   ),
                   leading: IconButton(
-                      icon: Icon(Icons.camera_alt), iconSize: _iconSize,onPressed: () => {},),
+                    icon: Icon(Icons.camera_alt),
+                    iconSize: _iconSize,
+                    onPressed: () => {},
+                  ),
                   actions: <Widget>[
                     IconButton(
                       icon: Icon(Icons.live_tv),
                       iconSize: _iconSize,
                       onPressed: () => {},
                     ),
-                    IconButton(icon: Icon(Icons.send), iconSize: _iconSize,onPressed: () => {},),
+                    IconButton(
+                      icon: Icon(Icons.send),
+                      iconSize: _iconSize,
+                      onPressed: () => {},
+                    ),
                   ],
                 )),
             body: TabBarView(children: [
@@ -97,7 +95,19 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
-              Center(),
+              SingleChildScrollView(
+                child: Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.all(0),
+                      child: Stories(),
+                    ),
+                    Center(
+                      child: Posts(),
+                    )
+                  ],
+                ),
+              ),
               Center(),
               Center(),
               Center(),
