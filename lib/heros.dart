@@ -15,8 +15,8 @@ final _heroItem = Container(
           Icons.account_circle,
           size: 100,
         ),
-        Text("ほげ", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-        Text("ほげ"),
+        Text("池田", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+        Text("将司"),
         FlatButton(
             onPressed: () {},
             padding: EdgeInsets.fromLTRB(24, 8, 24, 8),
@@ -24,7 +24,7 @@ final _heroItem = Container(
             textColor: Colors.white,
             color: Colors.blue,
             child:
-            Text("フォローする", style: TextStyle(fontWeight: FontWeight.bold))),
+            Text("Show Msg.", style: TextStyle(fontWeight: FontWeight.bold))),
       ],
     ));
 

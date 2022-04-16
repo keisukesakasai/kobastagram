@@ -46,7 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   backgroundColor: Colors.black,
                   title: Text(
                     widget.title,
-                    style: TextStyle(color: Colors.white),
+                    style:
+                        TextStyle(color: Colors.white, fontFamily: 'OpenSans'),
                   ),
                   leading: IconButton(
                     icon: Icon(Icons.camera_alt),
@@ -108,9 +109,45 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
-              Center(),
-              Center(),
-              Center(),
+              SingleChildScrollView(
+                child: Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.all(0),
+                      child: Stories(),
+                    ),
+                    Center(
+                      child: Posts(),
+                    )
+                  ],
+                ),
+              ),
+              SingleChildScrollView(
+                child: Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.all(0),
+                      child: Stories(),
+                    ),
+                    Center(
+                      child: Posts(),
+                    )
+                  ],
+                ),
+              ),
+              SingleChildScrollView(
+                child: Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.all(0),
+                      child: Stories(),
+                    ),
+                    Center(
+                      child: Posts(),
+                    )
+                  ],
+                ),
+              ),
             ]),
             bottomNavigationBar: Container(
               decoration: BoxDecoration(
