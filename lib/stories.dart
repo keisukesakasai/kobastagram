@@ -10,10 +10,10 @@ class Stories extends StatelessWidget {
                 bottom: BorderSide(width: 1.0, color: Color(0x3333000000)))),
         child: Row(
           children: <Widget>[
-            StoryItem(name: "r-yanyo", icon: Icons.account_circle),
-            StoryItem(name: "fugafuga", icon: Icons.account_circle),
-            StoryItem(name: "hogehogeo", icon: Icons.account_circle),
-            StoryItem(name: "mogemogeo", icon: Icons.account_circle),
+            StoryItem(name: "Yuji mom", icon: Icons.account_circle),
+            StoryItem(name: "Yuji dad", icon: Icons.account_circle),
+            StoryItem(name: "Mayu mom", icon: Icons.account_circle),
+            StoryItem(name: "Mayu dad", icon: Icons.account_circle),
           ],
         ));
   }

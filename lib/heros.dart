@@ -48,7 +48,7 @@ class Heros extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(12),
                   child: Text(
-                    "おすすめ",
+                    "Congraturation Msg.",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
                 )
