@@ -6,7 +6,7 @@ class StoryItem extends StatelessWidget {
   final String name;
   final IconData icon;
 
-  StoryItem({Key key, this.name, this.icon})
+  StoryItem({Key? key, required this.name, required this.icon})
       : super(key: key);
 
   @override
