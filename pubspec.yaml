@@ -72,6 +72,7 @@ flutter:
     - images/hoshino_reo_image.jpg
     - images/ikeda_masashi_image.jpg
 
+
 fonts:
   - family: OpenSans
     fonts:

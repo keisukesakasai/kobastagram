@@ -45,30 +45,28 @@ class _MyHomePageState extends State<MyHomePage> {
                 preferredSize: Size.fromHeight(40),
                 child: AppBar(
                   centerTitle: true,
-                  backgroundColor: Colors.black,
-                  title: Text(
-                    widget.title,
-                    style:
-                        TextStyle(color: Colors.white, fontFamily: 'OpenSans'),
-                  ),
-                  leading: IconButton(
-                    icon: Icon(Icons.camera_alt),
-                    iconSize: _iconSize,
-                    onPressed: () => {},
-                  ),
-                  actions: <Widget>[
-                    IconButton(
-                      icon: Icon(Icons.live_tv),
-                      iconSize: _iconSize,
-                      onPressed: () => {},
+                  backgroundColor: Colors.white,
+                  title: Image.asset('images/kobasutagram.png', height: 60,),
+
+                   actions: [
+                    Icon(Icons.add_box_outlined,color:Colors.black),
+                    SizedBox(width: 15,),
+                    Icon(Icons.favorite_border_outlined,color:Colors.black),
+                    SizedBox(width: 15,), //Iconの間隔
+                    Padding(
+                    padding: const EdgeInsets.only(bottom: 5.0),
+                    child: Transform.rotate( //Iconの角度変更
+                    angle: -20,
+                    child: Icon(Icons.send_outlined,color:Colors.black)
                     ),
-                    IconButton(
-                      icon: Icon(Icons.send),
-                      iconSize: _iconSize,
-                      onPressed: () => {},
                     ),
-                  ],
+                    SizedBox(width: 15,),
+                    ],
                 )),
+
+
+
+
             body: TabBarView(children: [
               //--- １個目のタブ
               SingleChildScrollView(
