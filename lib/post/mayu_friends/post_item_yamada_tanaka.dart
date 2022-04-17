@@ -146,7 +146,8 @@ class _PostItemState extends State {
               Text('まゆさんご結婚おめでとうございます！！\n'
                   'サービスセンターで大騒ぎしてた日々、本当に楽しかったですね、、\n'
                   'まゆちの結婚にぴんきーが寂しがってたので、気が向いたらケアしてあげてくださいね！\n'
-                  '末永くお幸せに♡')
+                  '末永くお幸せに♡',
+              )
             ],
           )),
       Container(
@@ -157,6 +158,9 @@ class _PostItemState extends State {
               Text(
                 '#ぴんきーとみー#タブ地獄#2部✌️\n'
                 '#チャイハナ#唐揚げで怪我#豆苗',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 1, 55, 142),
+                ),
               ),
             ],
           )),

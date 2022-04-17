@@ -159,6 +159,9 @@ class _PostItemState extends State {
                 '#UG#結婚#💒#🎉'
                 '#最近の思い出#めいどりーみん#4年前#💗'
                 '#アイシテルヨ',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 1, 55, 142),
+                ),
               ),
             ],
           )),

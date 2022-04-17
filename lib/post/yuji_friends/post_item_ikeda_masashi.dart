@@ -157,7 +157,10 @@ class _PostItemState extends State {
           child: Column(
             children: [
               Text(
-                '♯ケンカシかませ犬コンビ ♯思い出のハネムーン ♯グアム ♯チリゲとワカハゲ',
+                '♯ケンカシかませ犬コンビ ♯思い出のハネムーン♯グアム ♯チリゲとワカハゲ',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 1, 55, 142),
+                  ),
               ),
             ],
           )),

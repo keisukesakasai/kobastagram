@@ -155,6 +155,9 @@ class _PostItemState extends State {
             children: [
               Text(
                 '#ゆうじ#いい匂い#ボディミスト#多め',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 11, 75, 142),
+                 ),
               ),
             ],
           )),
