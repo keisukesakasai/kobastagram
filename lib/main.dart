@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 
-                
+
             body: TabBarView(children: [
               //--- １個目のタブ
               SingleChildScrollView(
