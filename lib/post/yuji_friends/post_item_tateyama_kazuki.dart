@@ -19,7 +19,7 @@ final _sliderItem = Container(
       )),
 );
 
-class PostItem extends StatefulWidget {
+class PostItemOkuyamaTaiki extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:kobastagram/posts.dart';
+import 'package:kobastagram/heros.dart';
 import 'package:kobastagram/stories.dart';
-// import 'package:kobastagram/next_page.dart';
+
+import 'package:kobastagram/post/posts_yuji_friends.dart';
 
 void main() => runApp(MyApp());
 
@@ -68,6 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 )),
             body: TabBarView(children: [
+              //--- １個目のタブ
               SingleChildScrollView(
                 child: Column(
                   children: <Widget>[
@@ -76,8 +79,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Stories(),
                     ),
                     Center(
-                      child: Posts(),
-                    ),
+                        child: Column(
+                      children: [
+                        PostsYujiFriends(),
+                        Heros(),
+                      ],
+                    )),
                     // Center(
                     //     child: RaisedButton(
                     //         child: Image.asset(
@@ -96,6 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
+              //--- ２個目のタブ
               SingleChildScrollView(
                 child: Column(
                   children: <Widget>[
@@ -109,6 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
+              //--- ３個目のタブ
               SingleChildScrollView(
                 child: Column(
                   children: <Widget>[
@@ -122,6 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
+              //--- ４個目のタブ
               SingleChildScrollView(
                 child: Column(
                   children: <Widget>[
@@ -135,6 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
+              //--- ５個目のタブ
               SingleChildScrollView(
                 child: Column(
                   children: <Widget>[

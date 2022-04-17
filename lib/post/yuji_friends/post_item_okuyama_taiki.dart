@@ -13,13 +13,13 @@ final _sliderItem = Container(
   child: ClipRRect(
       borderRadius: BorderRadius.all(Radius.circular(0.0)),
       child: Image.asset(
-        'images/okuyama_taiki.jpg',
+        'images/okuyama_taiki_image.jpg',
         fit: BoxFit.cover,
         width: 1000.0,
       )),
 );
 
-class PostItem extends StatefulWidget {
+class PostItemOkuyamaTaiki extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -50,7 +50,7 @@ class _PostItemState extends State {
       ]),
     Center(
         child: Image.asset(
-          'images/okuyama_taiki.jpg',
+          'images/okuyama_taiki_image.jpg',
           fit: BoxFit.cover,
           width: 1000.0,
           height: 400,
@@ -123,7 +123,7 @@ class _PostItemState extends State {
         child: Row(
           children: [
             Text(
-              'yachin17man',
+              '@yachin17man',
               textAlign: TextAlign.left,
               style: TextStyle(fontWeight: FontWeight.bold),
             ),

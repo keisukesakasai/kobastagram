@@ -13,13 +13,13 @@ final _sliderItem = Container(
   child: ClipRRect(
       borderRadius: BorderRadius.all(Radius.circular(0.0)),
       child: Image.asset(
-        'images/okuyama_taiki.jpg',
+        'images/ikeda_masashi_image.jpg',
         fit: BoxFit.cover,
         width: 1000.0,
       )),
 );
 
-class PostItem extends StatefulWidget {
+class PostItemIkedaMasashi extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -40,7 +40,7 @@ class _PostItemState extends State {
           _dummyIcon,
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [Text("奥山 大樹"), Text("日本 埼玉県")],
+            children: [Text("池田 将司"), Text("日本 東京の西！")],
           ),
         ]),
         IconButton(
@@ -50,7 +50,7 @@ class _PostItemState extends State {
       ]),
     Center(
         child: Image.asset(
-          'images/okuyama_taiki.jpg',
+          'images/ikeda_masashi_image.jpg',
           fit: BoxFit.cover,
           width: 1000.0,
           height: 400,
@@ -123,7 +123,7 @@ class _PostItemState extends State {
         child: Row(
           children: [
             Text(
-              'yachin17man',
+              '@masahi_ikeda',
               textAlign: TextAlign.left,
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
@@ -135,8 +135,11 @@ class _PostItemState extends State {
           alignment: Alignment.centerLeft,
           child: Column(
             children: [
-              Text('オレの誕生日の次の日の結婚式おめでとう！！\n'
-                  '高3の口聞かなかった時期のことまだ根に持ってたけど、もう大人だから水に流すね！またまゆちゃんも一緒につぶれるまで飲み行こう🙆\n‍ゆうじとまゆに永遠の幸あれ　アメン🌝\n'),
+              Text('結婚おめでとう！\n'
+          '愛するゆうじが他の人のものになってしまうと夜も眠れません\n'
+          '結婚式当日は最後の晴れ姿を目に焼き付けて\n'
+          'この思いを一生胸にしまうことにします\n'
+          'とはいえ本当におめでとう！'),
             ],
           )),
       Container(
@@ -145,7 +148,7 @@ class _PostItemState extends State {
           child: Column(
             children: [
               Text(
-                '#ゆうじ#いい匂い#ボディミスト#多め',
+                '♯ケンカシかませ犬コンビ ♯思い出のハネムーン ♯グアム ♯チリゲとワカハゲ',
               ),
             ],
           )),
@@ -189,7 +192,7 @@ class _PostItemState extends State {
                   bottom: BorderSide(width: 1, color: Color(0x33330000)))),
           alignment: Alignment.centerLeft,
           padding: EdgeInsets.fromLTRB(12, 0, 12, 8),
-          child: Text("12時間前")),
+          child: Text("30分前")),
     ]);
   }
 }

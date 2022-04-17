@@ -13,13 +13,13 @@ final _sliderItem = Container(
   child: ClipRRect(
       borderRadius: BorderRadius.all(Radius.circular(0.0)),
       child: Image.asset(
-        'images/okuyama_taiki.jpg',
+        'images/hoshino_reo_image.jpg',
         fit: BoxFit.cover,
         width: 1000.0,
       )),
 );
 
-class PostItem extends StatefulWidget {
+class PostItemHoshinoReo extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -40,7 +40,7 @@ class _PostItemState extends State {
           _dummyIcon,
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [Text("奥山 大樹"), Text("日本 埼玉県")],
+            children: [Text("星野 玲旺"), Text("日本 最果ての北")],
           ),
         ]),
         IconButton(
@@ -48,14 +48,14 @@ class _PostItemState extends State {
           onPressed: () => {},
         )
       ]),
-    Center(
-        child: Image.asset(
-          'images/okuyama_taiki.jpg',
-          fit: BoxFit.cover,
-          width: 1000.0,
-          height: 400,
-        )
-    ),
+      Center(
+          child: Image.asset(
+            'images/hoshino_reo_image.jpg',
+            fit: BoxFit.cover,
+            width: 1000.0,
+            height: 400,
+          )
+      ),
       Row(
         children: [
           Container(
@@ -82,20 +82,20 @@ class _PostItemState extends State {
                   children: _pictures
                       .asMap()
                       .map((index, picture) {
-                        return MapEntry(
-                            index,
-                            Container(
-                              height: 8.0,
-                              width: 8.0,
-                              margin: EdgeInsets.symmetric(
-                                  vertical: 20.0, horizontal: 2.0),
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: _current == index
-                                      ? Color.fromRGBO(0, 0, 0, 0.9)
-                                      : Color.fromRGBO(0, 0, 0, 0.4)),
-                            ));
-                      })
+                    return MapEntry(
+                        index,
+                        Container(
+                          height: 8.0,
+                          width: 8.0,
+                          margin: EdgeInsets.symmetric(
+                              vertical: 20.0, horizontal: 2.0),
+                          decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: _current == index
+                                  ? Color.fromRGBO(0, 0, 0, 0.9)
+                                  : Color.fromRGBO(0, 0, 0, 0.4)),
+                        ));
+                  })
                       .values
                       .toList())),
           Container(
@@ -123,7 +123,7 @@ class _PostItemState extends State {
         child: Row(
           children: [
             Text(
-              'yachin17man',
+              '@r17x_o',
               textAlign: TextAlign.left,
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
@@ -135,9 +135,11 @@ class _PostItemState extends State {
           alignment: Alignment.centerLeft,
           child: Column(
             children: [
-              Text('オレの誕生日の次の日の結婚式おめでとう！！\n'
-                  '高3の口聞かなかった時期のことまだ根に持ってたけど、もう大人だから水に流すね！またまゆちゃんも一緒につぶれるまで飲み行こう🙆\n‍ゆうじとまゆに永遠の幸あれ　アメン🌝\n'),
-            ],
+          Text(
+          'ゆうじ結婚おめでと！\n'
+          '高校の中では謎に1番付き合い長い説ある。\n'
+          'これからは家族の付き合いでゴルフとかＢＢＱとかしようね〜'
+          )],
           )),
       Container(
           padding: EdgeInsets.symmetric(horizontal: 12),
@@ -145,7 +147,9 @@ class _PostItemState extends State {
           child: Column(
             children: [
               Text(
-                '#ゆうじ#いい匂い#ボディミスト#多め',
+                '#UG#結婚#💒#🎉'
+                '#最近の思い出#めいどりーみん#4年前#💗'
+                '#アイシテルヨ',
               ),
             ],
           )),
