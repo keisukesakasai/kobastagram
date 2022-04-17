@@ -37,7 +37,17 @@ class _PostItemState extends State {
     return Column(children: [
       Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
         Row(children: [
-          _dummyIcon,
+          //_dummyIcon,
+          Container(
+            width: 40.0,
+            height: 40.0,
+            margin: const EdgeInsets.all(5.0),
+            decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage('images/ikeda_masashi_icon.jpg'))),
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [Text("池田 将司"), Text("日本 東京の西！")],
@@ -48,14 +58,13 @@ class _PostItemState extends State {
           onPressed: () => {},
         )
       ]),
-    Center(
-        child: Image.asset(
-          'images/ikeda_masashi_image.jpg',
-          fit: BoxFit.cover,
-          width: 1000.0,
-          height: 400,
-        )
-    ),
+      Center(
+          child: Image.asset(
+        'images/ikeda_masashi_image.jpg',
+        fit: BoxFit.cover,
+        width: 1000.0,
+        height: 400,
+      )),
       Row(
         children: [
           Container(
@@ -136,10 +145,10 @@ class _PostItemState extends State {
           child: Column(
             children: [
               Text('結婚おめでとう！\n'
-          '愛するゆうじが他の人のものになってしまうと夜も眠れません\n'
-          '結婚式当日は最後の晴れ姿を目に焼き付けて\n'
-          'この思いを一生胸にしまうことにします\n'
-          'とはいえ本当におめでとう！'),
+                  '愛するゆうじが他の人のものになってしまうと夜も眠れません\n'
+                  '結婚式当日は最後の晴れ姿を目に焼き付けて\n'
+                  'この思いを一生胸にしまうことにします\n'
+                  'とはいえ本当におめでとう！'),
             ],
           )),
       Container(
@@ -163,10 +172,15 @@ class _PostItemState extends State {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(children: [
-              IconButton(
-                icon: Icon(Icons.account_circle),
-                iconSize: 30,
-                onPressed: () => {},
+              Container(
+                width: 30.0,
+                height: 30.0,
+                margin: const EdgeInsets.all(5.0),
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage('images/yuji_icon.png'))),
               ),
               Text("コメントを追加..."),
             ]),

@@ -163,25 +163,46 @@ class _MyHomePageState extends State<MyHomePage> {
             bottomNavigationBar: Container(
               decoration: BoxDecoration(
                   border: Border(
-                      top: BorderSide(width: 1, color: Color(0x33330000)))),
-              height: 80,
+                      top: BorderSide(width: 1.5, color: Color(0x33330000)))),
+              height: 70,
               alignment: Alignment.topCenter,
               child: TabBar(
+                indicator: BoxDecoration(
+                  border: Border(
+                      bottom: BorderSide(
+                        width: 2.5,
+                        color: Colors.black38,
+                      )),
+                ),
                 tabs: <Widget>[
                   Tab(
-                    icon: Icon(Icons.home, color: Colors.black, size: 30),
+                    icon: Icon(Icons.people, color: Color(0xFF0B1EC9), size: 30),
                   ),
                   Tab(
-                    icon: Icon(Icons.search, color: Colors.black, size: 30),
+                    icon: Icon(Icons.people, color: Color(0xF3C10E0E), size: 30),
                   ),
                   Tab(
-                    icon: Icon(Icons.add_circle, color: Colors.black, size: 30),
+                    icon: Icon(Icons.window, color: Colors.black, size: 30),
                   ),
-                  Tab(
-                    icon: Icon(Icons.favorite, color: Colors.black, size: 30),
+                  Container(
+                    width: 34.5,
+                    height: 34.5,
+                    margin: const EdgeInsets.all(5.0),
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: AssetImage('images/yuji_tab_icon.png'))),
                   ),
-                  Tab(
-                    icon: Icon(Icons.person, color: Colors.black, size: 30),
+                  Container(
+                    width: 34.5,
+                    height: 34.5,
+                    margin: const EdgeInsets.all(5.0),
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: AssetImage('images/mayu_tab_icon.jpg'))),
                   ),
                 ],
               ),
