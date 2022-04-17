@@ -71,7 +71,8 @@ flutter:
     - images/okuyama_taiki_image.jpg
     - images/hoshino_reo_image.jpg
     - images/ikeda_masashi_image.jpg
-
+    - images/yamada_tanaka_icon.jpg
+    - images/yamada_tanaka_image.jpg
 
 fonts:
   - family: OpenSans
