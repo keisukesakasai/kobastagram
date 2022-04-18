@@ -36,36 +36,37 @@ class _PostItemState extends State {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(children: [
-        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
-          Row(children: [
-            Container(
-              width: 40.0,
-              height: 40.0,
-              margin: const EdgeInsets.all(5.0),
-              decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                      fit: BoxFit.fill,
-                      image: AssetImage('images/okuyama_taiki_icon.jpg'))),
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [Text("奥山 大樹"), Text("日本 埼玉県")],
-            ),
-          ]),
-          IconButton(
-            icon: Icon(Icons.more_horiz),
-            onPressed: () => {},
-          )
-        ]),
-      Center(
-          child: Image.asset(
-            'images/okuyama_taiki_image.jpg',
-            fit: BoxFit.cover,
-            width: 1000.0,
-            height: 400,
-          )
-      ),
+        Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Row(children: [
+                Container(
+                  width: 40.0,
+                  height: 40.0,
+                  margin: const EdgeInsets.all(5.0),
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage('images/okuyama_taiki_icon.jpg'))),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [Text("奥山 大樹"), Text("日本 埼玉県")],
+                ),
+              ]),
+              IconButton(
+                icon: Icon(Icons.more_horiz),
+                onPressed: () => {},
+              )
+            ]),
+        Center(
+            child: Image.asset(
+          'images/okuyama_taiki_image.jpg',
+          fit: BoxFit.cover,
+          width: 1000.0,
+          height: 400,
+        )),
         Row(
           children: [
             Container(
@@ -154,9 +155,10 @@ class _PostItemState extends State {
             alignment: Alignment.centerLeft,
             child: Column(
               children: [
-                Text(
-                  '#ゆうじ#いい匂い#ボディミスト#多め',
-                ),
+                Text('#ゆうじ#いい匂い#ボディミスト#多め',
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 11, 75, 142),
+                    )),
               ],
             )),
         // Container(
