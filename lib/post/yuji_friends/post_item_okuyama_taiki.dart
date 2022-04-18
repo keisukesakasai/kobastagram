@@ -37,7 +37,16 @@ class _PostItemState extends State {
     return Column(children: [
       Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
         Row(children: [
-          _dummyIcon,
+          Container(
+            width: 40.0,
+            height: 40.0,
+            margin: const EdgeInsets.all(5.0),
+            decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage('images/okuyama_taiki_icon.jpg'))),
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [Text("奥山 大樹"), Text("日本 埼玉県")],
@@ -160,10 +169,15 @@ class _PostItemState extends State {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(children: [
-              IconButton(
-                icon: Icon(Icons.account_circle),
-                iconSize: 30,
-                onPressed: () => {},
+              Container(
+                width: 30.0,
+                height: 30.0,
+                margin: const EdgeInsets.all(5.0),
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage('images/yuji_icon.png'))),
               ),
               Text("コメントを追加..."),
             ]),

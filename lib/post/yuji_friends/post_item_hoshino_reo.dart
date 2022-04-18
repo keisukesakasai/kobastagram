@@ -37,7 +37,16 @@ class _PostItemState extends State {
     return Column(children: [
       Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
         Row(children: [
-          _dummyIcon,
+          Container(
+            width: 40.0,
+            height: 40.0,
+            margin: const EdgeInsets.all(5.0),
+            decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage('images/hoshino_reo_icon.jpg'))),
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [Text("星野 玲旺"), Text("日本 最果ての北")],
@@ -164,10 +173,15 @@ class _PostItemState extends State {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(children: [
-              IconButton(
-                icon: Icon(Icons.account_circle),
-                iconSize: 30,
-                onPressed: () => {},
+              Container(
+                width: 30.0,
+                height: 30.0,
+                margin: const EdgeInsets.all(5.0),
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage('images/yuji_icon.png'))),
               ),
               Text("コメントを追加..."),
             ]),

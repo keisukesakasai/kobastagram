@@ -13,13 +13,13 @@ final _sliderItem = Container(
   child: ClipRRect(
       borderRadius: BorderRadius.all(Radius.circular(0.0)),
       child: Image.asset(
-        'images/ikeda_masashi_image.jpg',
+        'images/yamada_tanakaimage.jpg',
         fit: BoxFit.cover,
         width: 1000.0,
       )),
 );
 
-class PostItemIkedaMasashi extends StatefulWidget {
+class PostYamadaTanaka extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -37,7 +37,6 @@ class _PostItemState extends State {
     return Column(children: [
       Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
         Row(children: [
-          //_dummyIcon,
           Container(
             width: 40.0,
             height: 40.0,
@@ -46,11 +45,11 @@ class _PostItemState extends State {
                 shape: BoxShape.circle,
                 image: DecorationImage(
                     fit: BoxFit.fill,
-                    image: AssetImage('images/ikeda_masashi_icon.jpg'))),
+                    image: AssetImage('images/yamada_tanaka_icon.jpg'))),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [Text("池田 将司"), Text("日本 東京の西！")],
+            children: [Text("たなか＆やまだ"), Text("Japan")],
           ),
         ]),
         IconButton(
@@ -60,7 +59,7 @@ class _PostItemState extends State {
       ]),
       Center(
           child: Image.asset(
-        'images/ikeda_masashi_image.jpg',
+        'images/yamada_tanaka_image.jpg',
         fit: BoxFit.cover,
         width: 1000.0,
         height: 400,
@@ -124,7 +123,7 @@ class _PostItemState extends State {
       Container(
         padding: EdgeInsets.symmetric(horizontal: 12),
         alignment: Alignment.centerLeft,
-        child: Text("小林 悠司さんが「Good！」しました。"),
+        child: Text("小林 まゆさんが「Good！」しました。"),
       ),
       Container(
         padding: EdgeInsets.symmetric(horizontal: 12),
@@ -132,7 +131,7 @@ class _PostItemState extends State {
         child: Row(
           children: [
             Text(
-              '@masahi_ikeda',
+              '@AOI TANAKA & NANAMI YAMADA',
               textAlign: TextAlign.left,
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
@@ -144,11 +143,10 @@ class _PostItemState extends State {
           alignment: Alignment.centerLeft,
           child: Column(
             children: [
-              Text('結婚おめでとう！\n'
-                  '愛するゆうじが他の人のものになってしまうと夜も眠れません\n'
-                  '結婚式当日は最後の晴れ姿を目に焼き付けて\n'
-                  'この思いを一生胸にしまうことにします\n'
-                  'とはいえ本当におめでとう！'),
+              Text('まゆさんご結婚おめでとうございます！！\n'
+                  'サービスセンターで大騒ぎしてた日々、本当に楽しかったですね、、\n'
+                  'まゆちの結婚にぴんきーが寂しがってたので、気が向いたらケアしてあげてくださいね！\n'
+                  '末永くお幸せに♡')
             ],
           )),
       Container(
@@ -157,7 +155,8 @@ class _PostItemState extends State {
           child: Column(
             children: [
               Text(
-                '♯ケンカシかませ犬コンビ ♯思い出のハネムーン ♯グアム ♯チリゲとワカハゲ',
+                '#ぴんきーとみー#タブ地獄#2部✌️\n'
+                '#チャイハナ#唐揚げで怪我#豆苗',
               ),
             ],
           )),
@@ -180,7 +179,7 @@ class _PostItemState extends State {
                     shape: BoxShape.circle,
                     image: DecorationImage(
                         fit: BoxFit.fill,
-                        image: AssetImage('images/yuji_icon.png'))),
+                        image: AssetImage('images/mayu_icon.png'))),
               ),
               Text("コメントを追加..."),
             ]),
@@ -206,7 +205,7 @@ class _PostItemState extends State {
                   bottom: BorderSide(width: 1, color: Color(0x33330000)))),
           alignment: Alignment.centerLeft,
           padding: EdgeInsets.fromLTRB(12, 0, 12, 8),
-          child: Text("30分前")),
+          child: Text("12時間前")),
     ]);
   }
 }
