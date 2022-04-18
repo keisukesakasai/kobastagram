@@ -68,11 +68,6 @@ flutter:
   uses-material-design: true
   assets:
     - images/
-    - images/okuyama_taiki_image.jpg
-    - images/hoshino_reo_image.jpg
-    - images/ikeda_masashi_image.jpg
-    - images/yamada_tanaka_icon.jpg
-    - images/yamada_tanaka_image.jpg
 
 fonts:
   - family: OpenSans
@@ -81,6 +76,7 @@ fonts:
       - asset: assets/fonts/OpenSans-Bold.ttf
         style: italic
         weight: 700 # assets/fonts/OpenSans-Bold.ttfのウェイトを指定
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

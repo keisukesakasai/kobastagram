@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:path/path.dart';
+
 import 'package:kobastagram/post/posts_mayu_friends.dart';
 import 'package:kobastagram/posts.dart';
 import 'package:kobastagram/heros.dart';
 import 'package:kobastagram/stories.dart';
 
+// import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
 import 'package:kobastagram/post/posts_yuji_friends.dart';
 
 void main() => runApp(MyApp());
@@ -28,6 +31,7 @@ class MyHomePage extends StatefulWidget {
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
+
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -89,21 +93,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         //Heros(),
                       ],
                     )),
-                    // Center(
-                    //     child: RaisedButton(
-                    //         child: Image.asset(
-                    //           'images/friends_yuji/okuyama_taiki.jpg',
-                    //           fit: BoxFit.cover,
-                    //           width: 1000.0,
-                    //         ),
-                    //         onPressed: () {
-                    //           Navigator.push(
-                    //             context,
-                    //             MaterialPageRoute(
-                    //                 builder: (context) => NextPage()),
-                    //           );
-                    //         })
-                    // )
                   ],
                 ),
               ),
@@ -130,10 +119,42 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: EdgeInsets.all(0),
                       child: Stories(),
                     ),
-                    Center()
+                    Center(
+                        child: GridView(
+                      shrinkWrap: true,
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 3,
+                          mainAxisSpacing: 2.0,
+                          crossAxisSpacing: 2.0,
+                          childAspectRatio: 1.0,
+                          ),
+                      children: [
+                        // RaisedButton(
+                        //     child: Image.asset(
+                        //       'images/okuyama_taiki_image.jpg',
+                        //       fit: BoxFit.cover,
+                        //     ),
+                        //     onPressed: () {
+                        //       Navigator.push(
+                        //         context,
+                        //         MaterialPageRoute(
+                        //             builder: (context) => PostItemOkuyamaTaiki()),
+                        //       );
+                        //     }),
+                        Image.asset('images/yamada_tanaka_image.jpg',
+                            fit: BoxFit.cover),
+                        Image.asset('images/ikeda_masashi_image.jpg',
+                            fit: BoxFit.cover),
+                        Image.asset('images/hoshino_reo_image.jpg',
+                            fit: BoxFit.cover),
+                        Image.asset('images/okuyama_taiki_image.jpg',
+                            fit: BoxFit.cover)
+                      ],
+                    ))
                   ],
                 ),
               ),
+
               //--- ４個目のタブ
               SingleChildScrollView(
                 child: Column(
