@@ -159,6 +159,9 @@ class _PostItemState extends State {
                 '#UG#結婚#💒#🎉'
                 '#最近の思い出#めいどりーみん#4年前#💗'
                 '#アイシテルヨ',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 1, 55, 142),
+                ),
               ),
             ],
           )),
@@ -183,8 +186,19 @@ class _PostItemState extends State {
                         fit: BoxFit.fill,
                         image: AssetImage('images/yuji_icon.png'))),
               ),
-              Text("コメントを追加..."),
+
+              Text("コメントを追加...",style: TextStyle(color: Colors.grey),),
             ]),
+            Row(
+              mainAxisAlignment:
+              MainAxisAlignment.end,
+              children: [
+                Text('❤'),
+                SizedBox(width: 5,),//間隔
+                Text('👐'),
+                SizedBox(width: 5,),//間隔
+              ],
+            ),
             // Row(
             //   children: [
             //     IconButton(

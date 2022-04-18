@@ -155,6 +155,9 @@ class _PostItemState extends State {
             children: [
               Text(
                 '#ゆうじ#いい匂い#ボディミスト#多め',
+                style: TextStyle(
+                  color: Color.fromARGB(255, 11, 75, 142),
+                 ),
               ),
             ],
           )),
@@ -179,8 +182,18 @@ class _PostItemState extends State {
                         fit: BoxFit.fill,
                         image: AssetImage('images/yuji_icon.png'))),
               ),
-              Text("コメントを追加..."),
+              Text("コメントを追加...",style: TextStyle(color: Colors.grey),),
             ]),
+            Row(
+              mainAxisAlignment:
+              MainAxisAlignment.end,
+              children: [
+                Text('❤'),
+                SizedBox(width: 5,),//間隔
+                Text('👐'),
+                SizedBox(width: 5,),//間隔
+              ],
+            ),
             // Row(
             //   children: [
             //     IconButton(
