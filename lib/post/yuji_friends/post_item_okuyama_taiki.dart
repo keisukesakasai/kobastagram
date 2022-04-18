@@ -34,176 +34,178 @@ class _PostItemState extends State {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
-      Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
-        Row(children: [
-          Container(
-            width: 40.0,
-            height: 40.0,
-            margin: const EdgeInsets.all(5.0),
-            decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage('images/okuyama_taiki_icon.jpg'))),
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [Text("奥山 大樹"), Text("日本 埼玉県")],
-          ),
+    return SingleChildScrollView(
+      child: Column(children: [
+        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
+          Row(children: [
+            Container(
+              width: 40.0,
+              height: 40.0,
+              margin: const EdgeInsets.all(5.0),
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage('images/okuyama_taiki_icon.jpg'))),
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [Text("奥山 大樹"), Text("日本 埼玉県")],
+            ),
+          ]),
+          IconButton(
+            icon: Icon(Icons.more_horiz),
+            onPressed: () => {},
+          )
         ]),
-        IconButton(
-          icon: Icon(Icons.more_horiz),
-          onPressed: () => {},
-        )
-      ]),
-    Center(
-        child: Image.asset(
-          'images/okuyama_taiki_image.jpg',
-          fit: BoxFit.cover,
-          width: 1000.0,
-          height: 400,
-        )
-    ),
-      Row(
-        children: [
-          Container(
-              margin: EdgeInsets.only(right: 44),
-              child: Row(children: [
-                IconButton(
-                  icon: Icon(Icons.favorite),
-                  iconSize: 30,
-                  onPressed: () => {},
-                ),
-                IconButton(
-                  icon: Icon(Icons.mode_comment),
-                  iconSize: 30,
-                  onPressed: () => {},
-                ),
-                IconButton(
-                  icon: Icon(Icons.send),
-                  iconSize: 30,
-                  onPressed: () => {},
-                ),
-              ])),
-          Expanded(
-              child: Row(
-                  children: _pictures
-                      .asMap()
-                      .map((index, picture) {
-                        return MapEntry(
-                            index,
-                            Container(
-                              height: 8.0,
-                              width: 8.0,
-                              margin: EdgeInsets.symmetric(
-                                  vertical: 20.0, horizontal: 2.0),
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: _current == index
-                                      ? Color.fromRGBO(0, 0, 0, 0.9)
-                                      : Color.fromRGBO(0, 0, 0, 0.4)),
-                            ));
-                      })
-                      .values
-                      .toList())),
-          Container(
-              padding: EdgeInsets.only(right: 4),
-              child: Row(children: [
-                Transform.rotate(
-                  angle: 3 * pi / 2,
-                  child: IconButton(
-                    icon: Icon(Icons.label_important),
+      Center(
+          child: Image.asset(
+            'images/okuyama_taiki_image.jpg',
+            fit: BoxFit.cover,
+            width: 1000.0,
+            height: 400,
+          )
+      ),
+        Row(
+          children: [
+            Container(
+                margin: EdgeInsets.only(right: 44),
+                child: Row(children: [
+                  IconButton(
+                    icon: Icon(Icons.favorite),
                     iconSize: 30,
                     onPressed: () => {},
                   ),
-                )
-              ])),
-        ],
-      ),
-      Container(
-        padding: EdgeInsets.symmetric(horizontal: 12),
-        alignment: Alignment.centerLeft,
-        child: Text("小林 悠司さんが「Good！」しました。"),
-      ),
-      Container(
-        padding: EdgeInsets.symmetric(horizontal: 12),
-        alignment: Alignment.centerLeft,
-        child: Row(
-          children: [
-            Text(
-              '@yachin17man',
-              textAlign: TextAlign.left,
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
+                  IconButton(
+                    icon: Icon(Icons.mode_comment),
+                    iconSize: 30,
+                    onPressed: () => {},
+                  ),
+                  IconButton(
+                    icon: Icon(Icons.send),
+                    iconSize: 30,
+                    onPressed: () => {},
+                  ),
+                ])),
+            Expanded(
+                child: Row(
+                    children: _pictures
+                        .asMap()
+                        .map((index, picture) {
+                          return MapEntry(
+                              index,
+                              Container(
+                                height: 8.0,
+                                width: 8.0,
+                                margin: EdgeInsets.symmetric(
+                                    vertical: 20.0, horizontal: 2.0),
+                                decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: _current == index
+                                        ? Color.fromRGBO(0, 0, 0, 0.9)
+                                        : Color.fromRGBO(0, 0, 0, 0.4)),
+                              ));
+                        })
+                        .values
+                        .toList())),
+            Container(
+                padding: EdgeInsets.only(right: 4),
+                child: Row(children: [
+                  Transform.rotate(
+                    angle: 3 * pi / 2,
+                    child: IconButton(
+                      icon: Icon(Icons.label_important),
+                      iconSize: 30,
+                      onPressed: () => {},
+                    ),
+                  )
+                ])),
           ],
         ),
-      ),
-      Container(
+        Container(
           padding: EdgeInsets.symmetric(horizontal: 12),
           alignment: Alignment.centerLeft,
-          child: Column(
-            children: [
-              Text('オレの誕生日の次の日の結婚式おめでとう！！\n'
-                  '高3の口聞かなかった時期のことまだ根に持ってたけど、もう大人だから水に流すね！またまゆちゃんも一緒につぶれるまで飲み行こう🙆\n‍ゆうじとまゆに永遠の幸あれ　アメン🌝\n'),
-            ],
-          )),
-      Container(
+          child: Text("小林 悠司さんが「Good！」しました。"),
+        ),
+        Container(
           padding: EdgeInsets.symmetric(horizontal: 12),
           alignment: Alignment.centerLeft,
-          child: Column(
+          child: Row(
             children: [
               Text(
-                '#ゆうじ#いい匂い#ボディミスト#多め',
+                '@yachin17man',
+                textAlign: TextAlign.left,
+                style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ],
-          )),
-      // Container(
-      //     padding: EdgeInsets.symmetric(horizontal: 12),
-      //     alignment: Alignment.centerLeft,
-      //     child: Text(
-      //       "コメント1件を表示",
-      //     )),
-      Container(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Row(children: [
-              Container(
-                width: 30.0,
-                height: 30.0,
-                margin: const EdgeInsets.all(5.0),
-                decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    image: DecorationImage(
-                        fit: BoxFit.fill,
-                        image: AssetImage('images/yuji_icon.png'))),
-              ),
-              Text("コメントを追加..."),
-            ]),
-            // Row(
-            //   children: [
-            //     IconButton(
-            //       icon: Icon(Icons.favorite),
-            //     ),
-            //     IconButton(
-            //       icon: Icon(Icons.ac_unit),
-            //     ),
-            //     IconButton(
-            //       icon: Icon(Icons.add_circle),
-            //     ),
-            //   ],
-            // ),
-          ],
+          ),
         ),
-      ),
-      Container(
-          decoration: BoxDecoration(
-              border: Border(
-                  bottom: BorderSide(width: 1, color: Color(0x33330000)))),
-          alignment: Alignment.centerLeft,
-          padding: EdgeInsets.fromLTRB(12, 0, 12, 8),
-          child: Text("12時間前")),
-    ]);
+        Container(
+            padding: EdgeInsets.symmetric(horizontal: 12),
+            alignment: Alignment.centerLeft,
+            child: Column(
+              children: [
+                Text('オレの誕生日の次の日の結婚式おめでとう！！\n'
+                    '高3の口聞かなかった時期のことまだ根に持ってたけど、もう大人だから水に流すね！またまゆちゃんも一緒につぶれるまで飲み行こう🙆\n‍ゆうじとまゆに永遠の幸あれ　アメン🌝\n'),
+              ],
+            )),
+        Container(
+            padding: EdgeInsets.symmetric(horizontal: 12),
+            alignment: Alignment.centerLeft,
+            child: Column(
+              children: [
+                Text(
+                  '#ゆうじ#いい匂い#ボディミスト#多め',
+                ),
+              ],
+            )),
+        // Container(
+        //     padding: EdgeInsets.symmetric(horizontal: 12),
+        //     alignment: Alignment.centerLeft,
+        //     child: Text(
+        //       "コメント1件を表示",
+        //     )),
+        Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(children: [
+                Container(
+                  width: 30.0,
+                  height: 30.0,
+                  margin: const EdgeInsets.all(5.0),
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage('images/yuji_icon.png'))),
+                ),
+                Text("コメントを追加..."),
+              ]),
+              // Row(
+              //   children: [
+              //     IconButton(
+              //       icon: Icon(Icons.favorite),
+              //     ),
+              //     IconButton(
+              //       icon: Icon(Icons.ac_unit),
+              //     ),
+              //     IconButton(
+              //       icon: Icon(Icons.add_circle),
+              //     ),
+              //   ],
+              // ),
+            ],
+          ),
+        ),
+        Container(
+            decoration: BoxDecoration(
+                border: Border(
+                    bottom: BorderSide(width: 1, color: Color(0x33330000)))),
+            alignment: Alignment.centerLeft,
+            padding: EdgeInsets.fromLTRB(12, 0, 12, 8),
+            child: Text("12時間前")),
+      ]),
+    );
   }
 }

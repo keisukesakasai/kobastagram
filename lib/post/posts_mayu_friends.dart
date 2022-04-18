@@ -3,7 +3,7 @@ import 'package:kobastagram/post/mayu_friends/post_item_yamada_tanaka.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_hoshino_reo.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_ikeda_masashi.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
-
+import 'package:kobastagram/post_item.dart';
 
 class PostsMayuFriends extends StatefulWidget {
   @override
@@ -20,7 +20,7 @@ class _PostsState extends State<PostsMayuFriends> {
                     bottom: BorderSide(width: 1, color: Color(0x33330000)))),
             child: Column(
               children: [
-                PostYamadaTanaka(),
+                PostItemYamadaTanaka(),
               ],
             )));
   }
