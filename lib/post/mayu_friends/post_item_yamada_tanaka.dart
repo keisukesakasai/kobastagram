@@ -19,7 +19,7 @@ final _sliderItem = Container(
       )),
 );
 
-class PostYamadaTanaka extends StatefulWidget {
+class PostItemYamadaTanaka extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }

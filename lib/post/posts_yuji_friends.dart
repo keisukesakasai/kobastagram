@@ -3,7 +3,6 @@ import 'package:kobastagram/post/yuji_friends/post_item_hoshino_reo.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_ikeda_masashi.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
 
-
 class PostsYujiFriends extends StatefulWidget {
   @override
   _PostsState createState() => _PostsState();
