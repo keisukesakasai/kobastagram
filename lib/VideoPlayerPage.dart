@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoPlayerPage extends StatefulWidget {
+  VideoPlayerPage(String path);
+
   @override
   _VideoPlayerPageState createState() => _VideoPlayerPageState();
 }
 
 class _VideoPlayerPageState extends State<VideoPlayerPage> {
   late VideoPlayerController _controller;
-
+  late final String path;
 
   @override
   void initState() {
@@ -26,7 +28,6 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
     super.dispose();
   }
 
-
   @override
   Widget build(BuildContext context) {
     final double deviceHeight = MediaQuery.of(context).size.height;
@@ -34,7 +35,7 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
     return Scaffold(
       body: Container(
         height: deviceHeight,
-        width: deviceWedith*0.8,
+        width: deviceWedith * 0.8,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -119,4 +120,3 @@ class __ProgressTextState extends State<_ProgressText> {
     return Text('$position / $duration');
   }
 }
-
