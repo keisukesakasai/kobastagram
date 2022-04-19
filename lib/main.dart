@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:path/path.dart';
+import 'package:kobastagram/VideoPlayerPage.dart';
+import 'package:device_preview/device_preview.dart';
+
 import 'package:kobastagram/posts.dart';
 import 'package:kobastagram/heros.dart';
 import 'package:kobastagram/stories.dart';
@@ -12,8 +16,12 @@ import 'detail/post_item_okuyama_taiki_detail.dart';
 import 'detail/post_item_yamada_tanaka_detail.dart';
 import 'detail/post_item_hoshino_reo_detail.dart';
 
-void main() => runApp(MyApp());
-
+void main() => runApp(
+  DevicePreview(
+    enabled: true,
+    builder: (context) => MyApp(), // Wrap your app
+  ),
+);
 final _iconSize = 30.0;
 
 class MyApp extends StatelessWidget {
@@ -50,9 +58,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: AppBar(
                   centerTitle: true,
                   backgroundColor: Colors.white,
-                  title: Image.asset(
-                    'images/kobasutagram.png',
-                    height: 50,
+                  title: Row(
+                    children: [
+                      Image.asset(
+                        'images/kobasutagram.png',
+                        height: 45,
+                      ),
+                    ],
                   ),
                   actions: [
                     Icon(Icons.add_box_outlined, color: Colors.black),
@@ -83,7 +95,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: <Widget>[
                     Padding(
                       padding: EdgeInsets.all(0),
-                      child: Stories(),
+                      child: GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => VideoPlayerPage(),
+                              ),
+                            );
+                          },
+                          child: Stories()),
                     ),
                     Center(
                         child: Column(

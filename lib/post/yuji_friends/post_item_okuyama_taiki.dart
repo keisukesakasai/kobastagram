@@ -184,6 +184,16 @@ class _PostItemState extends State {
                 ),
                 Text("コメントを追加..."),
               ]),
+            Row(
+              mainAxisAlignment:
+              MainAxisAlignment.end,
+              children: [
+                Text('❤'),
+                SizedBox(width: 5,),//間隔
+                Text('👐'),
+                SizedBox(width: 5,),//間隔
+              ],
+            ),              
               // Row(
               //   children: [
               //     IconButton(
