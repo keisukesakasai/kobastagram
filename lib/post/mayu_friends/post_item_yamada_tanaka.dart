@@ -13,7 +13,7 @@ final _sliderItem = Container(
   child: ClipRRect(
       borderRadius: BorderRadius.all(Radius.circular(0.0)),
       child: Image.asset(
-        'images/yamada_tanakaimage.jpg',
+        'images/mayu_friends/yamada_tanakaimage.jpg',
         fit: BoxFit.cover,
         width: 1000.0,
       )),
@@ -45,7 +45,7 @@ class _PostItemState extends State {
                 shape: BoxShape.circle,
                 image: DecorationImage(
                     fit: BoxFit.fill,
-                    image: AssetImage('images/yamada_tanaka_icon.jpg'))),
+                    image: AssetImage('images/mayu_friends/yamada_tanaka_icon.jpg'))),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,7 +59,7 @@ class _PostItemState extends State {
       ]),
       Center(
           child: Image.asset(
-        'images/yamada_tanaka_image.jpg',
+        'images/mayu_friends/yamada_tanaka_image.jpg',
         fit: BoxFit.cover,
         width: 1000.0,
         height: 400,

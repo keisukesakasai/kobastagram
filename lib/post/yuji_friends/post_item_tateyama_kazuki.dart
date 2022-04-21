@@ -3,6 +3,19 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
+final String imagePath = 'images/yuji_friends/tateyama_kazuki_image.jpg';
+final String iconPath = 'images/yuji_friends/tateyama_kazuki_icon.jpg';
+final String name = '立山 一希';
+final String living = 'イタリア';
+final String account = '@kazuki_tateyama';
+final String message = '''結婚式おめでとう！
+出会いの場から結ばれるとこまで見れて嬉しいよ。食、馬、サッカーと共通点が多く楽しい思い出をありがとう。これからもよろしく！''';
+final String hashtag = '''#イタリア🇮🇹 スペイン🇪🇸
+#ビンタ事件忘れません
+#ゆーじ大好き隊
+#ゲロゲロごっくん''';
+final String chattime = '数秒前...';
+
 final _dummyIcon = IconButton(
   icon: Icon(Icons.account_circle),
   iconSize: 40.0,
@@ -13,13 +26,13 @@ final _sliderItem = Container(
   child: ClipRRect(
       borderRadius: BorderRadius.all(Radius.circular(0.0)),
       child: Image.asset(
-        'images/okuyama_taiki.jpg',
+        imagePath,
         fit: BoxFit.cover,
         width: 1000.0,
       )),
 );
 
-class PostItemOkuyamaTaiki extends StatefulWidget {
+class PostItemTateyamaKazuki extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -37,10 +50,18 @@ class _PostItemState extends State {
     return Column(children: [
       Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
         Row(children: [
-          _dummyIcon,
+          Container(
+            width: 40.0,
+            height: 40.0,
+            margin: const EdgeInsets.all(5.0),
+            decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                    fit: BoxFit.fill, image: AssetImage(iconPath))),
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [Text("奥山 大樹"), Text("日本 埼玉県")],
+            children: [Text(name), Text(living)],
           ),
         ]),
         IconButton(
@@ -48,14 +69,13 @@ class _PostItemState extends State {
           onPressed: () => {},
         )
       ]),
-    Center(
-        child: Image.asset(
-          'images/okuyama_taiki.jpg',
-          fit: BoxFit.cover,
-          width: 1000.0,
-          height: 400,
-        )
-    ),
+      Center(
+          child: Image.asset(
+        imagePath,
+        fit: BoxFit.cover,
+        width: 1000.0,
+        height: 400,
+      )),
       Row(
         children: [
           Container(
@@ -123,7 +143,7 @@ class _PostItemState extends State {
         child: Row(
           children: [
             Text(
-              'yachin17man',
+              account,
               textAlign: TextAlign.left,
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
@@ -134,10 +154,7 @@ class _PostItemState extends State {
           padding: EdgeInsets.symmetric(horizontal: 12),
           alignment: Alignment.centerLeft,
           child: Column(
-            children: [
-              Text('オレの誕生日の次の日の結婚式おめでとう！！\n'
-                  '高3の口聞かなかった時期のことまだ根に持ってたけど、もう大人だから水に流すね！またまゆちゃんも一緒につぶれるまで飲み行こう🙆\n‍ゆうじとまゆに永遠の幸あれ　アメン🌝\n'),
-            ],
+            children: [Text(message)],
           )),
       Container(
           padding: EdgeInsets.symmetric(horizontal: 12),
@@ -145,7 +162,10 @@ class _PostItemState extends State {
           child: Column(
             children: [
               Text(
-                '#ゆうじ#いい匂い#ボディミスト#多め',
+                hashtag,
+                style: TextStyle(
+                  color: Color.fromARGB(255, 1, 55, 142),
+                ),
               ),
             ],
           )),
@@ -160,13 +180,34 @@ class _PostItemState extends State {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(children: [
-              IconButton(
-                icon: Icon(Icons.account_circle),
-                iconSize: 30,
-                onPressed: () => {},
+              Container(
+                width: 30.0,
+                height: 30.0,
+                margin: const EdgeInsets.all(5.0),
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage('images/yuji_icon.png'))),
               ),
-              Text("コメントを追加..."),
+              Text(
+                "コメントを追加...",
+                style: TextStyle(color: Colors.grey),
+              ),
             ]),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text('❤'),
+                SizedBox(
+                  width: 5,
+                ), //間隔
+                Text('👐'),
+                SizedBox(
+                  width: 5,
+                ), //間隔
+              ],
+            ),
             // Row(
             //   children: [
             //     IconButton(
@@ -189,7 +230,7 @@ class _PostItemState extends State {
                   bottom: BorderSide(width: 1, color: Color(0x33330000)))),
           alignment: Alignment.centerLeft,
           padding: EdgeInsets.fromLTRB(12, 0, 12, 8),
-          child: Text("12時間前")),
+          child: Text(chattime)),
     ]);
   }
 }

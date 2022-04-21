@@ -37,6 +37,7 @@ dependencies:
   carousel_slider: ^4.0.0
   video_player: ^2.0.2
   flutter_screenutil: ^5.4.0
+  import_sorter: ^4.6.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -69,6 +70,9 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+    - images/yuji_friends/
+    - images/mayu_friends/
+    - images/story_icon/
 
 fonts:
   - family: OpenSans
@@ -77,6 +81,12 @@ fonts:
       - asset: assets/fonts/OpenSans-Bold.ttf
         style: italic
         weight: 700 # assets/fonts/OpenSans-Bold.ttfのウェイトを指定
+
+import_sorter:
+  emojis: true # Optional, defaults to false
+  comments: true # Optional, defaults to true
+  ignored_files: # Optional, defaults to []
+    - []
 
   # To add assets to your application, add an assets section, like this:
   # assets:

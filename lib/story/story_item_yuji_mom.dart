@@ -32,7 +32,7 @@ class StoryItemYujiMom extends StatelessWidget {
                 color: Colors.black,
                 border: Border.all(color: Colors.grey, width: 1),
                 image: DecorationImage(
-                    image: AssetImage('images/yuji_mam_icon.jpg'),
+                    image: AssetImage('images/story_icon/yuji_mam_icon.jpg'),
                     fit: BoxFit.cover),
               )),
         ),

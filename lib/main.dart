@@ -1,4 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_daiichiseimei.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_endo_mari.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_hayakawa_minaka.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_hirano_honami.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_hirose_rina.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_ogawa_mami.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_ogawa_miyako.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_takano_aoi.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_tamagawa_risako.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_uenoya_sayaka.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_umemura_natsumi.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_yamada_tanaka.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_yukimiyuannna.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_yusuke_yoshiki.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_abe_shunya.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_aida_takuya.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_hoshino_reo.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_ikeda_masashi.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_saito_masahiro.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_tateyama_kazuki.dart';
+import 'package:kobastagram/post_item_detail.dart';
 
 import 'package:path/path.dart';
 import 'package:kobastagram/VideoPlayerPage.dart';
@@ -11,6 +33,7 @@ import 'package:kobastagram/stories.dart';
 import 'package:kobastagram/post/posts_yuji_friends.dart';
 import 'package:kobastagram/post/posts_mayu_friends.dart';
 
+import 'post_gesture_detector.dart';
 import 'detail/post_item_ikeda_masashi_detail.dart';
 import 'detail/post_item_okuyama_taiki_detail.dart';
 import 'detail/post_item_yamada_tanaka_detail.dart';
@@ -132,101 +155,116 @@ class _MyHomePageState extends State<MyHomePage> {
                     Center(
                         child: GridView(
                       shrinkWrap: true,
+                      physics: ScrollPhysics(),
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 3,
-                        mainAxisSpacing: 2.0,
-                        crossAxisSpacing: 2.0,
+                        mainAxisSpacing: 3.0,
+                        crossAxisSpacing: 3.0,
                         childAspectRatio: 1.0,
                       ),
                       children: [
-                        //--- image1
-                        GestureDetector(
-                            child: Container(
-                                width: 120,
-                                height: 40,
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                  image: DecorationImage(
-                                      image: AssetImage(
-                                          'images/okuyama_taiki_image.jpg'),
-                                      fit: BoxFit.cover),
-                                )),
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      PostItemOkuyamaTaikiDetail(),
-                                ),
-                              );
-                            }),
-
-                        //--- image2
-                        GestureDetector(
-                            child: Container(
-                                width: 120,
-                                height: 40,
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                  image: DecorationImage(
-                                      image: AssetImage(
-                                          'images/yamada_tanaka_image.jpg'),
-                                      fit: BoxFit.cover),
-                                )),
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      PostItemYamadaTanakaDetail(),
-                                ),
-                              );
-                            }),
-
-                        //--- image3
-                        GestureDetector(
-                            child: Container(
-                                width: 120,
-                                height: 40,
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                  image: DecorationImage(
-                                      image: AssetImage(
-                                          'images/ikeda_masashi_image.jpg'),
-                                      fit: BoxFit.cover),
-                                )),
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      PostItemIkedaMasashiDetail(),
-                                ),
-                              );
-                            }),
-
-                        //--- image4
-                        GestureDetector(
-                            child: Container(
-                                width: 120,
-                                height: 40,
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                  image: DecorationImage(
-                                      image: AssetImage(
-                                          'images/hoshino_reo_image.jpg'),
-                                      fit: BoxFit.cover),
-                                )),
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      PostItemHoshinoReoDetail(),
-                                ),
-                              );
-                            }),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/yuji_friends/okuyama_taiki_image.jpg',
+                          func: PostItemDetail(func: PostItemOkuyamaTaiki()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/mayu_friends/yamada_tanaka_image.jpg',
+                          func: PostItemDetail(func: PostItemYamadaTanaka()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/yuji_friends/ikeda_masashi_image.jpg',
+                          func: PostItemDetail(func: PostItemIkedaMasashi()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/yuji_friends/hoshino_reo_image.jpg',
+                          func: PostItemDetail(func: PostItemHoshinoReo()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/yuji_friends/tateyama_kazuki_image.jpg',
+                          func: PostItemDetail(func: PostItemTateyamaKazuki()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath: 'images/yuji_friends/abe_shunya_image.jpg',
+                          func: PostItemDetail(func: PostItemAbeShunya()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/yuji_friends/aida_takuya_image.jpg',
+                          func: PostItemDetail(func: PostItemAidaTakuya()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/yuji_friends/saito_masahiro_image.png',
+                          func: PostItemDetail(func: PostItemSaitoMasahiro()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/mayu_friends/hayakawa_minaka_image.jpg',
+                          func: PostItemDetail(func: PostItemHayakawaMinaka()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/mayu_friends/daiichiseimei_image.jpg',
+                          func: PostItemDetail(func: PostItemDaiichiSeimei()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/mayu_friends/hirose_rina_image.jpg',
+                          func: PostItemDetail(func: PostItemHiroseRina()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/mayu_friends/yukimiyuanna_image.jpg',
+                          func: PostItemDetail(func: PostItemYukiMiyuAnna()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath: 'images/mayu_friends/takano_aoi_image.jpg',
+                          func: PostItemDetail(func: PostItemTakanoAoi()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/mayu_friends/umemura_natsumi_image.jpg',
+                          func: PostItemDetail(func: PostItemUemuraNatsumi()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/mayu_friends/ogawa_miyako_image.jpg',
+                          func: PostItemDetail(func: PostItemOgawaMiyako()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath: 'images/mayu_friends/endo_mari_image.jpg',
+                          func: PostItemDetail(func: PostItemEndoMari()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath: 'images/mayu_friends/ogawa_mami_image.jpg',
+                          func: PostItemDetail(func: PostItemOgawaMami()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/mayu_friends/yusuke_yoshiki_image.jpg',
+                          func: PostItemDetail(func: PostItemYusukeYoshiki()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/mayu_friends/hirano_honami_image.jpg',
+                          func: PostItemDetail(func: PostItemHiranoHonami()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/mayu_friends/tamagawa_risako_image.jpg',
+                          func: PostItemDetail(func: PostItemTamagawaRisako()),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/mayu_friends/uenoya_sayaka_image.jpg',
+                          func: PostItemDetail(func: PostItemUenoyaSayaka()),
+                        ),
                       ],
                     ))
                   ],
