@@ -12,7 +12,7 @@ class Stories extends StatelessWidget {
             border: Border(
                 bottom: BorderSide(width: 1.0, color: Color(0x3333000000)))),
         child: SingleChildScrollView(
-            padding: EdgeInsets.symmetric(horizontal: 12),
+            padding: EdgeInsets.symmetric(horizontal: 8,vertical: 8),
             scrollDirection: Axis.horizontal,
             child: Row(
               children: <Widget>[

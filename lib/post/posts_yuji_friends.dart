@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_abe_shunya.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_aida_takuya.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_hoshino_reo.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_ikeda_masashi.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_saito_masahiro.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_tateyama_kazuki.dart';
 
 class PostsYujiFriends extends StatefulWidget {
   @override
@@ -21,6 +25,10 @@ class _PostsState extends State<PostsYujiFriends> {
                 PostItemIkedaMasashi(),
                 PostItemOkuyamaTaiki(),
                 PostItemHoshinoReo(),
+                PostItemAbeShunya(),
+                PostItemAidaTakuya(),
+                PostItemTateyamaKazuki(),
+                PostItemSaitoMasahiro(),
               ],
             )));
   }

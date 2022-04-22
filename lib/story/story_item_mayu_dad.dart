@@ -32,7 +32,7 @@ class StoryItemMayuDad extends StatelessWidget {
                 color: Colors.black,
                 border: Border.all(color: Colors.grey, width: 1),
                 image: DecorationImage(
-                    image: AssetImage('images/mayu_dad_icon.png'),
+                    image: AssetImage('images/story_icon/mayu_dad_icon.png'),
                     fit: BoxFit.cover),
               )),
         ),

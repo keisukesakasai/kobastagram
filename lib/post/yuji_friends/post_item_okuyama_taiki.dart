@@ -13,7 +13,7 @@ final _sliderItem = Container(
   child: ClipRRect(
       borderRadius: BorderRadius.all(Radius.circular(0.0)),
       child: Image.asset(
-        'images/okuyama_taiki_image.jpg',
+        'images/yuji_friends/okuyama_taiki_image.jpg',
         fit: BoxFit.cover,
         width: 1000.0,
       )),
@@ -48,7 +48,7 @@ class _PostItemState extends State {
                       shape: BoxShape.circle,
                       image: DecorationImage(
                           fit: BoxFit.fill,
-                          image: AssetImage('images/okuyama_taiki_icon.jpg'))),
+                          image: AssetImage('images/yuji_friends/okuyama_taiki_icon.jpg'))),
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,7 +62,7 @@ class _PostItemState extends State {
             ]),
         Center(
             child: Image.asset(
-          'images/okuyama_taiki_image.jpg',
+          'images/yuji_friends/okuyama_taiki_image.jpg',
           fit: BoxFit.cover,
           width: 1000.0,
           height: 400,
