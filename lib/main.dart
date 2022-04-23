@@ -229,6 +229,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         PostsGestureDetector(
                           imagePath:
+                              'images/mayu_friends/takano_aoi_image.jpg',
+                         func: PostItemTakanoAoi(),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
                               'images/mayu_friends/umemura_natsumi_image.jpg',
                           func: PostItemUemuraNatsumi(),
                         ),
@@ -242,7 +247,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           func: PostItemEndoMari(),
                         ),
                         PostsGestureDetector(
-                          imagePath: 'images/mayu_friends/ogawa_mami_image.jpg',
+                          imagePath:
+                              'images/mayu_friends/ogawa_mami_image.jpg',
                           func: PostItemOgawaMami(),
                         ),
                         PostsGestureDetector(
