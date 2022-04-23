@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:kobastagram/VideoPlayerPage.dart';
+import 'package:kobastagram/story/videoplayer/yuji_mom.dart';
 
 final _iconSize = 65.0;
 
 class StoryItemYujiMom extends StatelessWidget {
   final String name;
   final IconData icon;
+  final String path = 'videos/yuji_family/yuji_mom.mp4';
 
   StoryItemYujiMom({Key? key, required this.name, required this.icon})
       : super(key: key);
@@ -19,7 +20,7 @@ class StoryItemYujiMom extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => VideoPlayerPage('images/sample.mp4'),
+                builder: (context) => VideoYujiMom(path),
               ),
             );
           },

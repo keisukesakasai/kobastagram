@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:kobastagram/VideoPlayerPage.dart';
+import 'package:kobastagram/story/videoplayer/yuji_dad.dart';
 
 final _iconSize = 65.0;
 
 class StoryItemYujiDad extends StatelessWidget {
   final String name;
   final IconData icon;
-
-  StoryItemYujiDad({Key? key, required this.name, required this.icon})
+  final String path = 'videos/yuji_family/yuji_dad.mp4';
+  StoryItemYujiDad({Key? key, required this.name, required this.icon, })
       : super(key: key);
 
   @override
@@ -19,7 +19,7 @@ class StoryItemYujiDad extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => VideoPlayerPage('images/sample.mp4'),
+                builder: (context) => VideoYujiDad(path),
               ),
             );
           },

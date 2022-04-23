@@ -15,7 +15,7 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset('images/sample.mp4');
+    _controller = VideoPlayerController.asset('videos/yuji_family/yuji_brother.MOV');
     _controller.initialize().then((_) {
       // 最初のフレームを描画するため初期化後に更新
       setState(() {});
@@ -31,11 +31,11 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
   @override
   Widget build(BuildContext context) {
     final double deviceHeight = MediaQuery.of(context).size.height;
-    final double deviceWedith = MediaQuery.of(context).size.width;
+    final double deviceWedth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Container(
         height: deviceHeight,
-        width: deviceWedith * 0.8,
+        width: deviceWedth,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -47,7 +47,6 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
               _controller,
               allowScrubbing: true,
             ),
-            _ProgressText(controller: _controller),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -77,46 +76,5 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
         ),
       ),
     );
-  }
-}
-
-class _ProgressText extends StatefulWidget {
-  final VideoPlayerController controller;
-
-  const _ProgressText({
-    Key? key,
-    required this.controller,
-  }) : super(key: key);
-
-  @override
-  __ProgressTextState createState() => __ProgressTextState();
-}
-
-class __ProgressTextState extends State<_ProgressText> {
-  late VoidCallback _listener;
-
-  __ProgressTextState() {
-    _listener = () {
-      setState(() {});
-    };
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    widget.controller.addListener(_listener);
-  }
-
-  @override
-  void deactivate() {
-    widget.controller.removeListener(_listener);
-    super.deactivate();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final String position = widget.controller.value.position.toString();
-    final String duration = widget.controller.value.duration.toString();
-    return Text('$position / $duration');
   }
 }
