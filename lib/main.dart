@@ -191,7 +191,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         PostsGestureDetector(
                           imagePath: 'images/yuji_friends/abe_shunya_image.jpg',
-                         func: PostItemAbeShunya(),
+                          func: PostItemAbeShunya(),
                         ),
                         PostsGestureDetector(
                           imagePath:
@@ -201,7 +201,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         PostsGestureDetector(
                           imagePath:
                               'images/yuji_friends/saito_masahiro_image.png',
-                         func: PostItemSaitoMasahiro(),
+                          func: PostItemSaitoMasahiro(),
                         ),
                         PostsGestureDetector(
                           imagePath:
@@ -211,7 +211,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/daiichiseimei_image.jpg',
-                         func: PostItemDaiichiSeimei(),
+                          func: PostItemDaiichiSeimei(),
                         ),
                         PostsGestureDetector(
                           imagePath:
@@ -221,11 +221,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/yukimiyuanna_image.jpg',
-                         func: PostItemYukiMiyuAnna(),
+                          func: PostItemYukiMiyuAnna(),
                         ),
                         PostsGestureDetector(
                           imagePath: 'images/mayu_friends/takano_aoi_image.jpg',
-                         func: PostItemTakanoAoi(),
+                          func: PostItemTakanoAoi(),
                         ),
                         PostsGestureDetector(
                           imagePath:
@@ -263,7 +263,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/uenoya_sayaka_image.jpg',
-                         func: PostItemUenoyaSayaka(),
+                          func: PostItemUenoyaSayaka(),
                         ),
                       ],
                     ))
