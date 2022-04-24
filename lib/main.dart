@@ -36,14 +36,14 @@ import 'package:kobastagram/post/posts_mayu_friends.dart';
 import 'package:kobastagram/post/posts_yuji_profile.dart';
 
 import 'post_gesture_detector.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(
-
-  DevicePreview(
-    enabled: true,
-    builder: (context) => MyApp(), // Wrap your app
-  ),
-);
+      DevicePreview(
+        enabled: true,
+        builder: (context) => MyApp(), // Wrap your app
+      ),
+    );
 
 final _iconSize = 30.0;
 final _tabiconSize = 40.0;
@@ -58,6 +58,11 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/home': (BuildContext context) => new PostsYujiFriends(),
       },
+      theme: ThemeData(
+        textTheme: GoogleFonts.mPlusRounded1cTextTheme(
+          Theme.of(context).textTheme,
+        ),
+      ),
     );
   }
 }
@@ -213,22 +218,22 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         PostsGestureDetector(
                           imagePath:
-                          'images/yuji_friends/saito_masahiro_image.png',
+                              'images/yuji_friends/saito_masahiro_image.png',
                           func: PostItemSaitoMasahiro(),
                         ),
                         PostsGestureDetector(
                           imagePath:
-                          'images/yuji_friends/iizuka_yusuke_image.jpg',
+                              'images/yuji_friends/iizuka_yusuke_image.jpg',
                           func: PostItemIizukaYusuke(),
-                        ),
-                          PostsGestureDetector(
-                            imagePath:
-                            'images/yuji_friends/hachisuka_gen_image.jpg',
-                            func: PostItemHachisukaGen(),
                         ),
                         PostsGestureDetector(
                           imagePath:
-                          'images/yuji_friends/kametaki_maiko_image.jpg',
+                              'images/yuji_friends/hachisuka_gen_image.jpg',
+                          func: PostItemHachisukaGen(),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/yuji_friends/kametaki_maiko_image.jpg',
                           func: PostItemKametakiMaiko(),
                         ),
                         PostsGestureDetector(
@@ -236,7 +241,6 @@ class _MyHomePageState extends State<MyHomePage> {
                               'images/yuji_friends/yoshida_rio_image.jpg',
                           func: PostItemYoshidaRio(),
                         ),
-
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/hayakawa_minaka_image.jpg',
@@ -299,7 +303,6 @@ class _MyHomePageState extends State<MyHomePage> {
                               'images/mayu_friends/uenoya_sayaka_image.jpg',
                           func: PostItemUenoyaSayaka(),
                         ),
-
                       ],
                     ))
                   ],
@@ -316,9 +319,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     Center(
                         child: Column(children: [
-                          PostYujiProfile(),
-                          Heros(),
-                        ]))
+                      PostYujiProfile(),
+                      Heros(),
+                    ]))
                   ],
                 ),
               ),
@@ -352,8 +355,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 tabs: <Widget>[
                   Container(
-                    width: _tabiconSize+5,
-                    height: _tabiconSize+5,
+                    width: _tabiconSize + 5,
+                    height: _tabiconSize + 5,
                     margin: const EdgeInsets.all(2.0),
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
@@ -375,8 +378,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     icon: Icon(Icons.window, color: Colors.black, size: 30),
                   ),
                   Container(
-                    width: _tabiconSize+5,
-                    height: _tabiconSize+5,
+                    width: _tabiconSize + 5,
+                    height: _tabiconSize + 5,
                     margin: const EdgeInsets.all(1.0),
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
@@ -385,8 +388,8 @@ class _MyHomePageState extends State<MyHomePage> {
                             image: AssetImage('images/yuji_tab_icon.png'))),
                   ),
                   Container(
-                    width: _tabiconSize+5,
-                    height: _tabiconSize+5,
+                    width: _tabiconSize + 5,
+                    height: _tabiconSize + 5,
                     margin: const EdgeInsets.all(1.0),
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:kobastagram/video_player_page.dart';
 
 final _iconSize = 60.0;
@@ -50,16 +51,18 @@ class StoryItem extends StatelessWidget {
                                 BorderRadius.all(Radius.circular(10))),
                         children: [
                           Container(
-                            child: VideoPlayerPage(moviePath: moviePath,),
+                            child: VideoPlayerPage(
+                              moviePath: moviePath,
+                            ),
                           ),
                         ]);
                   });
-            }
-            ),
+            }),
         Container(
             padding: EdgeInsets.symmetric(vertical: 0),
             child: Text(name,
-                style: TextStyle(
+                style: GoogleFonts.manrope(
+                  textStyle: Theme.of(context).textTheme.headline4,
                   color: Colors.black,
                   fontSize: 11.5,
                 )))
