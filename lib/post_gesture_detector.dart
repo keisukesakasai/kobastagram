@@ -22,7 +22,7 @@ class PostsGestureDetector extends StatelessWidget {
             height: 40,
             decoration: BoxDecoration(
               color: Colors.black,
-              // border: Border.all(color: Colors.white, width: 1),
+              // border: Border.all(color: Colors.grey, width: 0.1),
               borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
                   image: AssetImage(imagePath), fit: BoxFit.cover),
