@@ -31,7 +31,7 @@ class StoryItem extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.black,
-                border: Border.all(color: Colors.white, width: 3),
+                border: Border.all(color: Colors.white, width: 0),
                 image: DecorationImage(
                     image: AssetImage(imagePath), fit: BoxFit.cover),
               ),
