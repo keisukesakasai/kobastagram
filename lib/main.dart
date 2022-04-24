@@ -61,8 +61,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primaryColor: Colors.white,
           textTheme: GoogleFonts.mPlusRounded1cTextTheme(
-        Theme.of(context).textTheme,
-      )),
+            Theme.of(context).textTheme,
+          )),
     );
   }
 }
@@ -80,325 +80,319 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 5,
-        child: Scaffold(
-            appBar: PreferredSize(
-                preferredSize: Size.fromHeight(30),
-                child: AppBar(
-                  backgroundColor: Colors.white,
-                  elevation: 0.0,
-                  title: Row(
-                    children: [
-                      Image.asset(
-                        'images/kobasutagram.png',
-                        height: 28.5,
-                      ),
-                    ],
+      length: 5,
+      child: Scaffold(
+          appBar: PreferredSize(
+              preferredSize: Size.fromHeight(30),
+              child: AppBar(
+                backgroundColor: Colors.white,
+                elevation: 0.0,
+                title: Row(
+                  children: [
+                    Image.asset(
+                      'images/kobasutagram.png',
+                      height: 28,
+                    ),
+                  ],
+                ),
+                actions: [
+                  Icon(Icons.add_box_outlined, color: Colors.black),
+                  SizedBox(
+                    width: 12.5,
                   ),
-                  actions: [
-                    Icon(Icons.add_box_outlined, color: Colors.black),
-                    SizedBox(
-                      width: 12.5,
-                    ),
-                    Icon(Icons.favorite_border_outlined, color: Colors.black),
-                    SizedBox(
-                      width: 12.5,
-                    ), //Iconの間隔
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 6.5),
-                      child: Transform.rotate(
-                          //Iconの角度変更
-                          angle: 5.5,
-                          child:
-                              Icon(Icons.send_outlined, color: Colors.black)),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                  ],
-                )),
-            body: TabBarView(children: [
-              //--- １個目のタブ
-              SingleChildScrollView(
-                child: Column(
-                  children: <Widget>[
-                    Padding(padding: EdgeInsets.all(0), child: Stories()),
-                    //Padding(
-                    //  padding: EdgeInsets.all(0),
-                    //  child: GestureDetector(
-                    //      onTap: () {
-                    //        Navigator.push(
-                    //          context,
-                    //         MaterialPageRoute(
-                    //            builder: (context) => VideoPlayerPage(),
-                    //          ),
-                    //        );
-                    //      },
-                    //      child: Stories()),
-                    //),
-                    Center(
-                        child: Column(
-                      children: <Widget>[
-                        PostsYujiFriends(),
-                      ],
-                    )),
-                  ],
-                ),
-              ),
-
-              //--- ２個目のタブ
-              SingleChildScrollView(
-                child: Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.all(0),
-                      child: Stories(),
-                    ),
-                    Center(
-                        child: Column(children: [
-                      PostsMayuFriends(),
-                    ]))
-                  ],
-                ),
-              ),
-
-              //--- ３個目のタブ
-              SingleChildScrollView(
-                child: Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.all(0),
-                      child: Stories(),
-                    ),
-                    Center(
-                        child: GridView(
-                      shrinkWrap: true,
-                      physics: ScrollPhysics(),
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 3,
-                        mainAxisSpacing: 3.0,
-                        crossAxisSpacing: 3.0,
-                        childAspectRatio: 1.0,
-                      ),
-                      children: [
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/yuji_friends/okuyama_taiki_image.jpg',
-                          func: PostItemOkuyamaTaiki(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/yamada_tanaka_image.jpg',
-                          func: PostItemYamadaTanaka(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/yuji_friends/ikeda_masashi_image.jpg',
-                          func: PostItemIkedaMasashi(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/yuji_friends/hoshino_reo_image.jpg',
-                          func: PostItemHoshinoReo(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/yuji_friends/tateyama_kazuki_image.jpg',
-                          func: PostItemTateyamaKazuki(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath: 'images/yuji_friends/abe_shunya_image.jpg',
-                          func: PostItemAbeShunya(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/yuji_friends/aida_takuya_image.jpg',
-                          func: PostItemAidaTakuya(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/yuji_friends/saito_masahiro_image.png',
-                          func: PostItemSaitoMasahiro(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/yuji_friends/iizuka_yusuke_image.jpg',
-                          func: PostItemIizukaYusuke(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/yuji_friends/hachisuka_gen_image.jpg',
-                          func: PostItemHachisukaGen(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/yuji_friends/kametaki_maiko_image.jpg',
-                          func: PostItemKametakiMaiko(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/yuji_friends/yoshida_rio_image.jpg',
-                          func: PostItemYoshidaRio(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/hayakawa_minaka_image.jpg',
-                          func: PostItemHayakawaMinaka(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/daiichiseimei_image.jpg',
-                          func: PostItemDaiichiSeimei(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/hirose_rina_image.jpg',
-                          func: PostItemHiroseRina(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/yukimiyuanna_image.jpg',
-                          func: PostItemYukiMiyuAnna(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath: 'images/mayu_friends/takano_aoi_image.jpg',
-                          func: PostItemTakanoAoi(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/umemura_natsumi_image.jpg',
-                          func: PostItemUemuraNatsumi(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/ogawa_miyako_image.jpg',
-                          func: PostItemOgawaMiyako(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath: 'images/mayu_friends/endo_mari_image.jpg',
-                          func: PostItemEndoMari(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath: 'images/mayu_friends/ogawa_mami_image.jpg',
-                          func: PostItemOgawaMami(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/yusuke_yoshiki_image.jpg',
-                          func: PostItemYusukeYoshiki(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/hirano_honami_image.jpg',
-                          func: PostItemHiranoHonami(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/tamagawa_risako_image.jpg',
-                          func: PostItemTamagawaRisako(),
-                        ),
-                        PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/uenoya_sayaka_image.jpg',
-                          func: PostItemUenoyaSayaka(),
-                        ),
-                      ],
-                    ))
-                  ],
-                ),
-              ),
-
-              //--- ４個目のタブ
-              SingleChildScrollView(
-                child: Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.all(0),
-                      child: Stories(),
-                    ),
-                    Center(
-                        child: Column(children: [
-                      PostYujiProfile(),
-                      Heros(),
-                    ]))
-                  ],
-                ),
-              ),
-
-              //--- ５個目のタブ
-              SingleChildScrollView(
-                child: Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: EdgeInsets.all(0),
-                      child: Stories(),
-                    ),
-                    Center(child: Text('⚠️ 工事中 ⚠️'))
-                  ],
-                ),
-              ),
-            ]),
-            bottomNavigationBar: Container(
-              decoration: BoxDecoration(
-                  border: Border(
-                      top: BorderSide(width: 1.5, color: Color(0x33330000)))),
-              height: 70,
-              alignment: Alignment.topCenter,
-              child: TabBar(
-                indicator: BoxDecoration(
-                  border: Border(
-                      bottom: BorderSide(
-                    width: 2.5,
-                    color: Colors.black38,
-                  )),
-                ),
-                tabs: <Widget>[
-                  Container(
-                    width: _tabiconSize + 5,
-                    height: _tabiconSize + 5,
-                    margin: const EdgeInsets.all(2.0),
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                            fit: BoxFit.fill,
-                            image: AssetImage('images/tab_yuji_friend.png'))),
+                  Icon(Icons.favorite_border_outlined, color: Colors.black),
+                  SizedBox(
+                    width: 12.5,
+                  ), //Iconの間隔
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 6.5),
+                    child: Transform.rotate(
+                        //Iconの角度変更
+                        angle: 5.5,
+                        child: Icon(Icons.send_outlined, color: Colors.black)),
                   ),
-                  Container(
-                    width: _tabiconSize,
-                    height: _tabiconSize,
-                    margin: const EdgeInsets.all(2.0),
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                            fit: BoxFit.fill,
-                            image: AssetImage('images/tab_mayu_friend.png'))),
-                  ),
-                  Tab(
-                    icon: Icon(Icons.window, color: Colors.black, size: 30),
-                  ),
-                  Container(
-                    width: _tabiconSize + 5,
-                    height: _tabiconSize + 5,
-                    margin: const EdgeInsets.all(1.0),
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                            fit: BoxFit.fill,
-                            image: AssetImage('images/yuji_tab_icon.png'))),
-                  ),
-                  Container(
-                    width: _tabiconSize + 5,
-                    height: _tabiconSize + 5,
-                    margin: const EdgeInsets.all(1.0),
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        image: DecorationImage(
-                            fit: BoxFit.fill,
-                            image: AssetImage('images/mayu_tab_icon.jpg'))),
+                  SizedBox(
+                    width: 10,
                   ),
                 ],
+              )),
+          body: TabBarView(children: [
+            //--- １個目のタブ
+            SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  Padding(padding: EdgeInsets.all(0), child: Stories()),
+                  //Padding(
+                  //  padding: EdgeInsets.all(0),
+                  //  child: GestureDetector(
+                  //      onTap: () {
+                  //        Navigator.push(
+                  //          context,
+                  //         MaterialPageRoute(
+                  //            builder: (context) => VideoPlayerPage(),
+                  //          ),
+                  //        );
+                  //      },
+                  //      child: Stories()),
+                  //),
+                  Center(
+                      child: Column(
+                    children: <Widget>[
+                      PostsYujiFriends(),
+                    ],
+                  )),
+                ],
               ),
-            )));
+            ),
+
+            //--- ２個目のタブ
+            SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Stories(),
+                  ),
+                  Center(
+                      child: Column(children: [
+                    PostsMayuFriends(),
+                  ]))
+                ],
+              ),
+            ),
+
+            //--- ３個目のタブ
+            SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Stories(),
+                  ),
+                  Center(
+                      child: GridView(
+                    shrinkWrap: true,
+                    physics: ScrollPhysics(),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 3,
+                      mainAxisSpacing: 3.0,
+                      crossAxisSpacing: 3.0,
+                      childAspectRatio: 1.0,
+                    ),
+                    children: [
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/yuji_friends/okuyama_taiki_image.jpg',
+                        func: PostItemOkuyamaTaiki(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/mayu_friends/yamada_tanaka_image.jpg',
+                        func: PostItemYamadaTanaka(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/yuji_friends/ikeda_masashi_image.jpg',
+                        func: PostItemIkedaMasashi(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/hoshino_reo_image.jpg',
+                        func: PostItemHoshinoReo(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/yuji_friends/tateyama_kazuki_image.jpg',
+                        func: PostItemTateyamaKazuki(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/abe_shunya_image.jpg',
+                        func: PostItemAbeShunya(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/aida_takuya_image.jpg',
+                        func: PostItemAidaTakuya(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/yuji_friends/saito_masahiro_image.png',
+                        func: PostItemSaitoMasahiro(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/yuji_friends/iizuka_yusuke_image.jpg',
+                        func: PostItemIizukaYusuke(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/yuji_friends/hachisuka_gen_image.jpg',
+                        func: PostItemHachisukaGen(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/yuji_friends/kametaki_maiko_image.jpg',
+                        func: PostItemKametakiMaiko(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/yoshida_rio_image.jpg',
+                        func: PostItemYoshidaRio(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/mayu_friends/hayakawa_minaka_image.jpg',
+                        func: PostItemHayakawaMinaka(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/mayu_friends/daiichiseimei_image.jpg',
+                        func: PostItemDaiichiSeimei(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/mayu_friends/hirose_rina_image.jpg',
+                        func: PostItemHiroseRina(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/mayu_friends/yukimiyuanna_image.jpg',
+                        func: PostItemYukiMiyuAnna(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/mayu_friends/takano_aoi_image.jpg',
+                        func: PostItemTakanoAoi(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/mayu_friends/umemura_natsumi_image.jpg',
+                        func: PostItemUemuraNatsumi(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/mayu_friends/ogawa_miyako_image.jpg',
+                        func: PostItemOgawaMiyako(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/mayu_friends/endo_mari_image.jpg',
+                        func: PostItemEndoMari(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/mayu_friends/ogawa_mami_image.jpg',
+                        func: PostItemOgawaMami(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/mayu_friends/yusuke_yoshiki_image.jpg',
+                        func: PostItemYusukeYoshiki(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/mayu_friends/hirano_honami_image.jpg',
+                        func: PostItemHiranoHonami(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/mayu_friends/tamagawa_risako_image.jpg',
+                        func: PostItemTamagawaRisako(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/mayu_friends/uenoya_sayaka_image.jpg',
+                        func: PostItemUenoyaSayaka(),
+                      ),
+                    ],
+                  ))
+                ],
+              ),
+            ),
+
+            //--- ４個目のタブ
+            SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Stories(),
+                  ),
+                  Center(
+                      child: Column(children: [
+                    PostYujiProfile(),
+                    Heros(),
+                  ]))
+                ],
+              ),
+            ),
+
+            //--- ５個目のタブ
+            SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(0),
+                    child: Stories(),
+                  ),
+                  Center(child: Text('⚠️ 工事中 ⚠️'))
+                ],
+              ),
+            ),
+          ]),
+          bottomNavigationBar: Container(
+            decoration: BoxDecoration(
+                border: Border(
+                    top: BorderSide(width: 1.5, color: Color(0x33330000)))),
+            height: 70,
+            alignment: Alignment.topCenter,
+            child: TabBar(
+              indicator: BoxDecoration(
+                border: Border(
+                    bottom: BorderSide(
+                  width: 2.5,
+                  color: Colors.black38,
+                )),
+              ),
+              tabs: <Widget>[
+                Container(
+                  width: _tabiconSize + 5,
+                  height: _tabiconSize + 5,
+                  margin: const EdgeInsets.all(2.0),
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage('images/tab_yuji_friend.png'))),
+                ),
+                Container(
+                  width: _tabiconSize,
+                  height: _tabiconSize,
+                  margin: const EdgeInsets.all(2.0),
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage('images/tab_mayu_friend.png'))),
+                ),
+                Tab(
+                  icon: Icon(Icons.window, color: Colors.black, size: 30),
+                ),
+                Container(
+                  width: _tabiconSize + 5,
+                  height: _tabiconSize + 5,
+                  margin: const EdgeInsets.all(1.0),
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage('images/yuji_tab_icon.png'))),
+                ),
+                Container(
+                  width: _tabiconSize + 5,
+                  height: _tabiconSize + 5,
+                  margin: const EdgeInsets.all(1.0),
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage('images/mayu_tab_icon.jpg'))),
+                ),
+              ],
+            ),
+          )),
+    );
   }
 }
