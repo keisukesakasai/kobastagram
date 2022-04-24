@@ -2,7 +2,7 @@
     "name": "kobastagram",
     "short_name": "kobastagram",
     "start_url": ".",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#00000",
     "theme_color": "#000000",
     "description": "Wedding App",
