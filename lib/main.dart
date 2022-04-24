@@ -80,6 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 preferredSize: Size.fromHeight(30),
                 child: AppBar(
                   backgroundColor: Colors.white,
+                  elevation: 0.0,
                   title: Row(
                     children: [
                       Image.asset(
