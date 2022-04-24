@@ -59,10 +59,10 @@ class MyApp extends StatelessWidget {
         '/home': (BuildContext context) => new PostsYujiFriends(),
       },
       theme: ThemeData(
-        textTheme: GoogleFonts.mPlusRounded1cTextTheme(
-          Theme.of(context).textTheme,
-        ),
-      ),
+          primaryColor: Colors.white,
+          textTheme: GoogleFonts.mPlusRounded1cTextTheme(
+        Theme.of(context).textTheme,
+      )),
     );
   }
 }
