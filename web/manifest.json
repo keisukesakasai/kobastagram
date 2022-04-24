@@ -7,7 +7,6 @@
     "theme_color": "#000000",
     "description": "Wedding App",
     "orientation": "portrait-primary",
-    "prefer_related_applications": false,
     "icons": [
         {
             "src": "icons/icon-192x192.png",
