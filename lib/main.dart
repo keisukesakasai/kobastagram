@@ -46,6 +46,7 @@ void main() => runApp(
 );
 
 final _iconSize = 30.0;
+final _tabiconSize = 40.0;
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -350,21 +351,33 @@ class _MyHomePageState extends State<MyHomePage> {
                   )),
                 ),
                 tabs: <Widget>[
-                  Tab(
-                    icon:
-                        Icon(Icons.people, color: Color(0xFF0B1EC9), size: 30),
+                  Container(
+                    width: _tabiconSize+5,
+                    height: _tabiconSize+5,
+                    margin: const EdgeInsets.all(2.0),
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: AssetImage('images/tab_yuji_friend.png'))),
                   ),
-                  Tab(
-                    icon:
-                        Icon(Icons.people, color: Color(0xF3C10E0E), size: 30),
+                  Container(
+                    width: _tabiconSize,
+                    height: _tabiconSize,
+                    margin: const EdgeInsets.all(2.0),
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: AssetImage('images/tab_mayu_friend.png'))),
                   ),
                   Tab(
                     icon: Icon(Icons.window, color: Colors.black, size: 30),
                   ),
                   Container(
-                    width: 34.5,
-                    height: 34.5,
-                    margin: const EdgeInsets.all(5.0),
+                    width: _tabiconSize+5,
+                    height: _tabiconSize+5,
+                    margin: const EdgeInsets.all(1.0),
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(
@@ -372,9 +385,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             image: AssetImage('images/yuji_tab_icon.png'))),
                   ),
                   Container(
-                    width: 34.5,
-                    height: 34.5,
-                    margin: const EdgeInsets.all(5.0),
+                    width: _tabiconSize+5,
+                    height: _tabiconSize+5,
+                    margin: const EdgeInsets.all(1.0),
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         image: DecorationImage(

@@ -15,11 +15,11 @@ class Stories extends StatelessWidget {
               children: <Widget>[
                 StoryItem(
                     name: 'yuji mam',
-                    imagePath: 'images/story_icon/yuji_mam_icon.jpg',
+                    imagePath: 'images/story_icon/yuji_mam_icon.png',
                     moviePath: 'videos/yuji_family/yuji_mom.mp4'),
                 StoryItem(
                     name: 'yuji dad',
-                    imagePath: 'images/story_icon/yuji_dad_icon.jpg',
+                    imagePath: 'images/story_icon/yuji_dad_icon.png',
                     moviePath: 'videos/yuji_family/yuji_dad.mp4'),
                 StoryItem(
                     name: 'mayu mam&dad',
@@ -27,11 +27,11 @@ class Stories extends StatelessWidget {
                     moviePath: 'videos/mayu_family/mayu_mom_dad.mp4'),
                 StoryItem(
                     name: 'yuji sis',
-                    imagePath: 'images/story_icon/yuji_sis_icon.jpg',
+                    imagePath: 'images/story_icon/yuji_sis_icon.png',
                     moviePath: 'videos/yuji_family/yuji_brother_wife.MOV'),
                 StoryItem(
                     name: 'yuji bro',
-                    imagePath: 'images/story_icon/yuji_brother.png',
+                    imagePath: 'images/story_icon/yuji_bro_icon.png',
                     moviePath: 'videos/yuji_family/yuji_brother.MOV'),
                 StoryItem(
                     name: 'Mayu sis',
