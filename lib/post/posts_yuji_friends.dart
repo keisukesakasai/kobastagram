@@ -6,6 +6,10 @@ import 'package:kobastagram/post/yuji_friends/post_item_ikeda_masashi.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_saito_masahiro.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_tateyama_kazuki.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_iizuka_yusuke.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_hachisuka_gen.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_kametaki_maiko.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_yoshida_rio.dart';
 
 class PostsYujiFriends extends StatefulWidget {
   @override
@@ -29,6 +33,11 @@ class _PostsState extends State<PostsYujiFriends> {
                 PostItemAidaTakuya(),
                 PostItemTateyamaKazuki(),
                 PostItemSaitoMasahiro(),
+                PostItemIizukaYusuke(),
+                PostItemHachisukaGen(),
+                PostItemKametakiMaiko(),
+                PostItemYoshidaRio(),
+
               ],
             )));
   }

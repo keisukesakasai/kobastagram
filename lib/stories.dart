@@ -22,23 +22,19 @@ class Stories extends StatelessWidget {
                     imagePath: 'images/story_icon/yuji_dad_icon.png',
                     moviePath: 'images/sample.mp4'),
                 StoryItem(
-                    name: 'mayu mam',
+                    name: 'mayu mam&dad',
                     imagePath: 'images/story_icon/mayu_mam_icon.jpg',
                     moviePath: 'images/sample.mp4'),
                 StoryItem(
-                    name: 'mam dad',
+                    name: 'yuji sis',
                     imagePath: 'images/story_icon/mayu_dad_icon.png',
                     moviePath: 'images/sample.mp4'),
                 StoryItem(
-                    name: 'Mayu dad',
+                    name: 'yuji sis',
                     imagePath: 'images/story_icon/mayu_dad_icon.png',
                     moviePath: 'images/sample.mp4'),
                 StoryItem(
-                    name: 'Mayu dad',
-                    imagePath: 'images/story_icon/mayu_dad_icon.png',
-                    moviePath: 'images/sample.mp4'),
-                StoryItem(
-                    name: 'Mayu dad',
+                    name: 'Mayu sis',
                     imagePath: 'images/story_icon/mayu_dad_icon.png',
                     moviePath: 'images/sample.mp4'),
               ],

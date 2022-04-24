@@ -20,7 +20,12 @@ import 'package:kobastagram/post/yuji_friends/post_item_ikeda_masashi.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_saito_masahiro.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_tateyama_kazuki.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_iizuka_yusuke.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_yoshida_rio.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_hachisuka_gen.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_kametaki_maiko.dart';
 
+import 'package:path/path.dart';
 import 'package:device_preview/device_preview.dart';
 
 import 'package:kobastagram/heros.dart';
@@ -28,15 +33,18 @@ import 'package:kobastagram/stories.dart';
 
 import 'package:kobastagram/post/posts_yuji_friends.dart';
 import 'package:kobastagram/post/posts_mayu_friends.dart';
+import 'package:kobastagram/post/posts_yuji_profile.dart';
 
 import 'post_gesture_detector.dart';
 
 void main() => runApp(
-      DevicePreview(
-        enabled: true,
-        builder: (context) => MyApp(), // Wrap your app
-      ),
-    );
+
+  DevicePreview(
+    enabled: true,
+    builder: (context) => MyApp(), // Wrap your app
+  ),
+);
+
 final _iconSize = 30.0;
 
 class MyApp extends StatelessWidget {
@@ -108,6 +116,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   children: <Widget>[
                     Padding(padding: EdgeInsets.all(0), child: Stories()),
+                    //Padding(
+                    //  padding: EdgeInsets.all(0),
+                    //  child: GestureDetector(
+                    //      onTap: () {
+                    //        Navigator.push(
+                    //          context,
+                    //         MaterialPageRoute(
+                    //            builder: (context) => VideoPlayerPage(),
+                    //          ),
+                    //        );
+                    //      },
+                    //      child: Stories()),
+                    //),
                     Center(
                         child: Column(
                       children: <Widget>[
@@ -190,9 +211,30 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         PostsGestureDetector(
                           imagePath:
-                              'images/yuji_friends/saito_masahiro_image.png',
+                          'images/yuji_friends/saito_masahiro_image.png',
                           func: PostItemSaitoMasahiro(),
                         ),
+                        PostsGestureDetector(
+                          imagePath:
+                          'images/yuji_friends/iizuka_yusuke_image.jpg',
+                          func: PostItemIizukaYusuke(),
+                        ),
+                          PostsGestureDetector(
+                            imagePath:
+                            'images/yuji_friends/hachisuka_gen_image.jpg',
+                            func: PostItemHachisukaGen(),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                          'images/yuji_friends/kametaki_maiko_image.jpg',
+                          func: PostItemKametakiMaiko(),
+                        ),
+                        PostsGestureDetector(
+                          imagePath:
+                              'images/yuji_friends/yoshida_rio_image.jpg',
+                          func: PostItemYoshidaRio(),
+                        ),
+
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/hayakawa_minaka_image.jpg',
@@ -259,6 +301,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               'images/mayu_friends/uenoya_sayaka_image.jpg',
                           func: PostItemUenoyaSayaka(),
                         ),
+
                       ],
                     ))
                   ],
@@ -273,7 +316,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: EdgeInsets.all(0),
                       child: Stories(),
                     ),
-                    Center(child: Text('⚠️ 工事中 ⚠️'))
+                    Center(
+                        child: Column(children: [
+                          PostYujiProfile(),
+                        ]))
                   ],
                 ),
               ),

@@ -86,6 +86,7 @@ class _PostItemState extends State {
                   onPressed: () => {},
                 ),
               ])),
+
           Expanded(
               child: Row(
                   children: _pictures
@@ -190,8 +191,10 @@ class _PostItemState extends State {
               Text("コメントを追加...",style: TextStyle(color: Colors.grey),),
             ]),
             Row(
+
               mainAxisAlignment:
               MainAxisAlignment.end,
+
               children: [
                 Text('❤'),
                 SizedBox(width: 5,),//間隔
