@@ -260,10 +260,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           func: PostItemTakanoAoi(),
                         ),
                         PostsGestureDetector(
-                          imagePath: 'images/mayu_friends/takano_aoi_image.jpg',
-                          func: PostItemTakanoAoi(),
-                        ),
-                        PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/umemura_natsumi_image.jpg',
                           func: PostItemUemuraNatsumi(),

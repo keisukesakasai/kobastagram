@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kobastagram/VideoPlayerPage.dart';
+import 'package:kobastagram/video_player_page.dart';
 
 final _iconSize = 60.0;
 
@@ -30,7 +30,7 @@ class StoryItem extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.black,
-                border: Border.all(color: Colors.grey, width: 1),
+                border: Border.all(color: Colors.white, width: 1),
                 image: DecorationImage(
                     image: AssetImage(imagePath), fit: BoxFit.cover),
               ),
@@ -47,10 +47,10 @@ class StoryItem extends StatelessWidget {
                         backgroundColor: Colors.white,
                         shape: RoundedRectangleBorder(
                             borderRadius:
-                                BorderRadius.all(Radius.circular(20))),
+                                BorderRadius.all(Radius.circular(10))),
                         children: [
                           Container(
-                            child: VideoPlayerPage(moviePath),
+                            child: VideoPlayerPage(moviePath: moviePath,),
                           ),
                         ]);
                   });
