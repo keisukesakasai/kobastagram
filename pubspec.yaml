@@ -37,7 +37,9 @@ dependencies:
   carousel_slider: ^4.0.0
   video_player: ^2.0.2
   flutter_screenutil: ^5.4.0
+
   import_sorter: ^4.6.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

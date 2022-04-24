@@ -191,7 +191,10 @@ class _PostItemState extends State {
               Text("コメントを追加...",style: TextStyle(color: Colors.grey),),
             ]),
             Row(
-              mainAxisAlignment:MainAxisAlignment.end,
+
+              mainAxisAlignment:
+              MainAxisAlignment.end,
+
               children: [
                 Text('❤'),
                 SizedBox(width: 5,),//間隔

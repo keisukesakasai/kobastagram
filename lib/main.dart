@@ -28,7 +28,10 @@ import 'package:kobastagram/post/yuji_friends/post_item_kametaki_maiko.dart';
 import 'package:kobastagram/post_item_detail.dart';
 
 import 'package:path/path.dart';
-import 'package:kobastagram/VideoPlayerPage.dart';
+
+import 'package:device_preview/device_preview.dart';
+
+import 'package:path/path.dart';
 import 'package:device_preview/device_preview.dart';
 
 import 'package:kobastagram/posts.dart';
@@ -46,11 +49,13 @@ import 'detail/post_item_yamada_tanaka_detail.dart';
 import 'detail/post_item_hoshino_reo_detail.dart';
 
 void main() => runApp(
-      DevicePreview(
-        enabled: true,
-        builder: (context) => MyApp(), // Wrap your app
-      ),
-    );
+
+  DevicePreview(
+    enabled: true,
+    builder: (context) => MyApp(), // Wrap your app
+  ),
+);
+
 final _iconSize = 30.0;
 
 class MyApp extends StatelessWidget {
@@ -123,6 +128,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   children: <Widget>[
                     Padding(padding: EdgeInsets.all(0), child: Stories()),
+                    //Padding(
+                    //  padding: EdgeInsets.all(0),
+                    //  child: GestureDetector(
+                    //      onTap: () {
+                    //        Navigator.push(
+                    //          context,
+                    //         MaterialPageRoute(
+                    //            builder: (context) => VideoPlayerPage(),
+                    //          ),
+                    //        );
+                    //      },
+                    //      child: Stories()),
+                    //),
                     Center(
                         child: Column(
                       children: <Widget>[
