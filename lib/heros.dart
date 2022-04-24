@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 final _heroItem = Container(
     decoration: BoxDecoration(
-        border: Border.all(width: 2, color: Color(0x33330000)),
+        border: Border.all(width: 1, color: Color(0x33330000)),
         borderRadius: BorderRadius.circular(5)),
     width: 150,
     height: 250,

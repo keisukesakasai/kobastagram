@@ -316,6 +316,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     Center(
                         child: Column(children: [
                           PostYujiProfile(),
+                          Heros(),
                         ]))
                   ],
                 ),
