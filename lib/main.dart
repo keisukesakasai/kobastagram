@@ -20,13 +20,9 @@ import 'package:kobastagram/post/yuji_friends/post_item_ikeda_masashi.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_saito_masahiro.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_tateyama_kazuki.dart';
-import 'package:kobastagram/post_item_detail.dart';
 
-import 'package:path/path.dart';
-import 'package:kobastagram/VideoPlayerPage.dart';
 import 'package:device_preview/device_preview.dart';
 
-import 'package:kobastagram/posts.dart';
 import 'package:kobastagram/heros.dart';
 import 'package:kobastagram/stories.dart';
 
@@ -34,10 +30,6 @@ import 'package:kobastagram/post/posts_yuji_friends.dart';
 import 'package:kobastagram/post/posts_mayu_friends.dart';
 
 import 'post_gesture_detector.dart';
-import 'detail/post_item_ikeda_masashi_detail.dart';
-import 'detail/post_item_okuyama_taiki_detail.dart';
-import 'detail/post_item_yamada_tanaka_detail.dart';
-import 'detail/post_item_hoshino_reo_detail.dart';
 
 void main() => runApp(
       DevicePreview(
@@ -77,26 +69,25 @@ class _MyHomePageState extends State<MyHomePage> {
         length: 5,
         child: Scaffold(
             appBar: PreferredSize(
-                preferredSize: Size.fromHeight(45),
+                preferredSize: Size.fromHeight(30),
                 child: AppBar(
-                  centerTitle: true,
                   backgroundColor: Colors.white,
                   title: Row(
                     children: [
                       Image.asset(
                         'images/kobasutagram.png',
-                        height: 45,
+                        height: 28.5,
                       ),
                     ],
                   ),
                   actions: [
                     Icon(Icons.add_box_outlined, color: Colors.black),
                     SizedBox(
-                      width: 15,
+                      width: 12.5,
                     ),
                     Icon(Icons.favorite_border_outlined, color: Colors.black),
                     SizedBox(
-                      width: 15,
+                      width: 12.5,
                     ), //Iconの間隔
                     Padding(
                       padding: const EdgeInsets.only(bottom: 6.5),
@@ -121,7 +112,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                       children: <Widget>[
                         PostsYujiFriends(),
-                        //Heros(),
                       ],
                     )),
                   ],
@@ -228,9 +218,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           func: PostItemTakanoAoi(),
                         ),
                         PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/takano_aoi_image.jpg',
-                         func: PostItemTakanoAoi(),
+                          imagePath: 'images/mayu_friends/takano_aoi_image.jpg',
+                          func: PostItemTakanoAoi(),
                         ),
                         PostsGestureDetector(
                           imagePath:
@@ -247,8 +236,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           func: PostItemEndoMari(),
                         ),
                         PostsGestureDetector(
-                          imagePath:
-                              'images/mayu_friends/ogawa_mami_image.jpg',
+                          imagePath: 'images/mayu_friends/ogawa_mami_image.jpg',
                           func: PostItemOgawaMami(),
                         ),
                         PostsGestureDetector(

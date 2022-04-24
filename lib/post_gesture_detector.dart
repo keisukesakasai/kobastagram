@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kobastagram/post/yuji_friends/post_item_hoshino_reo.dart';
-import 'package:kobastagram/post_item_detail.dart';
 
 class PostsGestureDetector extends StatelessWidget {
   @override
@@ -40,20 +38,18 @@ class PostsGestureDetector extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(20))),
                     children: [
-                      Container(
-                          child: func
-                      ),
+                      Container(child: func),
                     ]);
               });
         }
-      // onTap: () {
-      //   Navigator.push(
-      //     context,
-      //     MaterialPageRoute(
-      //       builder: (context) => func,
-      //     ),
-      //   );
-      // }
-    );
+        // onTap: () {
+        //   Navigator.push(
+        //     context,
+        //     MaterialPageRoute(
+        //       builder: (context) => func,
+        //     ),
+        //   );
+        // }
+        );
   }
 }

@@ -32,48 +32,50 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
   Widget build(BuildContext context) {
     final double deviceHeight = MediaQuery.of(context).size.height;
     final double deviceWedith = MediaQuery.of(context).size.width;
-    return Scaffold(
-      body: Container(
-        height: deviceHeight,
-        width: deviceWedith * 0.8,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            AspectRatio(
-              aspectRatio: _controller.value.aspectRatio,
-              child: VideoPlayer(_controller),
-            ),
-            VideoProgressIndicator(
-              _controller,
-              allowScrubbing: true,
-            ),
-            _ProgressText(controller: _controller),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                IconButton(
-                  onPressed: () {
-                    _controller
-                        .seekTo(Duration.zero)
-                        .then((_) => _controller.play());
-                  },
-                  icon: Icon(Icons.refresh),
-                ),
-                IconButton(
-                  onPressed: () {
-                    _controller.play();
-                  },
-                  icon: Icon(Icons.play_arrow),
-                ),
-                IconButton(
-                  onPressed: () {
-                    _controller.pause();
-                  },
-                  icon: Icon(Icons.pause),
-                ),
-              ],
-            ),
-          ],
+    return SizedBox(
+      width: deviceWedith,
+      height: deviceHeight*1.2,
+      child: Scaffold(
+        body: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              AspectRatio(
+                aspectRatio: _controller.value.aspectRatio,
+                child: VideoPlayer(_controller),
+              ),
+              VideoProgressIndicator(
+                _controller,
+                allowScrubbing: true,
+              ),
+              _ProgressText(controller: _controller),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      _controller
+                          .seekTo(Duration.zero)
+                          .then((_) => _controller.play());
+                    },
+                    icon: Icon(Icons.refresh),
+                  ),
+                  IconButton(
+                    onPressed: () {
+                      _controller.play();
+                    },
+                    icon: Icon(Icons.play_arrow),
+                  ),
+                  IconButton(
+                    onPressed: () {
+                      _controller.pause();
+                    },
+                    icon: Icon(Icons.pause),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
