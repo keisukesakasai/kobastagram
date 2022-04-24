@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kobastagram/story/story_item_yuji_mom.dart';
-import 'package:kobastagram/story/story_item_yuji_dad.dart';
-import 'package:kobastagram/story/story_item_mayu_mom_dad.dart';
-import 'package:kobastagram/story/story_item_yuji_brother.dart';
-import 'package:kobastagram/story/story_item_yuji_brother_wife.dart';
-import 'package:kobastagram/story/story_item_yuji_sister.dart';
-import 'package:kobastagram/story/story_item_mayu_sister.dart';
+import 'package:kobastagram/story_item.dart';
 
 class Stories extends StatelessWidget {
   @override
@@ -15,19 +9,34 @@ class Stories extends StatelessWidget {
             border: Border(
                 bottom: BorderSide(width: 1.0, color: Color(0x3333000000)))),
         child: SingleChildScrollView(
-            padding: EdgeInsets.symmetric(horizontal: 8,vertical: 8),
+            padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
             scrollDirection: Axis.horizontal,
             child: Row(
               children: <Widget>[
-                StoryItemYujiMom(name: "Yuji mom", icon: Icons.account_circle),
-                StoryItemYujiDad(name: "Yuji dad", icon: Icons.account_circle),
-                StoryItemMayuMomDad(name: "Mayu mom&dad ", icon: Icons.account_circle),
-                StoryItemYujiBro(name: "Yuji bro ", icon: Icons.account_circle),
-                StoryItemYujiBroWife(name: "Yuji bro's wife", icon: Icons.account_circle),
-                StoryItemYujiSis(name: "Yuji sis", icon: Icons.account_circle),
-                StoryItemMayuSis(name: "Mayu sis", icon: Icons.account_circle),
-                //StoryItemMayuDad(name: "Mayu dad", icon: Icons.account_circle),
-                //StoryItemMayuDad(name: "Mayu dad", icon: Icons.account_circle),
+                StoryItem(
+                    name: 'yuji mam',
+                    imagePath: 'images/story_icon/yuji_mam_icon.jpg',
+                    moviePath: 'images/sample.mp4'),
+                StoryItem(
+                    name: 'yuji dad',
+                    imagePath: 'images/story_icon/yuji_dad_icon.png',
+                    moviePath: 'images/sample.mp4'),
+                StoryItem(
+                    name: 'mayu mam&dad',
+                    imagePath: 'images/story_icon/mayu_mam_icon.jpg',
+                    moviePath: 'images/sample.mp4'),
+                StoryItem(
+                    name: 'yuji sis',
+                    imagePath: 'images/story_icon/mayu_dad_icon.png',
+                    moviePath: 'images/sample.mp4'),
+                StoryItem(
+                    name: 'yuji sis',
+                    imagePath: 'images/story_icon/mayu_dad_icon.png',
+                    moviePath: 'images/sample.mp4'),
+                StoryItem(
+                    name: 'Mayu sis',
+                    imagePath: 'images/story_icon/mayu_dad_icon.png',
+                    moviePath: 'images/sample.mp4'),
               ],
             )));
   }

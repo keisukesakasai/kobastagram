@@ -25,16 +25,9 @@ import 'package:kobastagram/post/yuji_friends/post_item_yoshida_rio.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_hachisuka_gen.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_kametaki_maiko.dart';
 
-import 'package:kobastagram/post_item_detail.dart';
-
-import 'package:path/path.dart';
-
-import 'package:device_preview/device_preview.dart';
-
 import 'package:path/path.dart';
 import 'package:device_preview/device_preview.dart';
 
-import 'package:kobastagram/posts.dart';
 import 'package:kobastagram/heros.dart';
 import 'package:kobastagram/stories.dart';
 
@@ -43,10 +36,6 @@ import 'package:kobastagram/post/posts_mayu_friends.dart';
 import 'package:kobastagram/post/posts_yuji_profile.dart';
 
 import 'post_gesture_detector.dart';
-import 'detail/post_item_ikeda_masashi_detail.dart';
-import 'detail/post_item_okuyama_taiki_detail.dart';
-import 'detail/post_item_yamada_tanaka_detail.dart';
-import 'detail/post_item_hoshino_reo_detail.dart';
 
 void main() => runApp(
 
@@ -88,26 +77,25 @@ class _MyHomePageState extends State<MyHomePage> {
         length: 5,
         child: Scaffold(
             appBar: PreferredSize(
-                preferredSize: Size.fromHeight(45),
+                preferredSize: Size.fromHeight(30),
                 child: AppBar(
-                  centerTitle: true,
                   backgroundColor: Colors.white,
                   title: Row(
                     children: [
                       Image.asset(
                         'images/kobasutagram.png',
-                        height: 45,
+                        height: 28.5,
                       ),
                     ],
                   ),
                   actions: [
                     Icon(Icons.add_box_outlined, color: Colors.black),
                     SizedBox(
-                      width: 15,
+                      width: 12.5,
                     ),
                     Icon(Icons.favorite_border_outlined, color: Colors.black),
                     SizedBox(
-                      width: 15,
+                      width: 12.5,
                     ), //Iconの間隔
                     Padding(
                       padding: const EdgeInsets.only(bottom: 6.5),
@@ -145,7 +133,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Column(
                       children: <Widget>[
                         PostsYujiFriends(),
-                        //Heros(),
                       ],
                     )),
                   ],
@@ -191,124 +178,128 @@ class _MyHomePageState extends State<MyHomePage> {
                         PostsGestureDetector(
                           imagePath:
                               'images/yuji_friends/okuyama_taiki_image.jpg',
-                          func: PostItemDetail(func: PostItemOkuyamaTaiki()),
+                          func: PostItemOkuyamaTaiki(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/yamada_tanaka_image.jpg',
-                          func: PostItemDetail(func: PostItemYamadaTanaka()),
+                          func: PostItemYamadaTanaka(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/yuji_friends/ikeda_masashi_image.jpg',
-                          func: PostItemDetail(func: PostItemIkedaMasashi()),
+                          func: PostItemIkedaMasashi(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/yuji_friends/hoshino_reo_image.jpg',
-                          func: PostItemDetail(func: PostItemHoshinoReo()),
+                          func: PostItemHoshinoReo(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/yuji_friends/tateyama_kazuki_image.jpg',
-                          func: PostItemDetail(func: PostItemTateyamaKazuki()),
+                          func: PostItemTateyamaKazuki(),
                         ),
                         PostsGestureDetector(
                           imagePath: 'images/yuji_friends/abe_shunya_image.jpg',
-                          func: PostItemDetail(func: PostItemAbeShunya()),
+                          func: PostItemAbeShunya(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/yuji_friends/aida_takuya_image.jpg',
-                          func: PostItemDetail(func: PostItemAidaTakuya()),
+                          func: PostItemAidaTakuya(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                           'images/yuji_friends/saito_masahiro_image.png',
-                          func: PostItemDetail(func: PostItemSaitoMasahiro()),
+                          func: PostItemSaitoMasahiro(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                           'images/yuji_friends/iizuka_yusuke_image.jpg',
-                          func: PostItemDetail(func: PostItemIizukaYusuke()),
+                          func: PostItemIizukaYusuke(),
                         ),
                           PostsGestureDetector(
                             imagePath:
                             'images/yuji_friends/hachisuka_gen_image.jpg',
-                            func: PostItemDetail(func: PostItemHachisukaGen()),
+                            func: PostItemHachisukaGen(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                           'images/yuji_friends/kametaki_maiko_image.jpg',
-                          func: PostItemDetail(func: PostItemKametakiMaiko()),
+                          func: PostItemKametakiMaiko(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/yuji_friends/yoshida_rio_image.jpg',
-                          func: PostItemDetail(func: PostItemYoshidaRio()),
+                          func: PostItemYoshidaRio(),
                         ),
 
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/hayakawa_minaka_image.jpg',
-                          func: PostItemDetail(func: PostItemHayakawaMinaka()),
+                          func: PostItemHayakawaMinaka(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/daiichiseimei_image.jpg',
-                          func: PostItemDetail(func: PostItemDaiichiSeimei()),
+                          func: PostItemDaiichiSeimei(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/hirose_rina_image.jpg',
-                          func: PostItemDetail(func: PostItemHiroseRina()),
+                          func: PostItemHiroseRina(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/yukimiyuanna_image.jpg',
-                          func: PostItemDetail(func: PostItemYukiMiyuAnna()),
+                          func: PostItemYukiMiyuAnna(),
                         ),
                         PostsGestureDetector(
                           imagePath: 'images/mayu_friends/takano_aoi_image.jpg',
-                          func: PostItemDetail(func: PostItemTakanoAoi()),
+                          func: PostItemTakanoAoi(),
+                        ),
+                        PostsGestureDetector(
+                          imagePath: 'images/mayu_friends/takano_aoi_image.jpg',
+                          func: PostItemTakanoAoi(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/umemura_natsumi_image.jpg',
-                          func: PostItemDetail(func: PostItemUemuraNatsumi()),
+                          func: PostItemUemuraNatsumi(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/ogawa_miyako_image.jpg',
-                          func: PostItemDetail(func: PostItemOgawaMiyako()),
+                          func: PostItemOgawaMiyako(),
                         ),
                         PostsGestureDetector(
                           imagePath: 'images/mayu_friends/endo_mari_image.jpg',
-                          func: PostItemDetail(func: PostItemEndoMari()),
+                          func: PostItemEndoMari(),
                         ),
                         PostsGestureDetector(
                           imagePath: 'images/mayu_friends/ogawa_mami_image.jpg',
-                          func: PostItemDetail(func: PostItemOgawaMami()),
+                          func: PostItemOgawaMami(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/yusuke_yoshiki_image.jpg',
-                          func: PostItemDetail(func: PostItemYusukeYoshiki()),
+                          func: PostItemYusukeYoshiki(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/hirano_honami_image.jpg',
-                          func: PostItemDetail(func: PostItemHiranoHonami()),
+                          func: PostItemHiranoHonami(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/tamagawa_risako_image.jpg',
-                          func: PostItemDetail(func: PostItemTamagawaRisako()),
+                          func: PostItemTamagawaRisako(),
                         ),
                         PostsGestureDetector(
                           imagePath:
                               'images/mayu_friends/uenoya_sayaka_image.jpg',
-                          func: PostItemDetail(func: PostItemUenoyaSayaka()),
+                          func: PostItemUenoyaSayaka(),
                         ),
 
                       ],
