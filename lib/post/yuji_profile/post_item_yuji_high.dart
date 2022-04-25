@@ -214,7 +214,5 @@ class _PostItemState extends State {
             ),
           ],
         ));
-
-
   }
 }
