@@ -15,7 +15,12 @@ class PostsGestureDetector extends StatelessWidget {
   }) : super(key: key);
 
   @override
+
   Widget build(BuildContext context) {
+    var descTextStyle = TextStyle(
+      letterSpacing: 0.35,
+      fontSize: 12,
+    );
     return GestureDetector(
         child: Container(
             width: 120,
@@ -40,7 +45,8 @@ class PostsGestureDetector extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(20))),
                     children: [
-                      Container(child: func),
+                      DefaultTextStyle.merge(
+                          style: descTextStyle, child: Container(child: func)),
                     ]);
               });
         }
