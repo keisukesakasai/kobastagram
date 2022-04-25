@@ -53,6 +53,7 @@ class StoryItem extends StatelessWidget {
                           Container(
                             child: VideoPlayerPage(
                               moviePath: moviePath,
+                              name: name,
                             ),
                           ),
                         ]);
