@@ -4,10 +4,10 @@ import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
 final String LeftImagePath = 'images/profile/yuji_profile_high_icon.jpg';
-final String RightImagePath = 'images/profile/yuji_profile_high.jpg';
+final String RightImagePath = 'images/profile/yuji_profile_company.jpg';
 final String iconPath = 'images/profile/yuji_introduce_profile_icon.png';
-final String general = '高校時代';
-final String school = '千葉県立柏高校';
+final String general = '社会人';
+final String school = 'NTTデータ';
 final String message1 =  'サッカー部でエースの存在';
 final String message2 =  '勉強も部活も文武両道で優等生';
 final String message3=  '早弁して昼休みは\n''格闘フットサル';
@@ -15,7 +15,7 @@ final String hashtag = '#クラスのムードメーカー\n'
     '#少しいじられキャラ\n'
     '#愛されキャラ';
 
-class PostItemYujiHigh extends StatefulWidget {
+class PostItemYujiCom extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -214,5 +214,7 @@ class _PostItemState extends State {
             ),
           ],
         ));
+
+
   }
 }

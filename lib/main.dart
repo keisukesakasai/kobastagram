@@ -34,6 +34,7 @@ import 'package:kobastagram/stories.dart';
 import 'package:kobastagram/post/posts_yuji_friends.dart';
 import 'package:kobastagram/post/posts_mayu_friends.dart';
 import 'package:kobastagram/post/posts_yuji_profile.dart';
+import 'package:kobastagram/post/posts_mayu_profile.dart';
 
 import 'post_gesture_detector.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -327,7 +328,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     padding: EdgeInsets.all(0),
                     child: Stories(),
                   ),
-                  Center(child: Text('⚠️ 工事中 ⚠️'))
+                  Center(
+                      child: Column(children: [
+                      PostMayuProfile(),
+                        Heros(),
+                      ]))
                 ],
               ),
             ),

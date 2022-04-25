@@ -4,18 +4,17 @@ import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
 final String LeftImagePath = 'images/profile/yuji_profile_high_icon.jpg';
-final String RightImagePath = 'images/profile/yuji_profile_high.jpg';
+final String RightImagePath  = 'images/profile/yuji_profile_junior.jpg';
 final String iconPath = 'images/profile/yuji_introduce_profile_icon.png';
-final String general = '高校時代';
-final String school = '千葉県立柏高校';
-final String message1 =  'サッカー部でエースの存在';
-final String message2 =  '勉強も部活も文武両道で優等生';
-final String message3=  '早弁して昼休みは\n''格闘フットサル';
-final String hashtag = '#クラスのムードメーカー\n'
-    '#少しいじられキャラ\n'
-    '#愛されキャラ';
+final String general = '中学時代';
+final String school = '柏市立光中学校';
+final String message1 =  '長距離も短距離も速く';
+final String message2 =  '黄色い声援を浴びていた';
+final String message3=  '勉強もでき、\n''学級で常に上位の成績';
+final String hashtag = '#当時から優男\n'
+    '#負けず嫌い#お調子者';
 
-class PostItemYujiHigh extends StatefulWidget {
+class PostItemYujiJunior extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -116,13 +115,13 @@ class _PostItemState extends State {
                                     ),
                                   ],
                                 )),
-                               Container(
-                                 child: Column(
-                                   children: [
+                            Container(
+                              child: Column(
+                                children: [
 
-                                   ],
-                                 ),
-                               ),
+                                ],
+                              ),
+                            ),
                           ],
                         ), //Row3
                       ],
@@ -214,5 +213,7 @@ class _PostItemState extends State {
             ),
           ],
         ));
+
+
   }
 }
