@@ -18,27 +18,36 @@ class PostsYujiFriends extends StatefulWidget {
 
 class _PostsState extends State<PostsYujiFriends> {
   @override
+
+  var descTextStyle = TextStyle(
+    letterSpacing: 0.35,
+    fontSize: 11.5,
+  );
+
   Widget build(BuildContext context) {
     return SingleChildScrollView(
         child: Container(
             decoration: BoxDecoration(
                 border: Border(
                     bottom: BorderSide(width: 1, color: Color(0x33330000)))),
-            child: Column(
-              children: [
-                PostItemIkedaMasashi(),
-                PostItemOkuyamaTaiki(),
-                PostItemHoshinoReo(),
-                PostItemAbeShunya(),
-                PostItemAidaTakuya(),
-                PostItemTateyamaKazuki(),
-                PostItemSaitoMasahiro(),
-                PostItemIizukaYusuke(),
-                PostItemHachisukaGen(),
-                PostItemKametakiMaiko(),
-                PostItemYoshidaRio(),
+            child: DefaultTextStyle.merge(
+              style: descTextStyle,
+              child: Column(
+                children: [
+                  PostItemIkedaMasashi(),
+                  PostItemOkuyamaTaiki(),
+                  PostItemHoshinoReo(),
+                  PostItemAbeShunya(),
+                  PostItemAidaTakuya(),
+                  PostItemTateyamaKazuki(),
+                  PostItemSaitoMasahiro(),
+                  PostItemIizukaYusuke(),
+                  PostItemHachisukaGen(),
+                  PostItemKametakiMaiko(),
+                  PostItemYoshidaRio(),
 
-              ],
+                ],
+              ),
             )));
   }
 }
