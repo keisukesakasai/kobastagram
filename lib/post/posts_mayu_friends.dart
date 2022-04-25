@@ -27,8 +27,8 @@ class _PostsState extends State<PostsMayuFriends> {
   @override
 
   var descTextStyle = TextStyle(
-    letterSpacing: 0.35,
-    fontSize: 11.5,
+    letterSpacing: 0.3,
+    fontSize: 12,
   );
 
   Widget build(BuildContext context) {
