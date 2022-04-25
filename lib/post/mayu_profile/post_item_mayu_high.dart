@@ -3,19 +3,19 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String LeftImagePath = 'images/yuji_profile_high_icon.jpg';
-final String RightImagePath = 'images/yuji_profile_high.jpg';
-final String iconPath = 'images/yuji_introduce_profile_icon.png';
+final String LeftImagePath = 'images/profile/yuji_profile_high_icon.jpg';
+final String RightImagePath = 'images/profile/mayu_profile_high.jpg';
+final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
 final String general = '高校時代';
-final String school = '千葉県立柏高校';
-final String message1 =  'サッカー部でエースの存在';
-final String message2 =  '勉強も部活も文武両道で優等生';
-final String message3=  '早弁して昼休みは\n''格闘フットサル';
-final String hashtag = '#クラスのムードメーカー\n'
-    '#少しいじられキャラ\n'
-    '#愛されキャラ';
+final String school = '～高校';
+final String message1 =  'xxx';
+final String message2 =  'xxx';
+final String message3=  'xxx\n''xxx';
+final String hashtag = '#xxx\n'
+    '#xxx\n'
+    '#xxx';
 
-class PostItemYujiHigh extends StatefulWidget {
+class PostItemMayuHigh extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -38,96 +38,94 @@ class _PostItemState extends State {
                   Container(
                     height: 250,
                     width: 170,
-                    child: Flexible(
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              SizedBox(
-                                width: 10,
-                              ), //間隔
-                              CircleAvatar(
-                                radius: 30,
-                                backgroundImage: AssetImage(
-                                    LeftImagePath),
-                              ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 10,
+                            ), //間隔
+                            CircleAvatar(
+                              radius: 30,
+                              backgroundImage: AssetImage(
+                                  LeftImagePath),
+                            ),
 
-                              Row(
-                                children: [
-                                  Column(
-                                    // crossAxisAlignment: CrossAxisAlignment.start,//写真の横にusernameを配置
-                                    children: [
-                                      Column(
-                                        children: [
-                                          Text(
-                                            general,
-                                            style: TextStyle(
-                                              color: Color.fromARGB(
-                                                  255, 1, 55, 142),
-                                              fontSize: 15,
-                                            ),
+                            Row(
+                              children: [
+                                Column(
+                                  // crossAxisAlignment: CrossAxisAlignment.start,//写真の横にusernameを配置
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          general,
+                                          style: TextStyle(
+                                            color: Color.fromARGB(
+                                                255, 1, 55, 142),
+                                            fontSize: 15,
                                           ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              )
-                            ],
-                          ), //profile行
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            )
+                          ],
+                        ), //profile行
 
-                          Row(
-                            //Icon行
-                            children: [
-                              SizedBox(width: 5),
-                              Text('📍$school'),
-                            ],
-                          ), //Row2
-                          Column(
-                            //Icon行
-                            children: [
-                              Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 1),
-                                  child: Column(
-                                    children: [
-                                      Text(
-                                        message1,
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                        ),
+                        Row(
+                          //Icon行
+                          children: [
+                            SizedBox(width: 5),
+                            Text('📍$school'),
+                          ],
+                        ), //Row2
+                        Column(
+                          //Icon行
+                          children: [
+                            Container(
+                                padding: EdgeInsets.symmetric(horizontal: 1),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      message1,
+                                      style: TextStyle(
+                                        fontSize: 12,
                                       ),
-                                      Text(
-                                        message2,
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                        ),
+                                    ),
+                                    Text(
+                                      message2,
+                                      style: TextStyle(
+                                        fontSize: 12,
                                       ),
-                                      Text(
-                                        message3,
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                        ),
+                                    ),
+                                    Text(
+                                      message3,
+                                      style: TextStyle(
+                                        fontSize: 12,
                                       ),
-                                      Text(hashtag,
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color:
-                                          Color.fromARGB(255, 1, 55, 142),
-                                        ),
+                                    ),
+                                    Text(hashtag,
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color:
+                                        Color.fromARGB(255, 1, 55, 142),
                                       ),
-                                    ],
-                                  )),
-                                 Container(
-                                   child: Column(
-                                     children: [
+                                    ),
+                                  ],
+                                )),
+                               Container(
+                                 child: Column(
+                                   children: [
 
-                                     ],
-                                   ),
+                                   ],
                                  ),
-                            ],
-                          ), //Row3
-                        ],
-                      ),
+                               ),
+                          ],
+                        ), //Row3
+                      ],
                     ),
                   ),
                   Container(
@@ -153,7 +151,7 @@ class _PostItemState extends State {
                                           iconPath), //Story投稿画像
                                     ),
                                     Text(
-                                      'blaugrana.reysol',
+                                      'm.mayuu',
                                       style: TextStyle(
                                         fontSize: 10,
                                         fontWeight: FontWeight.bold,
@@ -162,7 +160,7 @@ class _PostItemState extends State {
                                   ],
                                 ),
                                 SizedBox(
-                                  width: 50,
+                                  width: 80,
                                 ),
                                 Icon(Icons.more_horiz, size: 12),
                               ],

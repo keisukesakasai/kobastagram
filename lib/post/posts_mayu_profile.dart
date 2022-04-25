@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:kobastagram/post/yuji_profile/post_item_yuji_junior.dart';
-import 'package:kobastagram/post/yuji_profile/post_item_yuji_high.dart';
-import 'package:kobastagram/post/yuji_profile/post_item_yuji_college.dart';
-import 'package:kobastagram/post/yuji_profile/post_item_yuji_company.dart';
+import 'package:kobastagram/post/mayu_profile/post_item_mayu_junior.dart';
+import 'package:kobastagram/post/mayu_profile/post_item_mayu_high.dart';
+import 'package:kobastagram/post/mayu_profile/post_item_mayu_college.dart';
+import 'package:kobastagram/post/mayu_profile/post_item_mayu_company.dart';
 
-final String iconPath = 'images/yuji_introduce_profile_icon.png';
-final String friendsPath = 'images/yuji_profile_friends.png';
-final String profileMsg = '千葉県柏市出身\n''趣味はサッカー観戦、ゴルフ\n''素敵な奥さんと出会い\n''人生勝ち組';
-class PostYujiProfile extends StatefulWidget {
+final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
+final String friendsPath = 'images/profile/yuji_profile_friends.png';
+final String profileMsg = 'xxx出身\n''xxx\n''xxx\n''xxx';
+class PostMayuProfile extends StatefulWidget {
   @override
   _PostsState createState() => _PostsState();
 }
 
 
-class _PostsState extends State<PostYujiProfile> {
+class _PostsState extends State<PostMayuProfile> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -40,7 +40,7 @@ class _PostsState extends State<PostYujiProfile> {
                                   CircleAvatar(
                                     radius: 45,
                                     backgroundImage: AssetImage(
-                                        'images/yuji_profile_icon.png'),
+                                        'images/profile/mayu_profile_icon.png'),
                                   ),
                                 ],
                               ),
@@ -65,7 +65,7 @@ class _PostsState extends State<PostYujiProfile> {
                                 ),
                               ),
                               Text(
-                                '優しさ',
+                                'xxx',
                                 style: TextStyle(
                                   fontSize: 13,
                                   //fontWeight: FontWeight.bold,
@@ -84,7 +84,7 @@ class _PostsState extends State<PostYujiProfile> {
                               ),
                             ),
                             Text(
-                              '運動神経',
+                              'xxx',
                               style: TextStyle(
                                 fontSize: 13,
                                 //fontWeight: FontWeight.bold,
@@ -103,7 +103,7 @@ class _PostsState extends State<PostYujiProfile> {
                                 ),
                               ),
                               Text(
-                                '適応性',
+                                'xxx',
                                 style: TextStyle(
                                   fontSize: 13,
                                   //fontWeight: FontWeight.bold,
@@ -129,14 +129,14 @@ class _PostsState extends State<PostYujiProfile> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Yuji kobayashi',
+                        'Mayu Kobayashi',
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
-                        'テクニシャン',
+                        '才色兼備',
                         style: TextStyle(
                           color: Color(0xE85D5F5D),
                         ),
@@ -166,7 +166,7 @@ class _PostsState extends State<PostYujiProfile> {
                 ),
                 Flexible(
                   child: Text(
-                    'saka_kei, kennn405, ekedadadadada, 他',
+                    'xxx, 他',
                     style: TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.bold,
@@ -244,10 +244,10 @@ class _PostsState extends State<PostYujiProfile> {
             ),
           ],
         )),
-        PostItemYujiJunior(),
-        PostItemYujiHigh(),
-        PostItemYujiCol(),
-        PostItemYujiCom(),
+        PostItemMayuJunior(),
+        PostItemMayuHigh(),
+        PostItemMayuCol(),
+        PostItemMayuCom(),
       ],
     ));
   }

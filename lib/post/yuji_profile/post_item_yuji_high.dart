@@ -3,16 +3,19 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String imagePath = 'images/yuji_profile_junior.jpg';
-final String iconPath = 'images/yuji_introduce_profile_icon.png';
-final String general = '柏市立光中学校';
-final String message1 =  '長距離も短距離も早く';
-final String message2 =  '黄色い声援を浴びていた';
-final String message3=  '勉強もでき、学級で常に上位の成績';
-final String hashtag = '#当時から優男\n'
-    '#負けず嫌い#お調子者';
+final String LeftImagePath = 'images/profile/yuji_profile_high_icon.jpg';
+final String RightImagePath = 'images/profile/yuji_profile_high.jpg';
+final String iconPath = 'images/profile/yuji_introduce_profile_icon.png';
+final String general = '高校時代';
+final String school = '千葉県立柏高校';
+final String message1 =  'サッカー部でエースの存在';
+final String message2 =  '勉強も部活も文武両道で優等生';
+final String message3=  '早弁して昼休みは\n''格闘フットサル';
+final String hashtag = '#クラスのムードメーカー\n'
+    '#少しいじられキャラ\n'
+    '#愛されキャラ';
 
-class PostItemYujiJunior extends StatefulWidget {
+class PostItemYujiHigh extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -33,98 +36,96 @@ class _PostItemState extends State {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    height: 200,
-                    width: 150,
-                    child: Flexible(
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              SizedBox(
-                                width: 10,
-                              ), //間隔
-                              CircleAvatar(
-                                radius: 30,
-                                backgroundImage: AssetImage(
-                                    'images/yuji_profile_icon.png'),
-                              ),
+                    height: 250,
+                    width: 170,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 10,
+                            ), //間隔
+                            CircleAvatar(
+                              radius: 30,
+                              backgroundImage: AssetImage(
+                                  LeftImagePath),
+                            ),
 
-                              Row(
-                                children: [
-                                  Column(
-                                    // crossAxisAlignment: CrossAxisAlignment.start,//写真の横にusernameを配置
-                                    children: [
-                                      Column(
-                                        children: [
-                                          Text(
-                                            '中学時代',
-                                            style: TextStyle(
-                                              color: Color.fromARGB(
-                                                  255, 1, 55, 142),
-                                              fontSize: 15,
-                                            ),
+                            Row(
+                              children: [
+                                Column(
+                                  // crossAxisAlignment: CrossAxisAlignment.start,//写真の横にusernameを配置
+                                  children: [
+                                    Column(
+                                      children: [
+                                        Text(
+                                          general,
+                                          style: TextStyle(
+                                            color: Color.fromARGB(
+                                                255, 1, 55, 142),
+                                            fontSize: 15,
                                           ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              )
-                            ],
-                          ), //profile行
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            )
+                          ],
+                        ), //profile行
 
-                          Row(
-                            //Icon行
-                            children: [
-                              SizedBox(width: 5),
-                              Text('📍$general'),
-                            ],
-                          ), //Row2
-                          Column(
-                            //Icon行
-                            children: [
-                              Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 1),
-                                  child: Column(
-                                    children: [
-                                      Text(
-                                        message1,
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                        ),
+                        Row(
+                          //Icon行
+                          children: [
+                            SizedBox(width: 5),
+                            Text('📍$school'),
+                          ],
+                        ), //Row2
+                        Column(
+                          //Icon行
+                          children: [
+                            Container(
+                                padding: EdgeInsets.symmetric(horizontal: 1),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      message1,
+                                      style: TextStyle(
+                                        fontSize: 12,
                                       ),
-                                      Text(
-                                        message2,
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                        ),
+                                    ),
+                                    Text(
+                                      message2,
+                                      style: TextStyle(
+                                        fontSize: 12,
                                       ),
-                                      Text(
-                                        message3,
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                        ),
+                                    ),
+                                    Text(
+                                      message3,
+                                      style: TextStyle(
+                                        fontSize: 12,
                                       ),
-                                    ],
-                                  )),
-                              Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 1),
-                                  //alignment: Alignment.centerLeft,
-                                  child: Column(
-                                    children: [
-                                      Text(hashtag,
-                                     style: TextStyle(
-                                          fontSize: 12,
-                                          color:
-                                          Color.fromARGB(255, 1, 55, 142),
-                                        ),
+                                    ),
+                                    Text(hashtag,
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color:
+                                        Color.fromARGB(255, 1, 55, 142),
                                       ),
-                                    ],
-                                  )),
-                            ],
-                          ), //Row3
-                        ],
-                      ),
+                                    ),
+                                  ],
+                                )),
+                               Container(
+                                 child: Column(
+                                   children: [
+
+                                   ],
+                                 ),
+                               ),
+                          ],
+                        ), //Row3
+                      ],
                     ),
                   ),
                   Container(
@@ -166,10 +167,10 @@ class _PostItemState extends State {
                             ),
                             Center(
                                 child: Image.asset(
-                                  imagePath,
+                                  RightImagePath,
                                   fit: BoxFit.cover,
                                   height: 200,
-                                  width: 170.0,
+                                  width: 165.0,
                                 )),
                             Container(
                               child: Row(
@@ -198,7 +199,7 @@ class _PostItemState extends State {
                     ),
                   ),
                   SizedBox(
-                    width: 5,
+                    width: 1,
                   ),
                 ],
               ),

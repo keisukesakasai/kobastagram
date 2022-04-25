@@ -34,7 +34,7 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
     final double deviceHeight = MediaQuery.of(context).size.height;
     final double deviceWidth = MediaQuery.of(context).size.width;
     return SizedBox(
-      height: deviceHeight * 1.2,
+      height: deviceHeight * 0.9 ,
       width: deviceWidth,
       child: Scaffold(
         appBar: PreferredSize(

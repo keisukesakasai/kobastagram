@@ -4,17 +4,18 @@ import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
 final String LeftImagePath = 'images/profile/yuji_profile_high_icon.jpg';
-final String RightImagePath  = 'images/profile/mayu_profile_juni.jpg';
-final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
-final String general = '中学時代';
-final String school = 'xxx中学校';
-final String message1 =  'xxx';
-final String message2 =  'xxx';
-final String message3=  'xxx、\n''xxx';
-final String hashtag = '#xxx\n'
-    '#xxx#xxx';
+final String RightImagePath = 'images/profile/yuji_profile_company.jpg';
+final String iconPath = 'images/profile/yuji_introduce_profile_icon.png';
+final String general = '社会人';
+final String school = 'NTTデータ';
+final String message1 =  'サッカー部でエースの存在';
+final String message2 =  '勉強も部活も文武両道で優等生';
+final String message3=  '早弁して昼休みは\n''格闘フットサル';
+final String hashtag = '#クラスのムードメーカー\n'
+    '#少しいじられキャラ\n'
+    '#愛されキャラ';
 
-class PostItemMayuJunior extends StatefulWidget {
+class PostItemYujiCom extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -115,13 +116,13 @@ class _PostItemState extends State {
                                     ),
                                   ],
                                 )),
-                            Container(
-                              child: Column(
-                                children: [
+                               Container(
+                                 child: Column(
+                                   children: [
 
-                                ],
-                              ),
-                            ),
+                                   ],
+                                 ),
+                               ),
                           ],
                         ), //Row3
                       ],
@@ -150,7 +151,7 @@ class _PostItemState extends State {
                                           iconPath), //Story投稿画像
                                     ),
                                     Text(
-                                      'm.mayuu',
+                                      'blaugrana.reysol',
                                       style: TextStyle(
                                         fontSize: 10,
                                         fontWeight: FontWeight.bold,
@@ -159,7 +160,7 @@ class _PostItemState extends State {
                                   ],
                                 ),
                                 SizedBox(
-                                  width: 80,
+                                  width: 50,
                                 ),
                                 Icon(Icons.more_horiz, size: 12),
                               ],

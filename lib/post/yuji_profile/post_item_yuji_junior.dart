@@ -4,17 +4,17 @@ import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
 final String LeftImagePath = 'images/profile/yuji_profile_high_icon.jpg';
-final String RightImagePath  = 'images/profile/mayu_profile_juni.jpg';
-final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
+final String RightImagePath  = 'images/profile/yuji_profile_junior.jpg';
+final String iconPath = 'images/profile/yuji_introduce_profile_icon.png';
 final String general = '中学時代';
-final String school = 'xxx中学校';
-final String message1 =  'xxx';
-final String message2 =  'xxx';
-final String message3=  'xxx、\n''xxx';
-final String hashtag = '#xxx\n'
-    '#xxx#xxx';
+final String school = '柏市立光中学校';
+final String message1 =  '長距離も短距離も速く';
+final String message2 =  '黄色い声援を浴びていた';
+final String message3=  '勉強もでき、\n''学級で常に上位の成績';
+final String hashtag = '#当時から優男\n'
+    '#負けず嫌い#お調子者';
 
-class PostItemMayuJunior extends StatefulWidget {
+class PostItemYujiJunior extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -150,7 +150,7 @@ class _PostItemState extends State {
                                           iconPath), //Story投稿画像
                                     ),
                                     Text(
-                                      'm.mayuu',
+                                      'blaugrana.reysol',
                                       style: TextStyle(
                                         fontSize: 10,
                                         fontWeight: FontWeight.bold,
@@ -159,7 +159,7 @@ class _PostItemState extends State {
                                   ],
                                 ),
                                 SizedBox(
-                                  width: 80,
+                                  width: 50,
                                 ),
                                 Icon(Icons.more_horiz, size: 12),
                               ],
