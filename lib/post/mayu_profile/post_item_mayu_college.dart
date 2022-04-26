@@ -9,9 +9,9 @@ final String RightImagePath  = 'images/profile/mayu_college_image.jpg';
 final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
 final String general = '大学時代';
 final String school = '早稲田大学';
-final String message1 =  'BP32代の元気印！\n合宿女サブリ！';
+final String message1 =  'BP32代の元気印！\n 合宿女サブリ！';
 final String message2 =  '当時一大勢力の教育学部✏';
-final String message3=  '先輩後輩みんなから\n愛される存在❤\n''卓にはまゆちが必要！🍻';
+final String message3=  ' 先輩後輩みんなから\n     愛される存在❤\n''卓にはまゆちが必要！🍻';
 final String hashtag = '#眠り姫まゆち\n';
 
 
@@ -79,7 +79,7 @@ class _PostItemState extends State {
                           //Icon行
                           children: [
                             SizedBox(width: 5),
-                            Text('📍$school'),
+                            Text('    📍$school'),
                           ],
                         ), //Row2
                         Column(

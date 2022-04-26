@@ -12,7 +12,7 @@ final String school = '南浦和中学校';
 final String message1 =  '\n明るく元気な女バドの部長🏸';
 final String message2 =  'しっかり者で笑い声はうるさい';
 final String message3=  '文武両道ハッピーガール♡';
-final String hashtag = '#存在感でも物理的にも皆を引っ張ってた';
+final String hashtag = '#存在感でも物理的にも皆を\n引っ張ってた';
 
 
 class PostItemMayuJunior extends StatefulWidget {
@@ -79,7 +79,7 @@ class _PostItemState extends State {
                           //Icon行
                           children: [
                             SizedBox(width: 5),
-                            Text('📍$school'),
+                            Text('    📍$school'),
                           ],
                         ), //Row2
                         Column(

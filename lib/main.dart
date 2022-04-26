@@ -69,7 +69,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(
       DevicePreview(
-        enabled: false,
+        enabled: true,
         builder: (context) => MyApp(), // Wrap your app
       ),
     );
