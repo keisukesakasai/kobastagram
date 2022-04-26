@@ -5,9 +5,9 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 final String imagePath = 'images/mayu_friends/asuka_akimoto_image.jpg';
 final String iconPath = 'images/mayu_friends/asuka_akimoto_icon.jpg';
-final String name = 'JURI ODA';
-final String living = '';
-final String account = '@JURI ODA';
+final String name = 'AZUSA AKIMOTO';
+final String living = '埼玉';
+final String account = '@AZUSA AKIMOTO';
 final String message = '"ご結婚おめでとう🤍🤍🤍\n'
 '茉由のキラキラした笑顔でいっぱいの毎日になりますよう、お二人の幸せをお祈りしています…✰\n'
 'またいつか会える日を楽しみにしてるね"';

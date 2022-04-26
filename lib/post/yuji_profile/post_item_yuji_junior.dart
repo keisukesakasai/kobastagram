@@ -10,7 +10,7 @@ final String general = '中学時代';
 final String school = '柏市立光中学校';
 final String message1 =  '長距離も短距離も速く';
 final String message2 =  '黄色い声援を浴びていた';
-final String message3=  '勉強もでき、\n''学級で常に上位の成績';
+final String message3=  '    勉強もでき、\n''学級で常に上位の成績';
 final String hashtag = '#当時から優男\n'
     '#負けず嫌い#お調子者';
 
@@ -78,7 +78,7 @@ class _PostItemState extends State {
                           //Icon行
                           children: [
                             SizedBox(width: 5),
-                            Text('📍$school'),
+                            Text('  📍$school'),
                           ],
                         ), //Row2
                         Column(

@@ -9,8 +9,8 @@ final String RightImagePath = 'images/profile/mayu_kaisha_image.jpg';
 final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
 final String general = '社会人';
 final String school = '第一生命保険株式会社';
-final String message1 =  'どの所属でも常に大活躍\n期待のエース☺';
-final String message2 =  'BP組と入社のクラスは\n今でも仲良し！';
+final String message1 =  'どの所属でも常に大活躍\n     期待のエース☺';
+final String message2 =  'BP組と入社のクラスは\n    今でも仲良し！';
 final String message3=  '今年からは初めての営業もポジティブに頑張ってます🏃‍♂';
 final String hashtag = '#お局にはなりません';
 
