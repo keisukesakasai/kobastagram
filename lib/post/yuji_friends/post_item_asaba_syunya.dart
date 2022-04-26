@@ -3,14 +3,16 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String imagePath = 'images/yuji_friends/ito_kosuke_image.jpg';
-final String iconPath = 'images/yuji_friends/ito_kosuke_icon.jpg';
-final String name = '伊藤功資';
-final String living = '豊洲';
-final String account = '@伊藤功資';
-final String message = 'ゆうじ結婚おめでとう！！奥さんと飲めるとかまじ最高やな👍お幸せに✨\n';
-final String hashtag = '#B4一緒#社保一緒#昼飯は全然一緒ならない#海鮮丼行くよ';
-final String chattime = '11月前';
+final String imagePath = 'images/yuji_friends/asaba_shunya_image.jpg';
+final String iconPath = 'images/yuji_friends/asaba_shunya_icon.jpg';
+final String name = '浅羽';
+final String living = '中野';
+final String account = '@Indian_ShunyaAsaba';
+final String message = '"ゆーじ、まゆさん結婚おめでとう！\n'
+'クラス一緒になったことないのに、いつの間にか仲良くなってた笑\n'
+'これからも長い付き合いお願いします！';
+final String hashtag = '"#サッカー部エース#なんやかんやなんでもできる#クラッチバック"';
+final String chattime = '2秒前';
 
 final _dummyIcon = IconButton(
   icon: Icon(Icons.account_circle),
@@ -28,7 +30,7 @@ final _sliderItem = Container(
       )),
 );
 
-class PostItemItouKousuke extends StatefulWidget {
+class PostItemAsabaSyunya extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }

@@ -3,14 +3,22 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String imagePath = 'images/yuji_friends/ito_kosuke_image.jpg';
-final String iconPath = 'images/yuji_friends/ito_kosuke_icon.jpg';
-final String name = '伊藤功資';
-final String living = '豊洲';
-final String account = '@伊藤功資';
-final String message = 'ゆうじ結婚おめでとう！！奥さんと飲めるとかまじ最高やな👍お幸せに✨\n';
-final String hashtag = '#B4一緒#社保一緒#昼飯は全然一緒ならない#海鮮丼行くよ';
-final String chattime = '11月前';
+final String imagePath = 'images/yuji_friends/mai_image.jpg';
+final String iconPath = 'images/yuji_friends/mai_icon.jpg';
+final String name = '池田麻衣';
+final String living = '流山おおたかの森';
+final String account = '@chanmaidotcom';
+final String message = 'まゆちゃん&ゆうじ♡\n'
+'ついに！結婚おめでとう🥳\n'
+'小学校から中学、高校とクラスなりが一緒だったのは、りおとゆうじだけなんだよ！笑\n'
+'それがこんなに大人になっても仲良くできるとは想像してなかったわ🤣\n'
+'とくに、結婚式の2次会ではたくさんありがとう！！\n'
+'まゆちゃんともお会いしたけど、2人の雰囲気に癒されたし、不思議と私も初めて会った気がしなかったんだよね🤩(とんだ勘違い)\n\n'
+'これからも家族ともども、仲良くしてください😙';
+final String hashtag = '#なにげエルも一緒だよ#写真は大野学級\n'
+'#左から松林村本小橋長屋小林\n'
+'#あ、夫が潰れたら電話くれ';
+final String chattime = '4月前';
 
 final _dummyIcon = IconButton(
   icon: Icon(Icons.account_circle),
@@ -28,7 +36,7 @@ final _sliderItem = Container(
       )),
 );
 
-class PostItemItouKousuke extends StatefulWidget {
+class PostItemMai extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }

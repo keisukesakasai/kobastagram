@@ -3,14 +3,19 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String imagePath = 'images/yuji_friends/ito_kosuke_image.jpg';
-final String iconPath = 'images/yuji_friends/ito_kosuke_icon.jpg';
-final String name = '伊藤功資';
-final String living = '豊洲';
-final String account = '@伊藤功資';
-final String message = 'ゆうじ結婚おめでとう！！奥さんと飲めるとかまじ最高やな👍お幸せに✨\n';
-final String hashtag = '#B4一緒#社保一緒#昼飯は全然一緒ならない#海鮮丼行くよ';
-final String chattime = '11月前';
+final String imagePath = 'images/yuji_friends/kuwahara_souhei_image.jpg';
+final String iconPath = 'images/yuji_friends/kuwahara_souhei_icon.jpg';
+final String name = 'YUKICHIKA KUWAHARA';
+final String living = '';
+final String account = '@YUKICHIKA KUWAHARA';
+final String message = '結婚おめでとう。\n'
+'一足も二足も先にいかれちゃって、さすがゆうじ。\n'
+'これからもたくさんゆうじのテク見せてかっこよく素敵で優しい男、旦那さんでいてね。\n'
+'幸せに溢れますように。\n\n'
+
+'応援団より';
+final String hashtag = '#県柏サッカー部 #ゆうじエース #悠司の応援団';
+final String chattime = '3月前';
 
 final _dummyIcon = IconButton(
   icon: Icon(Icons.account_circle),
@@ -28,7 +33,7 @@ final _sliderItem = Container(
       )),
 );
 
-class PostItemItouKousuke extends StatefulWidget {
+class PostItemKuwaharaSouhei extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }

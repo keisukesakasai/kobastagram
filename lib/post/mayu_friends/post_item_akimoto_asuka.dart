@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String imagePath = 'images/mayu_friends/oda_juri_image.jpg';
-final String iconPath = 'images/mayu_friends/oda_juri_icon.jpg';
+final String imagePath = 'images/mayu_friends/asuka_akimoto_image.jpg';
+final String iconPath = 'images/mayu_friends/asuka_akimoto_icon.jpg';
 final String name = 'JURI ODA';
 final String living = '';
 final String account = '@JURI ODA';
-final String message = 'まゆち結婚おめでとう💐\n'
-'10年前からまゆちの笑顔の虜です🧡\n'
-'いつも癒しと元気をありがとう！悠司くんと幸せな家庭を築いてね！';
-final String hashtag = '#bp #同期愛#海メンforever#ネモフィラ#ドライブ#これからもたまには構って';
-final String chattime = '4週間前';
+final String message = '"ご結婚おめでとう🤍🤍🤍\n'
+'茉由のキラキラした笑顔でいっぱいの毎日になりますよう、お二人の幸せをお祈りしています…✰\n'
+'またいつか会える日を楽しみにしてるね"';
+final String hashtag = '#南中女バド #茉由との写真がなく…私は今愛猫ルルと住んでます𓃠';
+final String chattime = '7週間前';
 
 final _dummyIcon = IconButton(
   icon: Icon(Icons.account_circle),
@@ -30,7 +30,7 @@ final _sliderItem = Container(
       )),
 );
 
-class PostItemOdaJuri extends StatefulWidget {
+class PostItemAkimotoAsuka extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }

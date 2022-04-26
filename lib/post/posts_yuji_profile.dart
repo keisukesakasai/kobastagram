@@ -40,7 +40,7 @@ class _PostsState extends State<PostYujiProfile> {
                                   CircleAvatar(
                                     radius: 45,
                                     backgroundImage: AssetImage(
-                                        'images/profile/yuji_profile_icon.png'),
+                                        'images/profile/yuji_profile_icon.jpg'),
                                   ),
                                 ],
                               ),

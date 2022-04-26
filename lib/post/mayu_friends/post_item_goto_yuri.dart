@@ -3,14 +3,18 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String imagePath = 'images/mayu_friends/';
-final String iconPath = 'images/mayu_friends/';
-final String name = '';
-final String living = '';
-final String account = '';
-final String message = '';
-final String hashtag = '';
-final String chattime = '';
+final String imagePath = 'images/mayu_friends/goto_yuri_image.jpg';
+final String iconPath = 'images/mayu_friends/goto_yuri_icon.jpg';
+final String name = 'YURI GOTO';
+final String living = '日本';
+final String account = '@YURI GOTO';
+final String message = '"結婚おめでとう💕\n'
+'大学時代から仲良くしてくれてありがとう！まゆちの笑顔に会う度に元気もらってます✨\n'
+'あのとき海に行って良かったです笑\n'
+'これからも宜しくね！\n'
+'末長くお幸せに！！😊"';
+final String hashtag = '#breakpoint#親子代#海メンforever#黒幕#642';
+final String chattime = '3週間前';
 
 final _dummyIcon = IconButton(
   icon: Icon(Icons.account_circle),
@@ -28,7 +32,7 @@ final _sliderItem = Container(
       )),
 );
 
-class PostItemHoshinoReo extends StatefulWidget {
+class PostItemGotoYuri extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }

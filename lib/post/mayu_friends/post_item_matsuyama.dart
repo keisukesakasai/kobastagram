@@ -6,7 +6,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 final String imagePath = 'images/mayu_friends/matsuyama_image.jpg';
 final String iconPath = 'images/mayu_friends/matsuyama_icon.jpg';
 final String name = '松山　胡桃';
-final String living = '';
+final String living = '浦和';
 final String account = '@MAMI OGAWA';
 final String message = '"結婚おめでとう♡\n'
 '3年4組大石道子先生のことは覚えてますか？まゆとの思い出は楽しいことばかりだよー♡\n久しぶりに会いたいな♡本当におめでとう！！"';
@@ -29,7 +29,7 @@ final _sliderItem = Container(
       )),
 );
 
-class PostItemOgawaMami extends StatefulWidget {
+class PostItemMatsuyama extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }

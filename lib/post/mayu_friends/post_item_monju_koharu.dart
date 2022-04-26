@@ -3,16 +3,14 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String imagePath = 'images/mayu_friends/goto_yuri_image.jpg';
-final String iconPath = 'images/mayu_friends/goto_yuri_icon.jpg';
-final String name = 'YURI GOTO';
+final String imagePath = 'images/mayu_friends/monjyu_koharu_icon_image.jpg';
+final String iconPath = 'images/mayu_friends/monjyu_koharu_icon_icon.jpg';
+final String name = '文珠　小春（もんじゅ　こはる）';
 final String living = '日本';
-final String account = '@YURI GOTO';
-final String message = '"結婚おめでとう💕\n'
-'大学時代から仲良くしてくれてありがとう！まゆちの笑顔に会う度に元気もらってます✨\n'
-'あのとき海に行って良かったです笑\n'
-'これからも宜しくね！\n'
-'末長くお幸せに！！😊"';
+final String account = '@文珠　小春（もんじゅ　こはる）';
+final String message = '"まゆ、結婚おめでとう！！そしてお久しぶりです！笑\n'
+'まゆと遊んだ日々は今も覚えてるよ☺\n'
+'優しくて面白くてあの当時から変わらず大好きです😊ぜひ、旦那さんと福岡にも遊びに来てね〜！お幸せに♡';
 final String hashtag = '#breakpoint#親子代#海メンforever#黒幕#642';
 final String chattime = '3週間前';
 
