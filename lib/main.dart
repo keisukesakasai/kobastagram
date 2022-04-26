@@ -33,6 +33,7 @@ import 'package:kobastagram/post/yuji_friends/post_item_ikeda_masashi.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_ito_kuwahara_souhei.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_saito_masahiro.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_sakasai_keisuke.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_soccer_mane.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_tateyama_kazuki.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_iizuka_yusuke.dart';
@@ -211,22 +212,22 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       PostsGestureDetector(
                         imagePath:
-                            'images/yuji_friends/okuyama_taiki_image.jpg',
-                        func: PostItemOkuyamaTaiki(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath:
                             'images/mayu_friends/yamada_tanaka_image.jpg',
                         func: PostItemYamadaTanaka(),
                       ),
                       PostsGestureDetector(
                         imagePath:
-                            'images/yuji_friends/ikeda_masashi_image.jpg',
-                        func: PostItemIkedaMasashi(),
+                            'images/yuji_friends/sugita_daisuke_image.jpg',
+                        func: PostItemSugitaDaisuke(),
                       ),
                       PostsGestureDetector(
-                        imagePath: 'images/yuji_friends/hoshino_reo_image.jpg',
-                        func: PostItemHoshinoReo(),
+                        imagePath:
+                            'images/mayu_friends/tamagawa_risako_image.jpg',
+                        func: PostItemTamagawaRisako(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/soccer_mane_image.jpg',
+                        func: PostItemSoccerMane(),
                       ),
                       PostsGestureDetector(
                         imagePath:
@@ -234,12 +235,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         func: PostItemTateyamaKazuki(),
                       ),
                       PostsGestureDetector(
-                        imagePath: 'images/yuji_friends/abe_shunya_image.jpg',
-                        func: PostItemAbeShunya(),
+                        imagePath:
+                            'images/mayu_friends/hayakawa_minaka_image.jpg',
+                        func: PostItemHayakawaMinaka(),
                       ),
                       PostsGestureDetector(
-                        imagePath: 'images/yuji_friends/yoshida_rio_grid.jpg',
-                        func: PostItemYoshidaRio(),
+                        imagePath:
+                        'images/yuji_friends/saito_masahiro_image.png',
+                        func: PostItemSaitoMasahiro(),
                       ),
                       PostsGestureDetector(
                         imagePath:
@@ -251,9 +254,22 @@ class _MyHomePageState extends State<MyHomePage> {
                         func: PostItemAidaTakuya(),
                       ),
                       PostsGestureDetector(
+                        imagePath: 'images/mayu_friends/takano_aoi_image.jpg',
+                        func: PostItemTakanoAoi(),
+                      ),
+                      PostsGestureDetector(
                         imagePath:
-                            'images/yuji_friends/saito_masahiro_image.png',
-                        func: PostItemSaitoMasahiro(),
+                        'images/yuji_friends/kametaki_maiko_image.jpg',
+                        func: PostItemKametakiMaiko(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/mayu_friends/yukimiyuanna_image.jpg',
+                        func: PostItemYukiMiyuAnna(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/yuji_friends/yamamoto_takeru_image.jpg',
+                        func: PostItemYamamotoTakeru(),
                       ),
                       PostsGestureDetector(
                         imagePath:
@@ -267,37 +283,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                            'images/yuji_friends/hachisuka_gen_image.jpg',
-                        func: PostItemHachisukaGen(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath:
-                            'images/yuji_friends/kametaki_maiko_image.jpg',
-                        func: PostItemKametakiMaiko(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath: 'images/yuji_friends/yoshida_rio_image.jpg',
-                        func: PostItemYoshidaRio(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath:
-                            'images/yuji_friends/kasahara_koutarou_image.jpg',
-                        func: PostItemKasaharaKoutarou(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath:
-                            'images/yuji_friends/sugita_daisuke_image.jpg',
-                        func: PostItemSugitaDaisuke(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath:
-                            'images/yuji_friends/yamamoto_takeru_image.jpg',
-                        func: PostItemYamamotoTakeru(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath:
                             'images/yuji_friends/ooyama_tsubasa_image.jpg',
                         func: PostItemOoyamaTsubasa(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/uenoya_sayaka_image.jpg',
+                        func: PostItemUenoyaSayaka(),
                       ),
                       PostsGestureDetector(
                         imagePath: 'images/yuji_friends/ono_masahiro_image.jpg',
@@ -305,8 +297,18 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                            'images/yuji_friends/yamada_masahi_image.jpg',
-                        func: PostItemYamadaMasahi(),
+                            'images/mayu_friends/kobayashi_shimizu_nakamura_grid1.jpg',
+                        func: PostItemKobayashiShimizuNakamura(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/mayu_friends/kobayashi_shimizu_nakamura_grid2.jpg',
+                        func: PostItemKobayashiShimizuNakamura(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                            'images/mayu_friends/kobayashi_shimizu_nakamura_grid3.jpg',
+                        func: PostItemKobayashiShimizuNakamura(),
                       ),
                       PostsGestureDetector(
                         imagePath: 'images/yuji_friends/ito_kosuke_image.jpg',
@@ -314,20 +316,17 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
+                            'images/mayu_friends/daiichiseimei_image.jpg',
+                        func: PostItemDaiichiSeimei(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
                             'images/yuji_friends/kuwahara_souhei_image.jpg',
                         func: PostItemKuwaharaSouhei(),
                       ),
                       PostsGestureDetector(
-                        imagePath: 'images/yuji_friends/soccer_mane_image.jpg',
-                        func: PostItemSoccerMane(),
-                      ),
-                      PostsGestureDetector(
                         imagePath: 'images/yuji_friends/mai_image.jpg',
                         func: PostItemMai(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath: 'images/yuji_friends/asaba_shunya_image.jpg',
-                        func: PostItemAsabaSyunya(),
                       ),
                       PostsGestureDetector(
                         imagePath: 'images/yuji_friends/ikeda_ken_image.jpg',
@@ -335,25 +334,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                            'images/mayu_friends/hayakawa_minaka_image.jpg',
-                        func: PostItemHayakawaMinaka(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath:
-                            'images/mayu_friends/daiichiseimei_image.jpg',
-                        func: PostItemDaiichiSeimei(),
+                            'images/yuji_friends/yamada_masahi_image.jpg',
+                        func: PostItemYamadaMasahi(),
                       ),
                       PostsGestureDetector(
                         imagePath: 'images/mayu_friends/hirose_rina_image.jpg',
                         func: PostItemHiroseRina(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath: 'images/mayu_friends/yukimiyuanna_image.jpg',
-                        func: PostItemYukiMiyuAnna(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath: 'images/mayu_friends/takano_aoi_image.jpg',
-                        func: PostItemTakanoAoi(),
                       ),
                       PostsGestureDetector(
                         imagePath:
@@ -361,12 +347,33 @@ class _MyHomePageState extends State<MyHomePage> {
                         func: PostItemUemuraNatsumi(),
                       ),
                       PostsGestureDetector(
+                        imagePath: 'images/mayu_friends/oda_juri_image.jpg',
+                        func: PostItemOdaJuri(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/yoshida_rio_grid1.jpg',
+                        func: PostItemYoshidaRio(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/abe_shunya_image.jpg',
+                        func: PostItemAbeShunya(),
+                      ),
+                      PostsGestureDetector(
                         imagePath: 'images/mayu_friends/ogawa_miyako_image.jpg',
                         func: PostItemOgawaMiyako(),
                       ),
                       PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/yoshida_rio_grid2.jpg',
+                        func: PostItemYoshidaRio(),
+                      ),
+                      PostsGestureDetector(
                         imagePath: 'images/mayu_friends/endo_mari_image.jpg',
                         func: PostItemEndoMari(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/yuji_friends/ikeda_masashi_image.jpg',
+                        func: PostItemIkedaMasashi(),
                       ),
                       PostsGestureDetector(
                         imagePath: 'images/mayu_friends/ogawa_mami_image.jpg',
@@ -388,18 +395,26 @@ class _MyHomePageState extends State<MyHomePage> {
                         func: PostItemTamagawaRisako(),
                       ),
                       PostsGestureDetector(
-                        imagePath:
-                            'images/mayu_friends/uenoya_sayaka_image.jpg',
-                        func: PostItemUenoyaSayaka(),
+                        imagePath: 'images/yuji_friends/hoshino_reo_image.jpg',
+                        func: PostItemHoshinoReo(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/asaba_shunya_image.jpg',
+                        func: PostItemAsabaSyunya(),
                       ),
                       PostsGestureDetector(
                         imagePath:
-                            'images/mayu_friends/kobayashi_shimizu_nakamura_image.jpg',
-                        func: PostItemKobayashiShimizuNakamura(),
+                        'images/yuji_friends/hachisuka_gen_image.jpg',
+                        func: PostItemHachisukaGen(),
                       ),
                       PostsGestureDetector(
                         imagePath:
-                            'images/mayu_friends/yamada_nishikawa_yamashita_image.jpg',
+                            'images/mayu_friends/yamada_nishikawa_yamashita_grid1.jpg',
+                        func: PostItemNishikawa(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/yamada_nishikawa_yamashita_grid2.jpg',
                         func: PostItemNishikawa(),
                       ),
                       PostsGestureDetector(
@@ -412,13 +427,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         func: PostItemGotoYuri(),
                       ),
                       PostsGestureDetector(
-                        imagePath: 'images/mayu_friends/oda_juri_image.jpg',
-                        func: PostItemOdaJuri(),
+                        imagePath:
+                            'images/yuji_friends/kasahara_koutarou_image.jpg',
+                        func: PostItemKasaharaKoutarou(),
                       ),
                       PostsGestureDetector(
                         imagePath:
-                            'images/mayu_friends/asuka_akimoto_image.jpg',
-                        func: PostItemAkimotoAsuka(),
+                            'images/yuji_friends/okuyama_taiki_image.jpg',
+                        func: PostItemOkuyamaTaiki(),
                       ),
                       PostsGestureDetector(
                         imagePath: 'images/mayu_friends/shibata_saki_image.jpg',
@@ -427,6 +443,21 @@ class _MyHomePageState extends State<MyHomePage> {
                       PostsGestureDetector(
                         imagePath: 'images/mayu_friends/matsuyama_image.jpg',
                         func: PostItemMatsuyama(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/yuji_friends/sakasai_keisuke_image.jpg',
+                        func: PostItemSakasaiKeisuke(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/asuka_akimoto_grid1.jpg',
+                        func: PostItemAkimotoAsuka(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/asuka_akimoto_grid2.jpg',
+                        func: PostItemAkimotoAsuka(),
                       ),
                     ],
                   ))
