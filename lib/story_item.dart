@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kobastagram/video_player_page.dart';
-
 final _iconSize = 60.0;
-
 class StoryItem extends StatelessWidget {
   final String name;
   final String imagePath;
   final String moviePath;
-
   StoryItem(
       {Key? key,
-      required this.name,
-      required this.imagePath,
-      required this.moviePath})
+        required this.name,
+        required this.imagePath,
+        required this.moviePath})
       : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -48,11 +44,12 @@ class StoryItem extends StatelessWidget {
                         backgroundColor: Colors.white,
                         shape: RoundedRectangleBorder(
                             borderRadius:
-                                BorderRadius.all(Radius.circular(10))),
+                            BorderRadius.all(Radius.circular(10))),
                         children: [
                           Container(
                             child: VideoPlayerPage(
                               moviePath: moviePath,
+                              name: name,
                             ),
                           ),
                         ]);

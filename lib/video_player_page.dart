@@ -3,8 +3,9 @@ import 'package:video_player/video_player.dart';
 
 class VideoPlayerPage extends StatefulWidget {
   final String moviePath;
+  final String name;
 
-  VideoPlayerPage({required this.moviePath});
+  VideoPlayerPage({required this.moviePath, required this.name});
 
   @override
   _VideoPlayerPageState createState() => _VideoPlayerPageState();
@@ -34,7 +35,7 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
     final double deviceHeight = MediaQuery.of(context).size.height;
     final double deviceWidth = MediaQuery.of(context).size.width;
     return SizedBox(
-      height: deviceHeight * 0.9 ,
+      height: deviceHeight * 1.15 ,
       width: deviceWidth,
       child: Scaffold(
         appBar: PreferredSize(
@@ -43,18 +44,22 @@ class _VideoPlayerPageState extends State<VideoPlayerPage> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5) //角の丸み
                   ),
-              title: const Text("Video Letter",
-                  style: TextStyle(
-                    color: Colors.redAccent,
-                    fontStyle: FontStyle.normal,
-                    shadows: <Shadow>[
-                      Shadow(
-                        color: Colors.grey,
-                        offset: Offset(5.0, 5.0),
-                        blurRadius: 3.0,
-                      ),
-                    ],
-                  )),
+              title: Align(
+                alignment: Alignment.center,
+                child: Text('Video Letter. '+'${widget.name}           ',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.redAccent,
+                      fontStyle: FontStyle.normal,
+                      shadows: <Shadow>[
+                        Shadow(
+                          color: Colors.grey,
+                          offset: Offset(5.0, 5.0),
+                          blurRadius: 3.0,
+                        ),
+                      ],
+                    )),
+              ),
               backgroundColor: Colors.white.withOpacity(0),
               elevation: 0.0,
             )),

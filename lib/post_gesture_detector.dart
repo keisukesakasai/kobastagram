@@ -16,6 +16,10 @@ class PostsGestureDetector extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var descTextStyle = TextStyle(
+      letterSpacing: 0.3,
+      fontSize: 12,
+    );
     return GestureDetector(
         child: Container(
             width: 120,
@@ -31,17 +35,21 @@ class PostsGestureDetector extends StatelessWidget {
           showDialog(
               context: context,
               builder: (childContext) {
-                return SimpleDialog(
-                    insetPadding: EdgeInsets.symmetric(
-                      horizontal: 6,
-                      vertical: 40,
-                    ),
-                    backgroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    children: [
-                      Container(child: func),
-                    ]);
+                return Container(
+                  margin: EdgeInsets.only(bottom: 40),
+                  child: SimpleDialog(
+                      insetPadding: EdgeInsets.symmetric(
+                        horizontal: 6,
+                        vertical: 40,
+                      ) ,
+                      backgroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      children: [
+                        DefaultTextStyle.merge(
+                            style: descTextStyle, child: Container(child: func)),
+                      ]),
+                );
               });
         }
         // onTap: () {

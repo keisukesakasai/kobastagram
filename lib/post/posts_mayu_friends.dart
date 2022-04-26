@@ -34,12 +34,19 @@ class PostsMayuFriends extends StatefulWidget {
 
 class _PostsState extends State<PostsMayuFriends> {
   @override
+  var descTextStyle = TextStyle(
+    letterSpacing: 0.3,
+    fontSize: 12,
+  );
+
   Widget build(BuildContext context) {
     return SingleChildScrollView(
         child: Container(
             decoration: BoxDecoration(
                 border: Border(
                     bottom: BorderSide(width: 1, color: Color(0x33330000)))),
+             child: DefaultTextStyle.merge(
+               style: descTextStyle,
             child: Column(
               children: [
                 PostItemYamadaTanaka(),
@@ -64,6 +71,7 @@ class _PostsState extends State<PostsMayuFriends> {
                 PostItemShibataSaki(),
                 PostItemMatsuyama(),
               ],
+             )
             )));
   }
 }
