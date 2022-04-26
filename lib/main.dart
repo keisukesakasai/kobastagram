@@ -203,12 +203,21 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                            'images/yuji_friends/tateyama_kazuki_image.jpg',
+                            'images/yuji_friends/tateyama_kazuki_grid1.jpg',
                         func: PostItemTateyamaKazuki(),
                       ),
                       PostsGestureDetector(
                         imagePath: 'images/yuji_friends/abe_shunya_image.jpg',
                         func: PostItemAbeShunya(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/yoshida_rio_grid.jpg',
+                        func: PostItemYoshidaRio(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/yuji_friends/tateyama_kazuki_grid2.jpg',
+                        func: PostItemTateyamaKazuki(),
                       ),
                       PostsGestureDetector(
                         imagePath: 'images/yuji_friends/aida_takuya_image.jpg',
@@ -221,7 +230,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                            'images/yuji_friends/iizuka_yusuke_image.jpg',
+                            'images/yuji_friends/iizuka_yusuke_grid1.jpg',
+                        func: PostItemIizukaYusuke(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/yuji_friends/iizuka_yusuke_grid2.jpg',
                         func: PostItemIizukaYusuke(),
                       ),
                       PostsGestureDetector(
@@ -233,10 +247,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         imagePath:
                             'images/yuji_friends/kametaki_maiko_image.jpg',
                         func: PostItemKametakiMaiko(),
-                      ),
-                      PostsGestureDetector(
-                        imagePath: 'images/yuji_friends/yoshida_rio_image.jpg',
-                        func: PostItemYoshidaRio(),
                       ),
                       PostsGestureDetector(
                         imagePath:
