@@ -3,11 +3,14 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
+
 final String LeftImagePath = 'images/profile/yuji_profile_college_icon.jpg';
+
 final String RightImagePath  = 'images/profile/yuji_profile_college.jpg';
 final String iconPath = 'images/profile/yuji_introduce_profile_icon.png';
 final String general = '大学時代';
 final String school = '芝浦工業大学';
+
 final String message1 =  '優しく親しみやすいキャラクタ';
 final String message2 =  '誰からも愛される\nムードメーカー';
 final String message3=  '';
@@ -15,6 +18,7 @@ final String hashtag = '#プロ馬券師化'
 '#みんなの家庭教師'
 '#テクニシャン小林\n'
 '#ゆうじくん休憩行ってきていいよ"';
+
 
 class PostItemYujiCol extends StatefulWidget {
   @override

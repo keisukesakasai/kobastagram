@@ -15,6 +15,7 @@ class PostsGestureDetector extends StatelessWidget {
   }) : super(key: key);
 
   @override
+
   Widget build(BuildContext context) {
     var descTextStyle = TextStyle(
       letterSpacing: 0.3,

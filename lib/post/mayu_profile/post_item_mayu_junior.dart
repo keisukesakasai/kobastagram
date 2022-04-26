@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
+
 final String LeftImagePath = 'images/profile/mayu_profile_juni_icon.jpg';
 final String RightImagePath  = 'images/profile/mayu_profile_juni.jpg';
 final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
@@ -12,6 +13,7 @@ final String message1 =  '\n明るく元気な女バドの部長🏸';
 final String message2 =  'しっかり者で笑い声はうるさい';
 final String message3=  '文武両道ハッピーガール♡';
 final String hashtag = '#存在感でも物理的にも皆を引っ張ってた';
+
 
 class PostItemMayuJunior extends StatefulWidget {
   @override

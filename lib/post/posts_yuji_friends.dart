@@ -43,6 +43,7 @@ class _PostsState extends State<PostsYujiFriends> {
     letterSpacing: 0.3,
     fontSize: 12,
   );
+
   Widget build(BuildContext context) {
     return SingleChildScrollView(
         child: Container(
@@ -79,6 +80,7 @@ class _PostsState extends State<PostsYujiFriends> {
 
               ],
             )
+
             )));
   }
 }

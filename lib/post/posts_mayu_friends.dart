@@ -34,6 +34,7 @@ class PostsMayuFriends extends StatefulWidget {
 
 class _PostsState extends State<PostsMayuFriends> {
   @override
+
   var descTextStyle = TextStyle(
     letterSpacing: 0.3,
     fontSize: 12,
@@ -45,6 +46,7 @@ class _PostsState extends State<PostsMayuFriends> {
             decoration: BoxDecoration(
                 border: Border(
                     bottom: BorderSide(width: 1, color: Color(0x33330000)))),
+
              child: DefaultTextStyle.merge(
                style: descTextStyle,
             child: Column(
@@ -72,6 +74,7 @@ class _PostsState extends State<PostsMayuFriends> {
                 PostItemMatsuyama(),
               ],
              )
+
             )));
   }
 }
