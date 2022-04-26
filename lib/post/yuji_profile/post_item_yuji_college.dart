@@ -12,8 +12,8 @@ final String general = '大学時代';
 final String school = '芝浦工業大学';
 
 final String message1 =  '優しく親しみやすいキャラクタ';
-final String message2 =  '誰からも愛される\nムードメーカー';
-final String message3=  '';
+final String message2 =  '誰からも愛される';
+final String message3=  'ムードメーカー';
 final String hashtag = '#プロ馬券師化'
 '#みんなの家庭教師'
 '#テクニシャン小林\n'
@@ -84,7 +84,7 @@ class _PostItemState extends State {
                           //Icon行
                           children: [
                             SizedBox(width: 5),
-                            Text('📍$school'),
+                            Text('  📍$school'),
                           ],
                         ), //Row2
                         Column(

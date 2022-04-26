@@ -79,7 +79,7 @@ class _PostItemState extends State {
                           //Icon行
                           children: [
                             SizedBox(width: 5),
-                            Text('📍$school'),
+                            Text('  📍$school'),
                           ],
                         ), //Row2
                         Column(

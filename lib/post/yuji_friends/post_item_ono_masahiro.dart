@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String imagePath = 'images/yuji_friends/yamamoto_takeru_image.jpg';
-final String iconPath = 'images/yuji_friends/yamamoto_takeru_icon.jpg';
+final String imagePath = 'images/yuji_friends/ono_masahiro_image.jpg';
+final String iconPath = 'images/yuji_friends/ono_masahiro_icon.jpg';
 final String name = '小野真寛';
 final String living = '富士山';
 final String account = '@小野真寛';

@@ -10,8 +10,8 @@ final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
 final String general = '高校時代';
 final String school = '淑徳与野高校';
 final String message1 =  '\n淑与野らしからぬバドの強者';
-final String message2 =  'ハッピーオーラ全開\n頼れる部長';
-final String message3=  'テストはいつも1位';
+final String message2 =  'ハッピーオーラ全開\nテストはいつも1位';
+final String message3=  '頼れる部長';
 final String hashtag = '#合唱';
 
 
@@ -79,7 +79,7 @@ class _PostItemState extends State {
                           //Icon行
                           children: [
                             SizedBox(width: 5),
-                            Text('📍$school'),
+                            Text('    📍$school'),
                           ],
                         ), //Row2
                         Column(
