@@ -330,71 +330,93 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Center(
                       child: Column(children: [
-                      PostMayuProfile(),
-                        Heros(),
-                      ]))
+                    PostMayuProfile(),
+                    Heros(),
+                  ]))
                 ],
               ),
             ),
           ]),
-          bottomNavigationBar: Container(
-            decoration: BoxDecoration(
-                border: Border(
-                    top: BorderSide(width: 1.5, color: Color(0x33330000)))),
-            height: 70,
-            alignment: Alignment.topCenter,
-            child: TabBar(
-              indicator: BoxDecoration(
-                border: Border(
-                    bottom: BorderSide(
-                  width: 2.5,
-                  color: Colors.black38,
-                )),
-              ),
-              tabs: <Widget>[
+          bottomNavigationBar: BottomAppBar(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
                 Container(
-                  width: _tabiconSize + 5,
-                  height: _tabiconSize + 5,
-                  margin: const EdgeInsets.all(2.0),
                   decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      image: DecorationImage(
-                          fit: BoxFit.fill,
-                          image: AssetImage('images/tab_yuji_friend.png'))),
+                      border: Border(
+                          top: BorderSide(
+                              width: 1.5, color: Color(0x33330000)))),
+                  height: 70,
+                  alignment: Alignment.topCenter,
+                  child: TabBar(
+                    indicator: BoxDecoration(
+                      border: Border(
+                          bottom: BorderSide(
+                        width: 2.5,
+                        color: Colors.black38,
+                      )),
+                    ),
+                    tabs: <Widget>[
+                      Container(
+                        width: _tabiconSize + 5,
+                        height: _tabiconSize + 5,
+                        margin: const EdgeInsets.all(2.0),
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image:
+                                    AssetImage('images/tab_yuji_friend.png'))),
+                      ),
+                      Container(
+                        width: _tabiconSize,
+                        height: _tabiconSize,
+                        margin: const EdgeInsets.all(2.0),
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image:
+                                    AssetImage('images/tab_mayu_friend.png'))),
+                      ),
+                      Tab(
+                        icon: Icon(Icons.window, color: Colors.black, size: 30),
+                      ),
+                      Container(
+                        width: _tabiconSize + 5,
+                        height: _tabiconSize + 5,
+                        margin: const EdgeInsets.all(1.0),
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage('images/yuji_tab_icon.png'))),
+                      ),
+                      Container(
+                        width: _tabiconSize + 5,
+                        height: _tabiconSize + 5,
+                        margin: const EdgeInsets.all(1.0),
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage('images/mayu_tab_icon.jpg'))),
+                      ),
+                    ],
+                  ),
                 ),
-                Container(
-                  width: _tabiconSize,
-                  height: _tabiconSize,
-                  margin: const EdgeInsets.all(2.0),
-                  decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      image: DecorationImage(
-                          fit: BoxFit.fill,
-                          image: AssetImage('images/tab_mayu_friend.png'))),
-                ),
-                Tab(
-                  icon: Icon(Icons.window, color: Colors.black, size: 30),
-                ),
-                Container(
-                  width: _tabiconSize + 5,
-                  height: _tabiconSize + 5,
-                  margin: const EdgeInsets.all(1.0),
-                  decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      image: DecorationImage(
-                          fit: BoxFit.fill,
-                          image: AssetImage('images/yuji_tab_icon.png'))),
-                ),
-                Container(
-                  width: _tabiconSize + 5,
-                  height: _tabiconSize + 5,
-                  margin: const EdgeInsets.all(1.0),
-                  decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      image: DecorationImage(
-                          fit: BoxFit.fill,
-                          image: AssetImage('images/mayu_tab_icon.jpg'))),
-                ),
+                Text(
+                  "©︎ copyright KenKasi's",
+                  style: GoogleFonts.sawarabiMincho(
+                    height: 0.80, //SETTING THIS CAN SOLVE YOUR PROBLEM
+                    color: Colors.black54,
+                    fontSize: 10.5,
+                    fontWeight: FontWeight.w300,
+                    letterSpacing: 3.8,
+                  ),
+                  textAlign: TextAlign.center,
+                )
               ],
             ),
           )),
