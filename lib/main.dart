@@ -476,7 +476,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Center(
                       child: Column(children: [
                     PostYujiProfile(),
-                    Heros(),
+                    // Heros(),
                   ]))
                 ],
               ),
@@ -493,7 +493,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Center(
                       child: Column(children: [
                     PostMayuProfile(),
-                    Heros(),
+                    // Heros(),
                   ]))
                 ],
               ),

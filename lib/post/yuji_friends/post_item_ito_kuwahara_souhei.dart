@@ -6,7 +6,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 final String imagePath = 'images/yuji_friends/kuwahara_souhei_image.jpg';
 final String iconPath = 'images/yuji_friends/kuwahara_souhei_icon.jpg';
 final String name = 'YUKICHIKA KUWAHARA';
-final String living = '';
+final String living = '柏の葉公園在住';
 final String account = '@YUKICHIKA KUWAHARA';
 final String message = '結婚おめでとう。\n'
 '一足も二足も先にいかれちゃって、さすがゆうじ。\n'
