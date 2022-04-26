@@ -69,7 +69,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(
       DevicePreview(
-        enabled: true,
+        enabled: false,
         builder: (context) => MyApp(), // Wrap your app
       ),
     );
@@ -205,8 +205,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 3,
-                      mainAxisSpacing: 3.0,
-                      crossAxisSpacing: 3.0,
+                      mainAxisSpacing: 1.0,
+                      crossAxisSpacing: 1.0,
                       childAspectRatio: 1.0,
                     ),
                     children: [
