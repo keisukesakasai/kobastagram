@@ -3,16 +3,17 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String LeftImagePath = 'images/profile/yuji_profile_high_icon.jpg';
-final String RightImagePath  = 'images/profile/yuji_profile_college.jpg';
+
+final String LeftImagePath = 'images/profile/mayu_profile_college_icon.png';
+final String RightImagePath  = 'images/profile/mayu_college_image.jpg';
 final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
 final String general = '大学時代';
 final String school = '早稲田大学';
-final String message1 =  'xxx';
-final String message2 =  'xxx';
-final String message3=  'xxx、\n''xxx';
-final String hashtag = '#xxx\n'
-    '#xxx#xxx';
+final String message1 =  'BP32代の元気印！\n合宿女サブリ！';
+final String message2 =  '当時一大勢力の教育学部✏';
+final String message3=  '先輩後輩みんなから\n愛される存在❤\n''卓にはまゆちが必要！🍻';
+final String hashtag = '#眠り姫まゆち\n';
+
 
 class PostItemMayuCol extends StatefulWidget {
   @override

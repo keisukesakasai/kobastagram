@@ -14,6 +14,7 @@ class Stories extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 StoryItem(
+
                     name: "Yuji mam",
                     imagePath: 'images/story_icon/yuji_mam_icon.png',
                     moviePath: 'videos/yuji_family/yuji_mom.mp4'),

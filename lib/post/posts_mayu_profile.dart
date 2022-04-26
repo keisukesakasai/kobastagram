@@ -6,7 +6,9 @@ import 'package:kobastagram/post/mayu_profile/post_item_mayu_company.dart';
 
 final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
 final String friendsPath = 'images/profile/yuji_profile_friends.png';
-final String profileMsg = 'xxx出身\n''xxx\n''xxx\n''xxx';
+
+final String profileMsg = '埼玉県浦和市出身\n''明るく人周囲の人を幸せに\n''何事にもポジティブ\n''勉強もスポーツもすべてこなす十全十美';
+
 class PostMayuProfile extends StatefulWidget {
   @override
   _PostsState createState() => _PostsState();
@@ -65,7 +67,9 @@ class _PostsState extends State<PostMayuProfile> {
                                 ),
                               ),
                               Text(
-                                'xxx',
+
+                                'ポジティブ性',
+
                                 style: TextStyle(
                                   fontSize: 13,
                                   //fontWeight: FontWeight.bold,
@@ -84,7 +88,9 @@ class _PostsState extends State<PostMayuProfile> {
                               ),
                             ),
                             Text(
-                              'xxx',
+
+                              '才力',
+
                               style: TextStyle(
                                 fontSize: 13,
                                 //fontWeight: FontWeight.bold,
@@ -103,7 +109,9 @@ class _PostsState extends State<PostMayuProfile> {
                                 ),
                               ),
                               Text(
-                                'xxx',
+
+                                '親密性',
+
                                 style: TextStyle(
                                   fontSize: 13,
                                   //fontWeight: FontWeight.bold,

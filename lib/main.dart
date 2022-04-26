@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_akimoto_asuka.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_daiichiseimei.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_endo_mari.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_hayakawa_minaka.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_hirano_honami.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_hirose_rina.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_matsuyama.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_oda_juri.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_ogawa_mami.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_ogawa_miyako.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_post_item_kobayashi_shimizu_nakamura.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_post_item_yamada_nishikawa_yamashita.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_takano_aoi.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_tamagawa_risako.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_uenoya_sayaka.dart';
@@ -13,17 +18,40 @@ import 'package:kobastagram/post/mayu_friends/post_item_umemura_natsumi.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_yamada_tanaka.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_yukimiyuannna.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_yusuke_yoshiki.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_post_item_kobayashi_shimizu_nakamura.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_post_item_yamada_nishikawa_yamashita.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_post_item_shitara_mizuho.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_goto_yuri.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_oda_juri.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_akimoto_asuka.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_shibata_saki.dart';
+
 import 'package:kobastagram/post/yuji_friends/post_item_abe_shunya.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_aida_takuya.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_hoshino_reo.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_ikeda_masashi.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_ito_kuwahara_souhei.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_saito_masahiro.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_soccer_mane.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_tateyama_kazuki.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_iizuka_yusuke.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_yamada_masahi.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_yoshida_rio.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_hachisuka_gen.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_kametaki_maiko.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_kasahara_koutarou.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_sugita_daisuke.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_yamamoto_takeru.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_ooyama_tubasa.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_ono_masahiro.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_yamada_masahi.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_ito_kousuke.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_soccer_mane.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_mai.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_asaba_syunya.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_ikeda_ken.dart';
+
 
 import 'package:path/path.dart';
 import 'package:device_preview/device_preview.dart';
@@ -239,6 +267,57 @@ class _MyHomePageState extends State<MyHomePage> {
                         func: PostItemYoshidaRio(),
                       ),
                       PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/kasahara_koutarou_image.jpg',
+                        func: PostItemKasaharaKoutarou(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/sugita_daisuke_image.jpg',
+                        func: PostItemSugitaDaisuke(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/yamamoto_takeru_image.jpg',
+                        func: PostItemYamamotoTakeru(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/ooyama_tsubasa_image.jpg',
+                        func: PostItemOoyamaTsubasa(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/ono_masahiro_image.jpg',
+                        func: PostItemOnoMasahiro(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/yamada_masahi_image.jpg',
+                        func: PostItemYamadaMasahi(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/ito_kosuke_image.jpg',
+                        func: PostItemItouKousuke(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/kuwahara_souhei_image.jpg',
+                        func: PostItemKuwaharaSouhei(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/soccer_mane_image.jpg',
+                        func: PostItemSoccerMane(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/mai_image.jpg',
+                        func: PostItemMai(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/asaba_shunya_image.jpg',
+                        func: PostItemAsabaSyunya(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/yuji_friends/ikeda_ken_image.jpg',
+                        func: PostItemIkedaKen(),
+                      ),
+
+
+
+                      PostsGestureDetector(
                         imagePath:
                             'images/mayu_friends/hayakawa_minaka_image.jpg',
                         func: PostItemHayakawaMinaka(),
@@ -297,6 +376,46 @@ class _MyHomePageState extends State<MyHomePage> {
                             'images/mayu_friends/uenoya_sayaka_image.jpg',
                         func: PostItemUenoyaSayaka(),
                       ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/kobayashi_shimizu_nakamura_image.jpg',
+                        func: PostItemKobayashiShimizuNakamura(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/yamada_nishikawa_yamashita_image.jpg',
+                        func: PostItemNishikawa(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/shitara_mizuho_image.jpg',
+                        func: PostItemShitara(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/goto_yuri_image.jpg',
+                        func: PostItemGotoYuri(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/oda_juri_image.jpg',
+                        func: PostItemOdaJuri(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/asuka_akimoto_image.jpg',
+                        func: PostItemAkimotoAsuka(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/shibata_saki_image.jpg',
+                        func: PostItemShibataSaki(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/matsuyama_image.jpg',
+                        func: PostItemMatsuyama(),
+                      ),
                     ],
                   ))
                 ],
@@ -342,6 +461,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
+
                 Container(
                   decoration: BoxDecoration(
                       border: Border(
@@ -417,6 +537,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   textAlign: TextAlign.center,
                 )
+
+
               ],
             ),
           )),
