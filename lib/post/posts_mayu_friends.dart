@@ -41,14 +41,14 @@ class _PostsState extends State<PostsMayuFriends> {
               style: descTextStyle,
               child: Column(
                 children: [
-                  PostItemYamadaTanaka(),
-                  PostItemHayakawaMinaka(),
                   PostItemDaiichiSeimei(),
                   PostItemHiroseRina(),
+                  PostItemOgawaMiyako(),
+                  PostItemYamadaTanaka(),
+                  PostItemHayakawaMinaka(),
                   PostItemYukiMiyuAnna(),
                   PostItemTakanoAoi(),
                   PostItemUemuraNatsumi(),
-                  PostItemOgawaMiyako(),
                   PostItemEndoMari(),
                   PostItemOgawaMami(),
                   PostItemYusukeYoshiki(),

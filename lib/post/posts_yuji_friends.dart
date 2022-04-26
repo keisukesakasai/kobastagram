@@ -34,14 +34,15 @@ class _PostsState extends State<PostsYujiFriends> {
               style: descTextStyle,
               child: Column(
                 children: [
+                  PostItemSaitoMasahiro(),
+                  PostItemIizukaYusuke(),
+                  PostItemAidaTakuya(),
+                  PostItemKametakiMaiko(),
                   PostItemIkedaMasashi(),
                   PostItemOkuyamaTaiki(),
                   PostItemHoshinoReo(),
                   PostItemAbeShunya(),
-                  PostItemAidaTakuya(),
                   PostItemTateyamaKazuki(),
-                  PostItemSaitoMasahiro(),
-                  PostItemIizukaYusuke(),
                   PostItemHachisukaGen(),
                   PostItemKametakiMaiko(),
                   PostItemYoshidaRio(),
