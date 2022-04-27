@@ -11,7 +11,6 @@ final String general = '社会人';
 final String school = 'NTTデータ';
 
 final String message1 =  '　 2ヶ月の研修を経て\n社会保障事業部に配属される';
-
 final String message2 =  '一緒に配属された同期と';
 final String message3=  'よく不仲になる？';
 final String hashtag = '#同期と不仲説流したがる\n#本当は仲良し\n'
