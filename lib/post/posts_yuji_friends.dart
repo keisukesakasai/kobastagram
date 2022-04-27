@@ -47,42 +47,44 @@ class _PostsState extends State<PostsYujiFriends> {
 
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-        child: Container(
-            decoration: BoxDecoration(
-                border: Border(
-                    bottom: BorderSide(width: 1, color: Color(0x33330000)))),
-         child: DefaultTextStyle.merge(
-             style: descTextStyle,
-            child: Column(
-              children: [
-                PostItemIizukaYusuke(),
-                PostItemAidaTakuya(),
-                PostItemSaitoMasahiro(),
-                PostItemKametakiMaiko(),
-                PostItemSugitaDaisuke(),
-                PostItemOoyamaTsubasa(),
-                PostItemIkedaMasashi(),
-                PostItemOkuyamaTaiki(),
-                PostItemHoshinoReo(),
-                PostItemAbeShunya(),
-                PostItemTateyamaKazuki(),
-                PostItemHachisukaGen(),
-                PostItemYoshidaRio(),
-                PostItemKasaharaKoutarou(),
-                PostItemYamamotoTakeru(),
-                PostItemOnoMasahiro(),
-                PostItemYamadaMasahi(),
-                PostItemItouKousuke(),
-                PostItemKuwaharaSouhei(),
-                PostItemSoccerMane(),
-                PostItemMai(),
-                PostItemAsabaSyunya(),
-                PostItemSakasaiKeisuke(),
-                PostItemIkedaKen()
+        child: InteractiveViewer(
+          child: Container(
+              decoration: BoxDecoration(
+                  border: Border(
+                      bottom: BorderSide(width: 1, color: Color(0x33330000)))),
+           child: DefaultTextStyle.merge(
+               style: descTextStyle,
+              child: Column(
+                children: [
+                  PostItemIizukaYusuke(),
+                  PostItemAidaTakuya(),
+                  PostItemSaitoMasahiro(),
+                  PostItemKametakiMaiko(),
+                  PostItemSugitaDaisuke(),
+                  PostItemOoyamaTsubasa(),
+                  PostItemIkedaMasashi(),
+                  PostItemOkuyamaTaiki(),
+                  PostItemHoshinoReo(),
+                  PostItemAbeShunya(),
+                  PostItemTateyamaKazuki(),
+                  PostItemHachisukaGen(),
+                  PostItemYoshidaRio(),
+                  PostItemKasaharaKoutarou(),
+                  PostItemYamamotoTakeru(),
+                  PostItemOnoMasahiro(),
+                  PostItemYamadaMasahi(),
+                  PostItemItouKousuke(),
+                  PostItemKuwaharaSouhei(),
+                  PostItemSoccerMane(),
+                  PostItemMai(),
+                  PostItemAsabaSyunya(),
+                  PostItemSakasaiKeisuke(),
+                  PostItemIkedaKen()
 
-              ],
-            )
+                ],
+              )
 
-            )));
+              )),
+        ));
   }
 }
