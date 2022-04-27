@@ -8,7 +8,7 @@ final String LeftImagePath = 'images/profile/yuji_profile_company_icon.jpg';
 final String RightImagePath = 'images/profile/yuji_profile_company.jpg';
 final String iconPath = 'images/profile/yuji_introduce_profile_icon.png';
 final String general = '社会人';
-final String school = 'NTTデータ';
+final String school = '日経大手IT企業';
 
 final String message1 =  '　 2ヶ月の研修を経て\n社会保障事業部に配属される';
 final String message2 =  '一緒に配属された同期と';
