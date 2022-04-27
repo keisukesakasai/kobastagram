@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String LeftImagePath = 'images/profile/yuji_profile_high_icon.jpg';
+final String LeftImagePath = 'images/profile/yuji_profile_juni_icon.jpg';
 final String RightImagePath  = 'images/profile/yuji_profile_junior.jpg';
 final String iconPath = 'images/profile/yuji_introduce_profile_icon.png';
 final String general = '中学時代';
