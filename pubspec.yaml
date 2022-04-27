@@ -29,7 +29,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  device_preview: ^1.0.0
+#  device_preview: ^1.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -44,6 +44,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+    
 
   flutter_launcher_icons:
     git:
@@ -108,7 +109,7 @@ fonts:
 
 import_sorter:
   emojis: true # Optional, defaults to false
-  comments: true # Optional, defaults to true
+  comments: true  # Optional, defaults to true
   ignored_files: # Optional, defaults to []
     - []
 
