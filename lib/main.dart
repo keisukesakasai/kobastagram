@@ -52,6 +52,8 @@ import 'package:kobastagram/post/yuji_friends/post_item_soccer_mane.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_mai.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_asaba_syunya.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_ikeda_ken.dart';
+import 'package:kobastagram/post_secret_gesture_detector.dart';
+import 'package:kobastagram/secret_file.dart';
 
 import 'package:path/path.dart';
 import 'package:device_preview/device_preview.dart';
@@ -129,10 +131,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: 12.5,
                   ),
-                  Icon(Icons.favorite_border_outlined, color: Colors.black),
+                  PostsSecretsGestureDetector(
+                    imagePath: '',
+                    func: PostsSecretFile(),
+                  ),
+                  //Iconの間隔
                   SizedBox(
-                    width: 12.5,
-                  ), //Iconの間隔
+                    width: 10,
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 6.5),
                     child: Transform.rotate(
@@ -241,7 +247,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                        'images/yuji_friends/saito_masahiro_image.png',
+                            'images/yuji_friends/saito_masahiro_image.png',
                         func: PostItemSaitoMasahiro(),
                       ),
                       PostsGestureDetector(
@@ -259,7 +265,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                        'images/yuji_friends/kametaki_maiko_image.jpg',
+                            'images/yuji_friends/kametaki_maiko_image.jpg',
                         func: PostItemKametakiMaiko(),
                       ),
                       PostsGestureDetector(
@@ -268,7 +274,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                        'images/yuji_friends/yamamoto_takeru_image.jpg',
+                            'images/yuji_friends/yamamoto_takeru_image.jpg',
                         func: PostItemYamamotoTakeru(),
                       ),
                       PostsGestureDetector(
@@ -288,7 +294,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                        'images/mayu_friends/uenoya_sayaka_image.jpg',
+                            'images/mayu_friends/uenoya_sayaka_image.jpg',
                         func: PostItemUenoyaSayaka(),
                       ),
                       PostsGestureDetector(
@@ -372,7 +378,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                        'images/yuji_friends/ikeda_masashi_image.jpg',
+                            'images/yuji_friends/ikeda_masashi_image.jpg',
                         func: PostItemIkedaMasashi(),
                       ),
                       PostsGestureDetector(
@@ -404,7 +410,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                        'images/yuji_friends/hachisuka_gen_image.jpg',
+                            'images/yuji_friends/hachisuka_gen_image.jpg',
                         func: PostItemHachisukaGen(),
                       ),
                       PostsGestureDetector(
@@ -414,7 +420,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                        'images/mayu_friends/yamada_nishikawa_yamashita_grid2.jpg',
+                            'images/mayu_friends/yamada_nishikawa_yamashita_grid2.jpg',
                         func: PostItemNishikawa(),
                       ),
                       PostsGestureDetector(
@@ -446,17 +452,17 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
-                        'images/yuji_friends/sakasai_keisuke_image.jpg',
+                            'images/yuji_friends/sakasai_keisuke_image.jpg',
                         func: PostItemSakasaiKeisuke(),
                       ),
                       PostsGestureDetector(
                         imagePath:
-                        'images/mayu_friends/asuka_akimoto_grid1.jpg',
+                            'images/mayu_friends/asuka_akimoto_grid1.jpg',
                         func: PostItemAkimotoAsuka(),
                       ),
                       PostsGestureDetector(
                         imagePath:
-                        'images/mayu_friends/asuka_akimoto_grid2.jpg',
+                            'images/mayu_friends/asuka_akimoto_grid2.jpg',
                         func: PostItemAkimotoAsuka(),
                       ),
                     ],
@@ -568,17 +574,21 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   ),
                 ),
-                Text(
-                  "©︎ copyright KenKasi's",
-                  style: GoogleFonts.sawarabiMincho(
-                    height: 0.80,
-                    //SETTING THIS CAN SOLVE YOUR PROBLEM
-                    color: Colors.black54,
-                    fontSize: 10.5,
-                    fontWeight: FontWeight.w300,
-                    letterSpacing: 3.8,
+                Padding(
+                  // padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "©︎ copyright KenKasi's",
+                    style: GoogleFonts.sawarabiMincho(
+                      height: 0.80,
+                      //SETTING THIS CAN SOLVE YOUR PROBLEM
+                      color: Colors.black54,
+                      fontSize: 10.5,
+                      fontWeight: FontWeight.w300,
+                      letterSpacing: 3.8,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
+                  padding: EdgeInsets.only(bottom: 1.6),
                 )
               ],
             ),

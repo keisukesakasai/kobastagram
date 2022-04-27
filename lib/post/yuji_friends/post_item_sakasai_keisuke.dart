@@ -5,17 +5,17 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 final String imagePath = 'images/yuji_friends/sakasai_keisuke_image.jpg';
 final String iconPath = 'images/yuji_friends/sakasai_keisuke_icon.png';
-final String name = '逆井 啓佑';
-final String living = '神楽坂 --> 目黒';
+final String name = 'さかけー';
+final String living = '武蔵小山の商店街';
 final String account = '@k6s4i5.3rx';
-final String message = 'これからもよろ！！！！';
+final String message = '\n. これからも家族ぐるみでよろ！！！！';
 final String hashtag = '''
 
-# 圧倒的信頼
-# 何やかんやで信頼
-# 舐めてるけど信頼
-# BFF(Best Friend Forever)
-''';
+# リリースオンスケ🙏
+# 信頼してる
+# 何やかんやで
+# 舐めてるけどな
+# BFF(Best Friend Forever)''';
 final String chattime = 'Now On Sale';
 
 final _dummyIcon = IconButton(
