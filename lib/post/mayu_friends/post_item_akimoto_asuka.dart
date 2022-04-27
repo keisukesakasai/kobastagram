@@ -47,27 +47,29 @@ class _PostItemState extends State {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
-        Row(children: [
-          Container(
-            width: 40.0,
-            height: 40.0,
-            margin: const EdgeInsets.all(5.0),
-            decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                    fit: BoxFit.fill, image: AssetImage(iconPath))),
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [Text(name), Text(living)],
-          ),
+      InteractiveViewer(
+        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
+          Row(children: [
+            Container(
+              width: 40.0,
+              height: 40.0,
+              margin: const EdgeInsets.all(5.0),
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  image: DecorationImage(
+                      fit: BoxFit.fill, image: AssetImage(iconPath))),
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [Text(name), Text(living)],
+            ),
+          ]),
+          IconButton(
+            icon: Icon(Icons.more_horiz),
+            onPressed: () => {},
+          )
         ]),
-        IconButton(
-          icon: Icon(Icons.more_horiz),
-          onPressed: () => {},
-        )
-      ]),
+      ),
       Center(
           child: Image.asset(
         imagePath,

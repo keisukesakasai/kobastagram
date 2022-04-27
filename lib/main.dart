@@ -72,7 +72,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(
       DevicePreview(
-        enabled: false,
+        enabled: true,
         builder: (context) => MyApp(), // Wrap your app
       ),
     );
@@ -544,8 +544,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                     AssetImage('images/tab_yuji_friend1.png'))),
                       ),
                       Container(
-                        width: _tabiconSize,
-                        height: _tabiconSize,
+                        width: _tabiconSize + 5,
+                        height: _tabiconSize + 5,
                         margin: const EdgeInsets.all(2.0),
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
