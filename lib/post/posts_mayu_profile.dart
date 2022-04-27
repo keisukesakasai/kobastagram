@@ -5,7 +5,7 @@ import 'package:kobastagram/post/mayu_profile/post_item_mayu_college.dart';
 import 'package:kobastagram/post/mayu_profile/post_item_mayu_company.dart';
 
 final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
-final String friendsPath = 'images/profile/yuji_profile_friends.png';
+final String friendsPath = 'images/profile/mayu_profile_friends.png';
 
 final String profileMsg = '埼玉県浦和市出身\n''明るく人周囲の人を幸せに\n''何事にもポジティブ\n''勉強もスポーツもすべてこなす十全十美';
 
@@ -174,7 +174,7 @@ class _PostsState extends State<PostMayuProfile> {
                 ),
                 Flexible(
                   child: Text(
-                    'xxx, 他',
+                    'natsumiiin_, minakaaa, 他',
                     style: TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.bold,

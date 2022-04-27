@@ -8,6 +8,7 @@ import 'package:kobastagram/post/yuji_friends/post_item_ito_kousuke.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_ito_kuwahara_souhei.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_saito_masahiro.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_sakasai_keisuke.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_tateyama_kazuki.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_iizuka_yusuke.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_hachisuka_gen.dart';
@@ -54,21 +55,21 @@ class _PostsState extends State<PostsYujiFriends> {
              style: descTextStyle,
             child: Column(
               children: [
+                PostItemIizukaYusuke(),
+                PostItemAidaTakuya(),
+                PostItemSaitoMasahiro(),
+                PostItemKametakiMaiko(),
+                PostItemSugitaDaisuke(),
+                PostItemOoyamaTsubasa(),
                 PostItemIkedaMasashi(),
                 PostItemOkuyamaTaiki(),
                 PostItemHoshinoReo(),
                 PostItemAbeShunya(),
-                PostItemAidaTakuya(),
                 PostItemTateyamaKazuki(),
-                PostItemSaitoMasahiro(),
-                PostItemIizukaYusuke(),
                 PostItemHachisukaGen(),
-                PostItemKametakiMaiko(),
                 PostItemYoshidaRio(),
                 PostItemKasaharaKoutarou(),
-                PostItemSugitaDaisuke(),
                 PostItemYamamotoTakeru(),
-                PostItemOoyamaTsubasa(),
                 PostItemOnoMasahiro(),
                 PostItemYamadaMasahi(),
                 PostItemItouKousuke(),
@@ -76,6 +77,7 @@ class _PostsState extends State<PostsYujiFriends> {
                 PostItemSoccerMane(),
                 PostItemMai(),
                 PostItemAsabaSyunya(),
+                PostItemSakasaiKeisuke(),
                 PostItemIkedaKen()
 
               ],
