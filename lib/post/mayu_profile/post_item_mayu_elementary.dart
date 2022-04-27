@@ -3,22 +3,19 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String LeftImagePath = 'images/profile/yuji_profile_company_icon.jpg';
 
-final String RightImagePath = 'images/profile/yuji_profile_company.jpg';
-final String iconPath = 'images/profile/yuji_introduce_profile_icon.png';
-final String general = '社会人';
-final String school = '日経大手IT企業';
-
-final String message1 =  '　 2ヶ月の研修を経て\n社会保障事業部に配属される';
-final String message2 =  '一緒に配属された同期と';
-final String message3=  'よく不仲になる？';
-final String hashtag = '#同期と不仲説流したがる\n#本当は仲良し\n'
-'#昼飯一緒に食べてる(はず)\n'
-'#写真は不仲の同期との写真ではなく研修時代の同じクラスの写真です\n';
+final String LeftImagePath = 'images/profile/mayu_syougakkou_icon.jpg';
+final String RightImagePath  = 'images/profile/mayu_syougakkou_image.jpg';
+final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
+final String general = '小学校時代';
+final String school = '小田部小学校';
+final String message1 =  '\n元気いっぱい！\nみんなでたくさん\n遊びました✌';
+final String message2 =  '楽しかった小学校時代';
+final String message3=  '';
+final String hashtag = '#帰ってきてよ\n#またつめこごっこやろ';
 
 
-class PostItemYujiCom extends StatefulWidget {
+class PostItemMayuEle extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
@@ -39,10 +36,7 @@ class _PostItemState extends State {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-
-                    height: 320,
-
-
+                    height: 250,
                     width: 170,
                     child: Column(
                       children: [
@@ -85,9 +79,7 @@ class _PostItemState extends State {
                           //Icon行
                           children: [
                             SizedBox(width: 5),
-
                             Text('    📍$school'),
-
                           ],
                         ), //Row2
                         Column(
@@ -124,13 +116,13 @@ class _PostItemState extends State {
                                     ),
                                   ],
                                 )),
-                               Container(
-                                 child: Column(
-                                   children: [
+                            Container(
+                              child: Column(
+                                children: [
 
-                                   ],
-                                 ),
-                               ),
+                                ],
+                              ),
+                            ),
                           ],
                         ), //Row3
                       ],
@@ -159,7 +151,7 @@ class _PostItemState extends State {
                                           iconPath), //Story投稿画像
                                     ),
                                     Text(
-                                      'blaugrana.reysol',
+                                      'm.mayuu',
                                       style: TextStyle(
                                         fontSize: 10,
                                         fontWeight: FontWeight.bold,
@@ -168,7 +160,7 @@ class _PostItemState extends State {
                                   ],
                                 ),
                                 SizedBox(
-                                  width: 50,
+                                  width: 80,
                                 ),
                                 Icon(Icons.more_horiz, size: 12),
                               ],
