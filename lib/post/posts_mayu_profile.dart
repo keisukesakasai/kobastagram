@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:kobastagram/post/mayu_profile/post_item_mayu_elementary.dart';
 import 'package:kobastagram/post/mayu_profile/post_item_mayu_junior.dart';
 import 'package:kobastagram/post/mayu_profile/post_item_mayu_high.dart';
 import 'package:kobastagram/post/mayu_profile/post_item_mayu_college.dart';
 import 'package:kobastagram/post/mayu_profile/post_item_mayu_company.dart';
+import 'package:kobastagram/post/mayu_profile/post_item_mayu_elementary.dart';
 
 final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
 final String friendsPath = 'images/profile/mayu_profile_friends.png';
@@ -252,6 +254,7 @@ class _PostsState extends State<PostMayuProfile> {
             ),
           ],
         )),
+        PostItemMayuEle(),
         PostItemMayuJunior(),
         PostItemMayuHigh(),
         PostItemMayuCol(),

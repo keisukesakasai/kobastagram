@@ -6,6 +6,7 @@ import 'package:kobastagram/post/mayu_friends/post_item_hayakawa_minaka.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_hirano_honami.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_hirose_rina.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_matsuyama.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_monju_koharu.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_oda_juri.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_ogawa_mami.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_ogawa_miyako.dart';
@@ -464,6 +465,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         imagePath:
                             'images/mayu_friends/asuka_akimoto_grid2.jpg',
                         func: PostItemAkimotoAsuka(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
+                        'images/mayu_friends/monju_koharu_image.jpg',
+                        func: PostItemMonjuKoharu(),
                       ),
                     ],
                   ))

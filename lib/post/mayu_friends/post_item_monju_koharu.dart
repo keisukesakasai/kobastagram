@@ -11,7 +11,7 @@ final String account = '@文珠　小春（もんじゅ　こはる）';
 final String message = '"まゆ、結婚おめでとう！！そしてお久しぶりです！笑\n'
 'まゆと遊んだ日々は今も覚えてるよ☺\n'
 '優しくて面白くてあの当時から変わらず大好きです😊ぜひ、旦那さんと福岡にも遊びに来てね〜！お幸せに♡';
-final String hashtag = '#breakpoint#親子代#海メンforever#黒幕#642';
+final String hashtag = '#小田部小\n#6年4組\n#にしふさこ\n#あっちゃん';
 final String chattime = '3週間前';
 
 final _dummyIcon = IconButton(
@@ -30,7 +30,7 @@ final _sliderItem = Container(
       )),
 );
 
-class PostItemGotoYuri extends StatefulWidget {
+class PostItemMonjuKoharu extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }
