@@ -47,36 +47,36 @@ class _PostItemState extends State {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      InteractiveViewer(
-        child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
-          Row(children: [
-            Container(
-              width: 40.0,
-              height: 40.0,
-              margin: const EdgeInsets.all(5.0),
-              decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                      fit: BoxFit.fill, image: AssetImage(iconPath))),
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [Text(name), Text(living)],
-            ),
-          ]),
-          IconButton(
-            icon: Icon(Icons.more_horiz),
-            onPressed: () => {},
-          )
+      Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget>[
+        Row(children: [
+          Container(
+            width: 40.0,
+            height: 40.0,
+            margin: const EdgeInsets.all(5.0),
+            decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                    fit: BoxFit.fill, image: AssetImage(iconPath))),
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [Text(name), Text(living)],
+          ),
         ]),
+        IconButton(
+          icon: Icon(Icons.more_horiz),
+          onPressed: () => {},
+        )
+      ]),
+      InteractiveViewer(
+        child: Center(
+            child: Image.asset(
+          imagePath,
+          fit: BoxFit.cover,
+          width: 1000.0,
+          height: 400,
+        )),
       ),
-      Center(
-          child: Image.asset(
-        imagePath,
-        fit: BoxFit.cover,
-        width: 1000.0,
-        height: 400,
-      )),
       Row(
         children: [
           Container(
