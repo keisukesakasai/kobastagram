@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:kobastagram/post/mayu_profile/post_item_mayu_elementary.dart';
 import 'package:kobastagram/post/mayu_profile/post_item_mayu_junior.dart';
 import 'package:kobastagram/post/mayu_profile/post_item_mayu_high.dart';
 import 'package:kobastagram/post/mayu_profile/post_item_mayu_college.dart';
 import 'package:kobastagram/post/mayu_profile/post_item_mayu_company.dart';
+import 'package:kobastagram/post/mayu_profile/post_item_mayu_elementary.dart';
 
 final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
 final String friendsPath = 'images/profile/mayu_profile_friends.png';
@@ -68,7 +70,7 @@ class _PostsState extends State<PostMayuProfile> {
                               ),
                               Text(
 
-                                'ポジティブ性',
+                                '笑顔',
 
                                 style: TextStyle(
                                   fontSize: 13,
@@ -89,7 +91,7 @@ class _PostsState extends State<PostMayuProfile> {
                             ),
                             Text(
 
-                              '才力',
+                              '美貌',
 
                               style: TextStyle(
                                 fontSize: 13,
@@ -102,7 +104,7 @@ class _PostsState extends State<PostMayuProfile> {
                           child: Column(
                             children: [
                               Text(
-                                '100',
+                                '200',
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -110,7 +112,7 @@ class _PostsState extends State<PostMayuProfile> {
                               ),
                               Text(
 
-                                '親密性',
+                                'IQ',
 
                                 style: TextStyle(
                                   fontSize: 13,
@@ -252,6 +254,7 @@ class _PostsState extends State<PostMayuProfile> {
             ),
           ],
         )),
+        PostItemMayuEle(),
         PostItemMayuJunior(),
         PostItemMayuHigh(),
         PostItemMayuCol(),

@@ -10,8 +10,10 @@ final String living = '日本';
 final String account = '@文珠　小春（もんじゅ　こはる）';
 final String message = 'まゆ、結婚おめでとう！！そしてお久しぶりです！笑\n'
 'まゆと遊んだ日々は今も覚えてるよ☺\n'
+
 '優しくて面白くてあの当時から変わらず大好きです😊ぜひ、旦那さんと福岡にも遊びに来てね〜！お幸せに♡\n';
 final String hashtag = '#昼休みにつめこごっこ\n#修学旅行ローレライ\n#6-4西ふさ子';
+
 final String chattime = '3週間前';
 
 final _dummyIcon = IconButton(

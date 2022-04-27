@@ -8,7 +8,7 @@ final String LeftImagePath = 'images/profile/mayu_profile_company_icon.png';
 final String RightImagePath = 'images/profile/mayu_kaisha_image.jpg';
 final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
 final String general = '社会人';
-final String school = '第一生命保険株式会社';
+final String school = '日経大手生保';
 final String message1 =  'どの所属でも常に大活躍\n     期待のエース☺';
 final String message2 =  'BP組と入社のクラスは\n    今でも仲良し！';
 final String message3=  '今年からは初めての営業もポジティブに頑張ってます🏃‍♂';
@@ -80,7 +80,7 @@ class _PostItemState extends State {
                           //Icon行
                           children: [
                             SizedBox(width: 5),
-                            Text('📍$school'),
+                            Text('   📍$school'),
                           ],
                         ), //Row2
                         Column(
