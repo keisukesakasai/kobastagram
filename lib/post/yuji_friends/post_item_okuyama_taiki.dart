@@ -147,7 +147,7 @@ class _PostItemState extends State {
             child: Column(
               children: [
                 Text('オレの誕生日の次の日の結婚式おめでとう！！\n'
-                    '高3の口聞かなかった時期のことまだ根に持ってたけど、もう大人だから水に流すね！またまゆちゃんも一緒につぶれるまで飲み行こう🙆\n‍ゆうじとまゆに永遠の幸あれ　アメン🌝\n'),
+                    '高3の口聞かなかった時期のことまだ根に持ってたけど、\nもう大人だから水に流すね！\nまたまゆちゃんも一緒につぶれるまで飲み行こう🙆\n‍ゆうじとまゆに永遠の幸あれ　アメン🌝\n'),
               ],
             )),
         Container(
@@ -155,7 +155,7 @@ class _PostItemState extends State {
             alignment: Alignment.centerLeft,
             child: Column(
               children: [
-                Text('#ゆうじ#いい匂い#ボディミスト#多め',
+                Text('#ゆうじ#いい匂い\n#ボディミスト#多め',
                     style: TextStyle(
                       color: Color.fromARGB(255, 11, 75, 142),
                     )),

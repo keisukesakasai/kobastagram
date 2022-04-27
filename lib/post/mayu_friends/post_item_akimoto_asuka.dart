@@ -8,10 +8,11 @@ final String iconPath = 'images/mayu_friends/asuka_akimoto_icon.jpg';
 final String name = 'AZUSA AKIMOTO';
 final String living = '埼玉';
 final String account = '@AZUSA AKIMOTO';
-final String message = '"ご結婚おめでとう🤍🤍🤍\n'
+final String message = 'ご結婚おめでとう🤍🤍🤍\n'
 '茉由のキラキラした笑顔でいっぱいの毎日になりますよう、お二人の幸せをお祈りしています…✰\n'
-'またいつか会える日を楽しみにしてるね"';
-final String hashtag = '#南中女バド #茉由との写真がなく…私は今愛猫ルルと住んでます𓃠';
+'またいつか会える日を楽しみにしてるね\n';
+final String hashtag = '''#南中女バド 
+#茉由との写真がなく…私は今愛猫ルルと住んでます𓃠''';
 final String chattime = '7週間前';
 
 final _dummyIcon = IconButton(

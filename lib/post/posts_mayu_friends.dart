@@ -9,6 +9,7 @@ import 'package:kobastagram/post/mayu_friends/post_item_hirose_rina.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_ogawa_mami.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_matsuyama.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_ogawa_miyako.dart';
+import 'package:kobastagram/post/mayu_friends/post_item_post_item_kobayashi_shimizu_nakamura.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_post_item_yamada_nishikawa_yamashita.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_takano_aoi.dart';
 import 'package:kobastagram/post/mayu_friends/post_item_tamagawa_risako.dart';
@@ -26,6 +27,8 @@ import 'package:kobastagram/post/mayu_friends/post_item_matsuyama.dart';
 
 
 import 'package:kobastagram/post_item.dart';
+
+import 'mayu_friends/post_item_monju_koharu.dart';
 
 class PostsMayuFriends extends StatefulWidget {
   @override
@@ -72,6 +75,8 @@ class _PostsState extends State<PostsMayuFriends> {
                 PostItemAkimotoAsuka(),
                 PostItemShibataSaki(),
                 PostItemMatsuyama(),
+                PostItemMonjuKoharu(),
+                PostItemKobayashiShimizuNakamura(),
               ],
              )
 

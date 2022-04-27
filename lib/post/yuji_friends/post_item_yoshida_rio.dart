@@ -13,7 +13,7 @@ final String message = '結婚おめでとう〜！㊗\n'
 'これからはまゆさんと仲良く楽しんでね☆\n';
 final String hashtag = '#ゲン&ユウジ\n'
 '#源もおめでとうだって！\n'
-'#そういえば足早かったね\n';
+'#そういえば足早かったね';
 final String chattime = '3か月前';
 
 final _dummyIcon = IconButton(

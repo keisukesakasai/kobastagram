@@ -10,7 +10,7 @@ final String living = '埼玉幼稚園';
 final String account = '@RISAKO TAMAGAWA★';
 final String message = '''大好きな茉由、結婚おめでとう☺️
 茉由とは旅行もしたしよく呑みに行ったしいろんなこと相談したし…とにかく愛で溢れてます。😂笑
-悠司くんと力を合わせて幸せな家庭を築いてね❣️幸せになれよ〜！！！''';
+悠司くんと力を合わせて幸せな家庭を築いてね❣️幸せになれよ〜！！！\n''';
 final String hashtag = '''#さいたま幼稚園
 #bp
 #教育学部社会学科（私は地歴）

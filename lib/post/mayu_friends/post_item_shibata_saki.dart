@@ -8,13 +8,17 @@ final String iconPath = 'images/mayu_friends/shibata_saki_icon.jpg';
 final String name = 'sakishibata';
 final String living = '大阪';
 final String account = '@sakishibata';
-final String message = '"結婚おめでとう💐✨…\n'
+final String message = '結婚おめでとう💐✨…\n'
 '何年か前に武蔵浦和で飲みに行ったぶりだね！！笑\n'
 '中学の時から変わらない、\n'
 '明るくキラキラしてるまゆがとっても素敵♡♡\n'
-'お幸せに…♡"';
-final String hashtag = '"#女バド#スーパーエース#西村組#さきんこさき\n'
-'#あんこ3兄弟※まゆとの写真がなく…私は今大阪に住んでます笑"';
+'お幸せに…♡\n';
+final String hashtag = '''#女バド
+#スーパーエース
+#西村組
+#さきんこさき
+#あんこ3兄弟
+※まゆとの写真がなく…私は今大阪に住んでます笑''';
 final String chattime = '4週間前';
 
 final _dummyIcon = IconButton(

@@ -8,9 +8,10 @@ final String iconPath = 'images/yuji_friends/sakasai_keisuke_icon.png';
 final String name = 'さかけー';
 final String living = '武蔵小山の商店街';
 final String account = '@k6s4i5.3rx';
-final String message = '\n. これからも家族ぐるみでよろ！！！！';
+final String message = '''.
+これからも家族ぐるみでよろ！！！！''';
 final String hashtag = '''
-
+.
 # リリースオンスケ🙏
 # 信頼してる
 # 何やかんやで

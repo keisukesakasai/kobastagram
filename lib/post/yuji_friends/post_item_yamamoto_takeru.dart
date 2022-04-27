@@ -8,10 +8,12 @@ final String iconPath = 'images/yuji_friends/yamamoto_takeru_icon.jpg';
 final String name = '山本丈';
 final String living = '豊洲';
 final String account = '@YAMAMOTO TAKERU';
-final String message = '"ご結婚おめでとうございます！\n'
+final String message = 'ご結婚おめでとうございます！\n'
 'お二人の幸せを心から嬉しく思います！\n'
-'笑顔が素敵なお二人で幸せなご家庭を築いてください！！';
-final String hashtag = '#ドイツ #楽しかったね #忘れ物に気を付けて #タマゴくさい #結婚おめでとう';
+'笑顔が素敵なお二人で幸せなご家庭を築いてください！！\n';
+final String hashtag = '''#ドイツ #楽しかったね 
+#忘れ物に気を付けて #タマゴくさい 
+#結婚おめでとう''';
 final String chattime = '9月前';
 
 final _dummyIcon = IconButton(

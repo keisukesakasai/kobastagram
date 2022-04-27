@@ -8,8 +8,8 @@ final String iconPath = 'images/yuji_friends/ito_kosuke_icon.jpg';
 final String name = '伊藤功資';
 final String living = '豊洲';
 final String account = '@伊藤功資';
-final String message = 'ゆうじ結婚おめでとう！！奥さんと飲めるとかまじ最高やな👍お幸せに✨\n';
-final String hashtag = '#B4一緒#社保一緒#昼飯は全然一緒ならない#海鮮丼行くよ';
+final String message = 'ゆうじ結婚おめでとう！！\n奥さんと飲めるとかまじ最高やな👍お幸せに✨\n';
+final String hashtag = '#B4一緒 #社保一緒 \n#昼飯は全然一緒ならない \n#海鮮丼行くよ';
 final String chattime = '11月前';
 
 final _dummyIcon = IconButton(

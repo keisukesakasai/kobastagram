@@ -10,8 +10,8 @@ final String living = 'サッカーグランド';
 final String account = '@TEAMマネ';
 final String message = 'ご結婚おめでとうございます！\n'
 'お二人が笑顔いっぱいの日々を過ごせますように😌\n'
-'末永くお幸せに🌷';
-final String hashtag = '#県柏#サッカー部#写真見返して懐かしんでます';
+'末永くお幸せに🌷\n';
+final String hashtag = '#県柏 #サッカー部\n#写真見返して懐かしんでます';
 final String chattime = '数秒前';
 
 final _dummyIcon = IconButton(

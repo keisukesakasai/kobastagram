@@ -8,8 +8,13 @@ final String iconPath = 'images/yuji_friends/ooyama_tsubasa_icon.jpg';
 final String name = '大山翼';
 final String living = '豊洲';
 final String account = '@大山翼';
-final String message = 'ゆうじ結婚おめでとう！また富士山登ろうね！絶対！！';
-final String hashtag = '##同期 #社保 #また富士山登ろう（3回目？4回目？） #7合目にあるトモエ館でチャイを飲むために  #修行ならぬ #苦行 #でも諦めない心 #事後の焼肉も待ってるよ';
+final String message = 'ゆうじ結婚おめでとう！また富士山登ろうね！絶対！！\n';
+final String hashtag = '''#同期 #社保 
+#また富士山登ろう（3回目？4回目？） 
+#7合目にあるトモエ館でチャイを飲むために  
+#修行ならぬ #苦行 
+#でも諦めない心 
+#事後の焼肉も待ってるよ''';
 final String chattime = '数秒前';
 
 final _dummyIcon = IconButton(

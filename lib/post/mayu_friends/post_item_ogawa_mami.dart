@@ -8,9 +8,15 @@ final String iconPath = 'images/mayu_friends/ogawa_mami_icon.jpg';
 final String name = 'おがわまみ';
 final String living = 'The Earth';
 final String account = '@MAMI OGAWA';
-final String message = '''.まゆち結婚おめでとう！！いつも明るくとびきり笑顔なまゆち、だいすきだよん❤️
+final String message = '''.
+まゆち結婚おめでとう！！\nいつも明るくとびきり笑顔なまゆち、だいすきだよん❤️
 ゆうじくんとさらに笑顔溢れる素敵な家庭を築いてね！末長くお幸せに☺️✨''';
-final String hashtag = '.#出会って9年#ハワイから5年#bp#さいたま幼稚園#今や幻の社科専#彩り#また旅行行こうね✈️';
+final String hashtag = '''.
+#出会って9年
+#ハワイから5年#bp
+#さいたま幼稚園
+#今や幻の社科専#彩り
+#また旅行行こうね✈️''';
 final String chattime = '3週間前';
 
 final _dummyIcon = IconButton(

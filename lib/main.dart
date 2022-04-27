@@ -137,7 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   //Iconの間隔
                   SizedBox(
-                    width: 10,
+                    width: 12.5,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 6.5),
@@ -147,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Icon(Icons.send_outlined, color: Colors.black)),
                   ),
                   SizedBox(
-                    width: 10,
+                    width: 12.5,
                   ),
                 ],
               )),

@@ -13,8 +13,8 @@ final String message = '結婚おめでとう。\n'
 'これからもたくさんゆうじのテク見せてかっこよく素敵で優しい男、旦那さんでいてね。\n'
 '幸せに溢れますように。\n\n'
 
-'応援団より';
-final String hashtag = '#県柏サッカー部 #ゆうじエース #悠司の応援団';
+'応援団より\n';
+final String hashtag = '#県柏サッカー部 #ゆうじエース \n#悠司の応援団';
 final String chattime = '3月前';
 
 final _dummyIcon = IconButton(

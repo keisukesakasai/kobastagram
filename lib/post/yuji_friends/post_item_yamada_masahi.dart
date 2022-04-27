@@ -8,10 +8,10 @@ final String iconPath = 'images/yuji_friends/yamada_masahi_icon.jpg';
 final String name = '山田政史';
 final String living = 'Mt Fuji';
 final String account = '@山田政史';
-final String message = '"ゆうじ結婚おめでとう！\n'
+final String message = 'ゆうじ結婚おめでとう！\n'
 '夫婦生活色々あると思うけど、\n'
 '楽しく健康に過ごしてください！\n'
-'今度みんなでまたキャンプいこう！"';
+'今度みんなでまたキャンプいこう！\n';
 final String hashtag = '#社保　#キャンプ　#富士山';
 final String chattime = '5年前';
 

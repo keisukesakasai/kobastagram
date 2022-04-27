@@ -8,11 +8,12 @@ final String iconPath = 'images/yuji_friends/abe_shunya_icon.jpg';
 final String name = '阿部 隼也';
 final String living = 'Japanese';
 final String account = '@SHUNYA ABE';
-final String message = '結婚おめでとう！'
-    '部活でもクラスでも中心にいるゆうじをいつも羨望の眼差しで見てました！'
-    'これからは一家の中心としての活躍を期待してます';
-final String hashtag = '#元3年5組#県柏サッカー部'
-'#県柏サッカー部の光と陰#不動のセンターベンチ';
+final String message = '結婚おめでとう！\n'
+    '部活でもクラスでも中心にいるゆうじをいつも羨望の眼差しで見てました！\n'
+    'これからは一家の中心としての活躍を期待してます\n';
+final String hashtag = '''#元3年5組 #県柏サッカー部
+#県柏サッカー部の光と陰 
+#不動のセンターベンチ''';
 final String chattime = '3年前';
 
 final _dummyIcon = IconButton(

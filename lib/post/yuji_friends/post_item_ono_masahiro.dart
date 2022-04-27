@@ -8,7 +8,7 @@ final String iconPath = 'images/yuji_friends/ono_masahiro_icon.jpg';
 final String name = '小野真寛';
 final String living = '富士山';
 final String account = '@小野真寛';
-final String message = '結婚おめでとう！人知を超える残業で培われた不屈の精神を糧に、何度も富士山を踏破したあの青春の日々は忘れません！また登ろうぜ！！';
+final String message = '結婚おめでとう！\n人知を超える残業で培われた不屈の精神を糧に、何度も富士山を踏破したあの青春の日々は忘れません！また登ろうぜ！！\n';
 final String hashtag = '#チャイ発祥の地Mt.Fuji';
 final String chattime = '3年前';
 

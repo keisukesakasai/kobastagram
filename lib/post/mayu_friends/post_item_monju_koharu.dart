@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String imagePath = 'images/mayu_friends/monjyu_koharu_icon_image.jpg';
-final String iconPath = 'images/mayu_friends/monjyu_koharu_icon_icon.jpg';
+final String imagePath = 'images/mayu_friends/monjyu_koharu_image.jpg';
+final String iconPath = 'images/mayu_friends/monjyu_koharu_icon.jpg';
 final String name = '文珠　小春（もんじゅ　こはる）';
 final String living = '日本';
 final String account = '@文珠　小春（もんじゅ　こはる）';
-final String message = '"まゆ、結婚おめでとう！！そしてお久しぶりです！笑\n'
+final String message = 'まゆ、結婚おめでとう！！そしてお久しぶりです！笑\n'
 'まゆと遊んだ日々は今も覚えてるよ☺\n'
-'優しくて面白くてあの当時から変わらず大好きです😊ぜひ、旦那さんと福岡にも遊びに来てね〜！お幸せに♡';
-final String hashtag = '#breakpoint#親子代#海メンforever#黒幕#642';
+'優しくて面白くてあの当時から変わらず大好きです😊ぜひ、旦那さんと福岡にも遊びに来てね〜！お幸せに♡\n';
+final String hashtag = '#昼休みにつめこごっこ\n#修学旅行ローレライ\n#6-4西ふさ子';
 final String chattime = '3週間前';
 
 final _dummyIcon = IconButton(
@@ -30,7 +30,7 @@ final _sliderItem = Container(
       )),
 );
 
-class PostItemGotoYuri extends StatefulWidget {
+class PostItemMonjuKoharu extends StatefulWidget {
   @override
   _PostItemState createState() => _PostItemState();
 }

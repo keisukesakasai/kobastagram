@@ -5,15 +5,16 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 final String imagePath = 'images/mayu_friends/shitara_mizuho_image.jpg';
 final String iconPath = 'images/mayu_friends/shitara_mizuho_icon.jpg';
-final String name = '設楽瑞穂';
+final String name = '設楽 瑞穂';
 final String living = '@Amerika';
-final String account = '@設楽瑞穂';
-final String message = '"まゆご結婚おめでとう！\n'
+final String account = '@設楽 瑞穂';
+final String message = 'まゆご結婚おめでとう！\n'
 '10年前からずっと周りを明るくするむらまゆスマイルが大好きです\n'
-    'まゆとゆうじさんの最幸ペアならきっと素敵な未来が待っていると思う。末永くお幸せに…🦋"';
-final String hashtag = '"#アメリカでAKB踊ったね#あいうぉんちゅー'
-'#あいにーじゅー#あいらーびゅー\n'
-'#オタク役の勢いにアメリカ人ぽかん"';
+    'まゆとゆうじさんの最幸ペアならきっと素敵な未来が待っていると思う。末永くお幸せに…🦋\n';
+final String hashtag = '''#アメリカでAKB踊ったね
+#あいうぉんちゅー
+#あいにーじゅー#あいらーびゅー
+#オタク役の勢いにアメリカ人ぽかん''';
 final String chattime = '4年前';
 
 final _dummyIcon = IconButton(

@@ -8,9 +8,9 @@ final String iconPath = 'images/yuji_friends/sugita_daisuke_icon.jpg';
 final String name = '杉田大輔';
 final String living = '北千住';
 final String account = '@DAISUKE SUGITA';
-final String message = '"ゆーじ結婚おめでと！\n'
-'高校の時は一度も同じクラスにならなかったけど、ゆーじとの思い出はいっぱいあるわ！\n'
-'また遊びに行くね😘';
+final String message = 'ゆーじ結婚おめでと！\n'
+'高校の時は一度も同じクラスにならなかったけど、\nゆーじとの思い出はいっぱいあるわ！\n'
+'また遊びに行くね😘\n';
 final String hashtag = '#ゆーじしか勝たん';
 final String chattime = '55年前';
 

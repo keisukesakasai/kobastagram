@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 
-final String imagePath = 'images/mayu_friends/kobayashi_shimizu_nakamura_image.jpg';
+final String imagePath = 'images/mayu_friends/kobayashi_shimizu_nakamura_image.png';
 final String iconPath = 'images/mayu_friends/kobayashi_shimizu_nakamura_icon.jpg';
 final String name = '小林奈津子,清水成美,中村友泉';
 final String living = '3年6組';
@@ -12,8 +12,11 @@ final String message = 'まゆ結婚おめでとう！\n'
 '毎日勉強と遊びで精一杯だったピュアな青春時代をともにしたまゆが結婚なんて感慨深い！\n'
 'まゆらしい、笑顔の絶えない家庭を築いてね！\n'
 'いつもテキパキ移動教室連れてってくれてありがとうね！！笑\n'
-'旦那さまと末永くお幸せに〜♡"';
-final String hashtag = '#合唱#6組あいらぶゆー#ガラケーの写真がない\n#まゆ常にテスト上位だった"';
+'旦那さまと末永くお幸せに〜♡\n';
+final String hashtag = '''
+#合唱 #6組あいらぶゆー
+#ガラケーの写真がない
+#まゆ常にテスト上位だった''';
 final String chattime = '10年前';
 
 final _dummyIcon = IconButton(

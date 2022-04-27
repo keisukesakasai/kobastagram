@@ -8,11 +8,11 @@ final String iconPath = 'images/mayu_friends/yusuke_yoshiki_icon.jpg';
 final String name = 'ゆうすけ、よしき';
 final String living = '全国転勤';
 final String account = '@YUSUKEandYOSHIKI';
-final String message = '''まゆ結婚おめでとう！これからも仲良くしてね！お局になる要素持ってそうだからあまり偉くならないように笑
+final String message = '''まゆ結婚おめでとう！これからも仲良くしてね！\nお局になる要素持ってそうだからあまり偉くならないように笑
 仕事はそこそこに家庭を大事に、末長くお幸せに。 
 まゆさん、おめでとうございます!!
 実は社会人になってからの方がもっと仲良くしてもらってますね笑
-ノリ良し！仕事良し！の大好きな先輩なので、これからも変わらず遊んでください〜。末永くお幸せに！ byよしき''';
+ノリ良し！仕事良し！の大好きな先輩なので、これからも変わらず遊んでください〜。末永くお幸せに！ byよしき\n''';
 final String hashtag = '''#心は熱く頭はクールに
 #会社というよりサークル
 #全国転勤とは

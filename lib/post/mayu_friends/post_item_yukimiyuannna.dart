@@ -10,7 +10,7 @@ final String living = '3人おんなじ家';
 final String account = '@yukimiyuanna';
 final String message = '''茉由、結婚おめでとう💍✨
 中学の頃一緒に必死に部活しながら、いつもふざけ合って遊んでた茉由が結婚するのは本当に感慨深いしとても嬉しい😆！
-末永くお幸せにね！ほんとーーーにおめでとう♡''';
+末永くお幸せにね！ほんとーーーにおめでとう♡\n''';
 final String hashtag = '''#安定
 #これからもゲラゲラ笑い合おうね
 #たまにはサンリオ付き合ってね

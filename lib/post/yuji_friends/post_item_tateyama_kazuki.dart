@@ -9,7 +9,9 @@ final String name = '立山 一希';
 final String living = 'イタリア';
 final String account = '@kazuki_tateyama';
 final String message = '''結婚式おめでとう！
-出会いの場から結ばれるとこまで見れて嬉しいよ。食、馬、サッカーと共通点が多く楽しい思い出をありがとう。これからもよろしく！''';
+出会いの場から結ばれるとこまで見れて嬉しいよ。
+食、馬、サッカーと共通点が多く楽しい思い出をありがとう。
+これからもよろしく！\n''';
 final String hashtag = '''#イタリア🇮🇹 スペイン🇪🇸
 #ビンタ事件忘れません
 #ゆーじ大好き隊

@@ -148,7 +148,7 @@ class _PostItemState extends State {
           Text(
           'ゆうじ結婚おめでと！\n'
           '高校の中では謎に1番付き合い長い説ある。\n'
-          'これからは家族の付き合いでゴルフとかＢＢＱとかしようね〜'
+          'これからは家族の付き合いでゴルフとかＢＢＱとかしようね〜\n'
           )],
           )),
       Container(
@@ -157,9 +157,9 @@ class _PostItemState extends State {
           child: Column(
             children: [
               Text(
-                '#UG#結婚#💒#🎉'
-                '#最近の思い出#めいどりーみん#4年前#💗'
-                '#アイシテルヨ',
+                '#UG#結婚#💒#🎉\n'
+                '#最近の思い出#めいどりーみん#4年前#💗\n'
+                '#アイシテルヨ\n',
                 style: TextStyle(
                   color: Color.fromARGB(255, 1, 55, 142),
                 ),

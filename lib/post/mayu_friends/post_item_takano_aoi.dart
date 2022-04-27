@@ -5,11 +5,14 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 final String imagePath = 'images/mayu_friends/takano_aoi_image.jpg';
 final String iconPath = 'images/mayu_friends/takano_aoi_icon.jpg';
-final String name = 'たかの　あおい';
+final String name = 'たかの あおい';
 final String living = '日本のどこか';
-final String account = '@たかの　あおい';
-final String message = 'まゆ結婚おめでとう！久しぶりに会えるの楽しみにしてます！旦那さんと末永くお幸せにね。';
-final String hashtag = '#女バドいつめん集合#えっ成人式振り?!#まゆに頼りまくってた中学生時代#本当にありがとう';
+final String account = '@たかの あおい';
+final String message = 'まゆ結婚おめでとう！久しぶりに会えるの楽しみにしてます！旦那さんと末永くお幸せにね。\n';
+final String hashtag = '''#女バドいつめん集合
+#えっ成人式振り?!
+#まゆに頼りまくってた中学生時代
+#本当にありがとう''';
 final String chattime = '昨日';
 
 final _dummyIcon = IconButton(

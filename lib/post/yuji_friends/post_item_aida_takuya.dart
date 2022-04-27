@@ -8,10 +8,10 @@ final String iconPath = 'images/yuji_friends/aida_takuya_icon.jpg';
 final String name = '會田 拓也';
 final String living = '松戸市松戸';
 final String account = '@會田拓也';
-final String message = '結婚本当におめでとう！'
+final String message = '結婚本当におめでとう！\n'
 '自分の事のように嬉しく思います！'
-'お幸せに！';
-final String hashtag = '#若かりしチリゲ#気持ち良し';
+'お幸せに！\n';
+final String hashtag = '#若かりしチリゲ\n#気持ち良し';
 final String chattime = '10分前';
 
 final _dummyIcon = IconButton(

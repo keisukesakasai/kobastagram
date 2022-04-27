@@ -10,8 +10,13 @@ final String living = '埼玉';
 final String account = '@JURI ODA';
 final String message = 'まゆち結婚おめでとう💐\n'
 '10年前からまゆちの笑顔の虜です🧡\n'
-'いつも癒しと元気をありがとう！悠司くんと幸せな家庭を築いてね！';
-final String hashtag = '#bp #同期愛#海メンforever#ネモフィラ#ドライブ#これからもたまには構って';
+'いつも癒しと元気をありがとう！悠司くんと幸せな家庭を築いてね！\n';
+final String hashtag = '''#bp 
+#同期愛
+#海メンforever
+#ネモフィラ
+#ドライブ
+#これからもたまには構って''';
 final String chattime = '4週間前';
 
 final _dummyIcon = IconButton(

@@ -8,10 +8,14 @@ final String iconPath = 'images/mayu_friends/hayakawa_minaka_icon.jpg';
 final String name = '早川 美奈香';
 final String living = '東京都大江戸';
 final String account = '@MINAKA_HAYAKAWA';
-final String message = '''.愛するまゆち結婚おめでとう！！
-思い出が有り余るほどあるので割愛します、＠minakaaa見てください。
-まゆちのはじける笑顔がずーっとだいすきです☺️💐悠司くんと末永くお幸せに❤️''';
-final String hashtag = '''#10年目突入 #bp #dl
+final String message = '''.
+愛するまゆち結婚おめでとう！！
+思い出が有り余るほどあるので割愛します、
+＠minakaaa見てください。
+まゆちのはじける笑顔がずーっとだいすきです☺️💐
+悠司くんと末永くお幸せに❤️\n''';
+final String hashtag = '''
+#10年目突入 #bp #dl
 #界隈 
 #ミーハー（27歳♀）
 #基本2軒目はこの距離感

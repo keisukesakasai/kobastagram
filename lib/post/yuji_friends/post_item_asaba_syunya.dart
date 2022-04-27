@@ -8,10 +8,10 @@ final String iconPath = 'images/yuji_friends/asaba_shunya_icon.jpg';
 final String name = '浅羽';
 final String living = '中野';
 final String account = '@Indian_ShunyaAsaba';
-final String message = '"ゆーじ、まゆさん結婚おめでとう！\n'
+final String message = 'ゆーじ、まゆさん結婚おめでとう！\n'
 'クラス一緒になったことないのに、いつの間にか仲良くなってた笑\n'
-'これからも長い付き合いお願いします！';
-final String hashtag = '"#サッカー部エース#なんやかんやなんでもできる#クラッチバック"';
+'これからも長い付き合いお願いします！\n';
+final String hashtag = '#サッカー部エース\n#なんやかんやなんでもできる\n#クラッチバック';
 final String chattime = '2秒前';
 
 final _dummyIcon = IconButton(

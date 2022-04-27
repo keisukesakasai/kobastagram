@@ -13,7 +13,9 @@ final String message = 'ゆうじ、まゆちゃん結婚おめでとー！\n'
 '結婚することを聞いたときや家に呼ばれときは嬉しかったなあ〜\n'
 'まゆちゃんに手のひらで転がされつつ、要所要所ははずさないゆうじらしい素敵な家庭を築いていってください！笑\n'
 'ほんとうにおめでとう。\n';
-final String hashtag = '#ケンカシ#IRL#reysol#池田家また行こうね#脱毛終わった？';
+final String hashtag = '''#ケンカシ #IRL #reysol
+#池田家また行こうね
+#脱毛終わった？''';
 final String chattime = '6か月前';
 
 final _dummyIcon = IconButton(

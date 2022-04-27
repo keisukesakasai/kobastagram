@@ -7,13 +7,16 @@ final String imagePath = 'images/mayu_friends/yamada_nishikawa_yamashita_image.j
 final String iconPath = 'images/mayu_friends/yamada_nishikawa_yamashita_icon.jpg';
 final String name = '"山田美菜実,西川友理,山下伽奈子"';
 final String living = '浦和';
-final String account = '"@山田美菜実,@西川友理,@山下伽奈子';
-final String message = '"むらまゆ結婚おめでとう！\n'
+final String account = '@山田美菜実,@西川友理,@山下伽奈子';
+final String message = 'むらまゆ結婚おめでとう！\n'
 '文武両道のしっかり者で、笑顔がとても似合うむらまゆは素敵な家庭を築くこと間違いなし🥺\n'
-'これからも沢山笑って、旦那さんと色んな思い出つくってね！末永くお幸せに！"';
-final String hashtag = '"#日本史の鬼#用語集ボロボロにしたもの勝ち\n'
-'#帰りのスクールバス#最寄駅浦和組\n'
-'#妄想トーク#畑の麦をかき集め#麦わら帽子を作るのさ#say yes"';
+'これからも沢山笑って、旦那さんと色んな思い出つくってね！末永くお幸せに！\n';
+final String hashtag = '''#日本史の鬼
+#用語集ボロボロにしたもの勝ち
+#帰りのスクールバス
+#最寄駅浦和組
+#妄想トーク
+#畑の麦をかき集め #麦わら帽子を作るのさ #say yes''';
 final String chattime = '10年前';
 
 final _dummyIcon = IconButton(

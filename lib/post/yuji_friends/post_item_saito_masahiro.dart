@@ -10,11 +10,13 @@ final String living = '柏らへん';
 final String account = '@Masahiro Saito';
 final String message = '''結婚おめでとう！
 ゆうじはいつもニコニコしてるから、笑顔の絶えない家族になるんだろうな！
-さて、写真だけど中学以降の写真見つからなかった！笑'
+さて、写真だけど中学以降の写真見つからなかった！笑
 付き合い長いし、結構仲いいはずだよなあ？？
 サッカー部なのに、俺より長距離走速かったよな。参ったよ
-とりあえず今度飲もう。おめでとう！！''';
-final String hashtag = '#光ヶ丘駅伝部 #永遠のライバル #心のアルバムのストレージはいっぱいです';
+とりあえず今度飲もう。おめでとう！！\n''';
+final String hashtag = '''#光ヶ丘駅伝部 
+#永遠のライバル 
+#心のアルバムのストレージはいっぱいです''';
 final String chattime = '15年前';
 
 final _dummyIcon = IconButton(

@@ -5,12 +5,14 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 final String imagePath = 'images/mayu_friends/matsuyama_image.jpg';
 final String iconPath = 'images/mayu_friends/matsuyama_icon.jpg';
-final String name = '松山　胡桃';
+final String name = '松山 胡桃';
 final String living = '浦和';
-final String account = '@MAMI OGAWA';
-final String message = '"結婚おめでとう♡\n'
-'3年4組大石道子先生のことは覚えてますか？まゆとの思い出は楽しいことばかりだよー♡\n久しぶりに会いたいな♡本当におめでとう！！"';
-final String hashtag = '#昼休みにつめこごっこ #修学旅行ローレライ #6-4西ふさ子';
+final String account = '@松山 胡桃';
+final String message = '結婚おめでとう♡\n'
+'3年4組大石道子先生のことは覚えてますか？\nまゆとの思い出は楽しいことばかりだよー♡\n久しぶりに会いたいな♡本当におめでとう！！\n';
+final String hashtag = '''#昼休みにつめこごっこ 
+#修学旅行ローレライ 
+#6-4西ふさ子''';
 final String chattime = '8週間前';
 
 final _dummyIcon = IconButton(

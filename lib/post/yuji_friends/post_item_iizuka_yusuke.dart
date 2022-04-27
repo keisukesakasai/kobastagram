@@ -15,8 +15,8 @@ final String message = 'チュパ王！結婚おめでとう！\n'
     'まゆさんと幸せな家庭を築いてください！\n'
     'またボール蹴りましょう⚽\n';
 final String hashtag = '#県柏のエース#中村俊輔\n'
-'#中村俊輔好きな人と繋がりたい#柏レイソルを一緒に応援したい\n'
-'#チュパラブ#結婚おめ'',';
+    '#中村俊輔好きな人と繋がりたい\n#柏レイソルを一緒に応援したい\n'
+    '#チュパラブ#結婚おめ';
 final String chattime = '3週間前';
 
 final _dummyIcon = IconButton(

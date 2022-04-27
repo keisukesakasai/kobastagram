@@ -10,8 +10,8 @@ final String living = '流山おおたかの森';
 final String account = '@kennn405';
 final String message = 'ゆうじ、まゆさんご結婚おめでとう！\n'
     'ゆうじは子供大好きで絶対いいパパになるな！\n'
-    'これから家族ぐるみでBBQやったり仲良くしよう！';
-final String hashtag = '#ちゅぱ次郎#将来有望パパ#またまゆちゃんと遊ぼう！';
+    'これから家族ぐるみでBBQやったり仲良くしよう！\n';
+final String hashtag = '#ちゅぱ次郎\n#将来有望パパ\n#またまゆちゃんと遊ぼう！';
 final String chattime = '13秒前';
 
 final _dummyIcon = IconButton(

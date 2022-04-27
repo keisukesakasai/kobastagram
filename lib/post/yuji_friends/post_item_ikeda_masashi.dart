@@ -131,7 +131,7 @@ class _PostItemState extends State {
         child: Row(
           children: [
             Text(
-              '@masahi_ikeda',
+              '@masashi_ikeda',
               textAlign: TextAlign.left,
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
@@ -147,7 +147,7 @@ class _PostItemState extends State {
                   '愛するゆうじが他の人のものになってしまうと夜も眠れません\n'
                   '結婚式当日は最後の晴れ姿を目に焼き付けて\n'
                   'この思いを一生胸にしまうことにします\n'
-                  'とはいえ本当におめでとう！'),
+                  'とはいえ本当におめでとう！\n'),
             ],
           )),
       Container(
@@ -156,7 +156,7 @@ class _PostItemState extends State {
           child: Column(
             children: [
               Text(
-                '♯ケンカシかませ犬コンビ ♯思い出のハネムーン♯グアム ♯チリゲとワカハゲ',
+                '''#ケンカシかませ犬コンビ\n#思い出のハネムーン #グアム\n♯チリゲとワカハゲ''',
                 style: TextStyle(
                   color: Color.fromARGB(255, 1, 55, 142),
                   ),

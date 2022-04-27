@@ -10,7 +10,7 @@ final String living = '第一生命ビル';
 final String account = '@dai_ichi_life_piiiiii';
 final String message = '''まゆち、ゆうじくんご結婚おめでとう☺️
 天龍会とぴーの集いは存続でお願いね！
-これからもゴン酔いするまゆちでいてね〜！笑''';
+これからもゴン酔いするまゆちでいてね〜！笑\n''';
 final String hashtag = '''#一生涯のパートナー
 #ゆうじくんに譲ります
 #connect永遠''';

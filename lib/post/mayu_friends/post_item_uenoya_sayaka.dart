@@ -10,8 +10,12 @@ final String living = '上の方';
 final String account = '@SAYOKA UENOYA';
 final String message = '''まゆち結婚おめでとう！！
 大学時代と変わらず仲良くしてくれてありがとう♡いつもまゆちに元気もらってるよ〜〜まゆと友達になれて幸せです！これからも美味しいもの食べながらマシンガントークしようね！
-旦那さんと幸せいっぱいの家庭を築いてね☺️🌈''';
-final String hashtag = ' #bp #まゆのイラストファン #イタリアでの濃い思い出 #まゆ守るつもりが携帯失う #ちびまるすっぴん';
+旦那さんと幸せいっぱいの家庭を築いてね☺️🌈\n''';
+final String hashtag = '''#bp 
+#まゆのイラストファン 
+#イタリアでの濃い思い出 
+#まゆ守るつもりが携帯失う 
+#ちびまるすっぴん''';
 final String chattime = 'おととい';
 
 final _dummyIcon = IconButton(
