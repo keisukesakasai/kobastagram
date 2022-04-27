@@ -91,7 +91,7 @@ fonts:
 
 import_sorter:
   emojis: true # Optional, defaults to false
-  comments: true # Optional, defaults to true
+  comments: true  # Optional, defaults to true
   ignored_files: # Optional, defaults to []
     - []
 

@@ -39,9 +39,7 @@ class _PostItemState extends State {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-
-                    height: 300,
-
+                    height: 320,
                     width: 170,
                     child: Column(
                       children: [
