@@ -40,169 +40,173 @@ class _PostItemState extends State {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    height: 250,
-                    width: 170,
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            SizedBox(
-                              width: 10,
-                            ), //間隔
-                            CircleAvatar(
-                              radius: 30,
-                              backgroundImage: AssetImage(
-                                  LeftImagePath),
-                            ),
-
-                            Row(
-                              children: [
-                                Column(
-                                  // crossAxisAlignment: CrossAxisAlignment.start,//写真の横にusernameを配置
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Text(
-                                          general,
-                                          style: TextStyle(
-                                            color: Color.fromARGB(
-                                                255, 1, 55, 142),
-                                            fontSize: 15,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            )
-                          ],
-                        ), //profile行
-
-                        Row(
-                          //Icon行
-                          children: [
-                            SizedBox(width: 5),
-
-                            Text('   📍$school'),
-
-                          ],
-                        ), //Row2
-                        Column(
-                          //Icon行
-                          children: [
-                            Container(
-                                padding: EdgeInsets.symmetric(horizontal: 1),
-                                child: Column(
-                                  children: [
-                                    Text(
-                                      message1,
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                      ),
-                                    ),
-                                    Text(
-                                      message2,
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                      ),
-                                    ),
-                                    Text(
-                                      message3,
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                      ),
-                                    ),
-                                    Text(hashtag,
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        color:
-                                        Color.fromARGB(255, 1, 55, 142),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                            Container(
-                              child: Column(
-                                children: [
-
-                                ],
+                  InteractiveViewer(
+                    child: Container(
+                      height: 250,
+                      width: 170,
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: 10,
+                              ), //間隔
+                              CircleAvatar(
+                                radius: 30,
+                                backgroundImage: AssetImage(
+                                    LeftImagePath),
                               ),
-                            ),
-                          ],
-                        ), //Row3
-                      ],
-                    ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.black,
-                        width: 0.5,
-                      ),
-                    ),
-                    child: Row(
-                      children: [
-                        Column(
-                          children: [
-                            Row(
-                              mainAxisAlignment:
-                              MainAxisAlignment.spaceBetween,
-                              children: [
-                                Row(
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 8,
-                                      backgroundImage: AssetImage(
-                                          iconPath), //Story投稿画像
-                                    ),
-                                    Text(
-                                      'blaugrana.reysol',
-                                      style: TextStyle(
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 50,
-                                ),
-                                Icon(Icons.more_horiz, size: 12),
-                              ],
-                            ),
-                            Center(
-                                child: Image.asset(
-                                  RightImagePath,
-                                  fit: BoxFit.cover,
-                                  height: 200,
-                                  width: 165.0,
-                                )),
-                            Container(
-                              child: Row(
-                                //mainAxisAlignment:MainAxisAlignment.spaceBetween,
+
+                              Row(
                                 children: [
-                                  Row(children: [
-                                    Icon(Icons.favorite_outline_outlined,
-                                        size: 12),
-                                    Icon(Icons.mode_comment_outlined,
-                                        size: 12),
-                                    Icon(Icons.send_outlined, size: 12),
-                                    SizedBox(
-                                      width: 95,
-                                    )
-                                  ]),
-                                  Icon(
-                                    Icons.home,
-                                    size: 12,
+                                  Column(
+                                    // crossAxisAlignment: CrossAxisAlignment.start,//写真の横にusernameを配置
+                                    children: [
+                                      Column(
+                                        children: [
+                                          Text(
+                                            general,
+                                            style: TextStyle(
+                                              color: Color.fromARGB(
+                                                  255, 1, 55, 142),
+                                              fontSize: 15,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
                                   ),
                                 ],
+                              )
+                            ],
+                          ), //profile行
+
+                          Row(
+                            //Icon行
+                            children: [
+                              SizedBox(width: 5),
+
+                              Text('   📍$school'),
+
+                            ],
+                          ), //Row2
+                          Column(
+                            //Icon行
+                            children: [
+                              Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 1),
+                                  child: Column(
+                                    children: [
+                                      Text(
+                                        message1,
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                      Text(
+                                        message2,
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                      Text(
+                                        message3,
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                      Text(hashtag,
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color:
+                                          Color.fromARGB(255, 1, 55, 142),
+                                        ),
+                                      ),
+                                    ],
+                                  )),
+                              Container(
+                                child: Column(
+                                  children: [
+
+                                  ],
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ), //Row3
+                        ],
+                      ),
+                    ),
+                  ),
+                  InteractiveViewer(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.black,
+                          width: 0.5,
                         ),
-                      ],
+                      ),
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 8,
+                                        backgroundImage: AssetImage(
+                                            iconPath), //Story投稿画像
+                                      ),
+                                      Text(
+                                        'blaugrana.reysol',
+                                        style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    width: 50,
+                                  ),
+                                  Icon(Icons.more_horiz, size: 12),
+                                ],
+                              ),
+                              Center(
+                                  child: Image.asset(
+                                    RightImagePath,
+                                    fit: BoxFit.cover,
+                                    height: 200,
+                                    width: 165.0,
+                                  )),
+                              Container(
+                                child: Row(
+                                  //mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(children: [
+                                      Icon(Icons.favorite_outline_outlined,
+                                          size: 12),
+                                      Icon(Icons.mode_comment_outlined,
+                                          size: 12),
+                                      Icon(Icons.send_outlined, size: 12),
+                                      SizedBox(
+                                        width: 95,
+                                      )
+                                    ]),
+                                    Icon(
+                                      Icons.home,
+                                      size: 12,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   SizedBox(
