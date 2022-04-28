@@ -533,26 +533,26 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     tabs: <Widget>[
                       Container(
-                        width: _tabiconSize + 5,
-                        height: _tabiconSize + 5,
-                        margin: const EdgeInsets.all(2.0),
+                        width: _tabiconSize + 10,
+                        height: _tabiconSize + 10,
+                        margin: const EdgeInsets.all(0.5),
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             image: DecorationImage(
                                 fit: BoxFit.fill,
                                 image:
-                                    AssetImage('images/tab_yuji_friend1.png'))),
+                                    AssetImage('images/tab_yuji_friend.png'))),
                       ),
                       Container(
-                        width: _tabiconSize + 5,
-                        height: _tabiconSize + 5,
-                        margin: const EdgeInsets.all(2.0),
+                        width: _tabiconSize + 10,
+                        height: _tabiconSize + 10,
+                        margin: const EdgeInsets.all(0.5),
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             image: DecorationImage(
                                 fit: BoxFit.fill,
                                 image:
-                                    AssetImage('images/tab_mayu_friend1.png'))),
+                                    AssetImage('images/tab_mayu_friend.png'))),
                       ),
                       Tab(
                         icon: Icon(Icons.window, color: Colors.black, size: 30),
