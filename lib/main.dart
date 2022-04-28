@@ -444,7 +444,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         func: PostItemOkuyamaTaiki(),
                       ),
                       PostsGestureDetector(
-                        imagePath: 'images/mayu_friends/shibata_saki_image.jpg',
+                        imagePath: 'images/mayu_friends/shibata_saki_image1.jpg',
+                        func: PostItemShibataSaki(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath: 'images/mayu_friends/shibata_saki_image2.jpg',
                         func: PostItemShibataSaki(),
                       ),
                       PostsGestureDetector(
@@ -458,6 +462,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       PostsGestureDetector(
                         imagePath:
+                        'images/mayu_friends/monjyu_koharu_image.jpg',
+                        func: PostItemMonjuKoharu(),
+                      ),
+                      PostsGestureDetector(
+                        imagePath:
                             'images/mayu_friends/asuka_akimoto_grid1.jpg',
                         func: PostItemAkimotoAsuka(),
                       ),
@@ -466,11 +475,16 @@ class _MyHomePageState extends State<MyHomePage> {
                             'images/mayu_friends/asuka_akimoto_grid2.jpg',
                         func: PostItemAkimotoAsuka(),
                       ),
-                      PostsGestureDetector(
-                        imagePath:
-                        'images/mayu_friends/monjyu_koharu_image.jpg',
-                        func: PostItemMonjuKoharu(),
-                      ),
+                      Container(
+                          width: 120,
+                          height: 40,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            border: Border.all(color: Colors.white, width: 0),
+                            // borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(
+                                image: AssetImage('images/mayu_friends/end.png'), fit: BoxFit.cover),
+                          ))
                     ],
                   ))
                 ],
