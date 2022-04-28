@@ -79,13 +79,17 @@ class _PostItemState extends State {
           onPressed: () => {},
         )
       ]),
-      Center(
-          child: Image.asset(
-        imagePath,
-        fit: BoxFit.cover,
-        width: 1000.0,
-        height: 400,
-      )),
+      InteractiveViewer(
+        child: Container(
+          child: Center(
+              child: Image.asset(
+            imagePath,
+            fit: BoxFit.cover,
+            width: 1000.0,
+            height: 400,
+          )),
+        ),
+      ),
       Row(
         children: [
           Container(

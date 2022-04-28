@@ -60,13 +60,17 @@ class _PostItemState extends State {
                 onPressed: () => {},
               )
             ]),
-        Center(
-            child: Image.asset(
-          'images/yuji_friends/okuyama_taiki_image.jpg',
-          fit: BoxFit.cover,
-          width: 1000.0,
-          height: 400,
-        )),
+        InteractiveViewer(
+          child: Container(
+            child: Center(
+                child: Image.asset(
+              'images/yuji_friends/okuyama_taiki_image.jpg',
+              fit: BoxFit.cover,
+              width: 1000.0,
+              height: 400,
+            )),
+          ),
+        ),
         Row(
           children: [
             Container(
