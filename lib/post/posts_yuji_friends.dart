@@ -4,6 +4,7 @@ import 'package:kobastagram/post/yuji_friends/post_item_abe_shunya.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_aida_takuya.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_hoshino_reo.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_ikeda_masashi.dart';
+import 'package:kobastagram/post/yuji_friends/post_item_inoue_takashi.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_ito_kousuke.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_ito_kuwahara_souhei.dart';
 import 'package:kobastagram/post/yuji_friends/post_item_okuyama_taiki.dart';
@@ -55,6 +56,7 @@ class _PostsState extends State<PostsYujiFriends> {
              style: descTextStyle,
             child: Column(
               children: [
+                PostItemInoueTakashi(),
                 PostItemIizukaYusuke(),
                 PostItemAidaTakuya(),
                 PostItemSaitoMasahiro(),
@@ -78,8 +80,7 @@ class _PostsState extends State<PostsYujiFriends> {
                 PostItemMai(),
                 PostItemAsabaSyunya(),
                 PostItemSakasaiKeisuke(),
-                PostItemIkedaKen()
-
+                PostItemIkedaKen(),
               ],
             )
 
