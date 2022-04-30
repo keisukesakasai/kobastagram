@@ -14,7 +14,6 @@ class Stories extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 StoryItem(
-
                     name: "Yuji mam",
                     imagePath: 'images/story_icon/yuji_mam_icon.png',
                     moviePath: 'videos/yuji_family/yuji_mom.mp4'),
@@ -42,6 +41,10 @@ class Stories extends StatelessWidget {
                     name: "Mayu sis",
                     imagePath: 'images/story_icon/mayu_sis_icon.jpg',
                     moviePath: 'videos/mayu_family/mayu_sis.mp4'),
+                StoryItem(
+                    name: "Best Friends",
+                    imagePath: 'images/story_icon/best_friends_icon.jpg',
+                    moviePath: 'videos/yuji_family/best_friends_video.mp4'),
               ],
             )));
   }
