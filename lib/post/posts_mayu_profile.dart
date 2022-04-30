@@ -9,7 +9,7 @@ import 'package:kobastagram/post/mayu_profile/post_item_mayu_elementary.dart';
 final String iconPath = 'images/profile/mayu_introduce_profile_icon.png';
 final String friendsPath = 'images/profile/mayu_profile_friends.png';
 
-final String profileMsg = '埼玉県浦和市出身\n''明るく人周囲の人を幸せに\n''何事にもポジティブ\n''勉強もスポーツもすべてこなす十全十美';
+final String profileMsg = '埼玉県浦和市出身\n''明るく周囲の人を幸せに\n''何事にもポジティブ\n''勉強もスポーツもすべてこなす十全十美';
 
 class PostMayuProfile extends StatefulWidget {
   @override
